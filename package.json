@@ -1,19 +1,23 @@
 {
   "name": "presentations",
   "version": "1.0.0",
-  "description": "",
-  "main": "reveal.js",
+  "description": "AI Avatar Workshop - Secure Slidev Presentation",
+  "main": "slides.md",
   "scripts": {
     "dev": "slidev",
     "build": "slidev build",
-    "export": "slidev export"
+    "export": "slidev export",
+    "vercel-build": "npm run build"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["slidev", "ai", "avatar", "workshop", "presentation"],
+  "author": "zouhx",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
     "@slidev/cli": "^51.8.2",
     "@slidev/theme-default": "^0.25.0"
+  },
+  "dependencies": {
+    "slidev-theme-neversink": "^0.3.6"
   }
 }
