@@ -7,7 +7,7 @@
     "dev": "slidev",
     "build": "slidev build",
     "build:github": "slidev build --base /avatar_presentation/",
-    "protect": "staticrypt dist/index.html AvatarWorkshop2025 -o dist/index.html --short --title \"AI Avatar Workshop - Enter Password\"",
+    "protect": "staticrypt dist/index.html -p AvatarWorkshop2025 -d dist --template-title \"AI Avatar Workshop - Enter Password\" --template-instructions \"Please enter the workshop password to access the slides\"",
     "export": "slidev export"
   },
   "keywords": ["slidev", "ai", "avatar", "workshop", "presentation"],

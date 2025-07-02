@@ -35,7 +35,13 @@ jobs:
         run: npm run build:github
 
       - name: Protect with password
-        run: npm run protect
+        run: |
+          echo "Before protection - checking dist/index.html"
+          ls -la dist/
+          head -20 dist/index.html
+          npx staticrypt dist/index.html -p AvatarWorkshop2025 -d dist --template-title "AI Avatar Workshop - Enter Password" --template-instructions "Please enter the workshop password to access the slides"
+          echo "After protection - checking dist/index.html"
+          head -20 dist/index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
