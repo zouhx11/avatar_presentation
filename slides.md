@@ -4421,6 +4421,239 @@ class: text-center
 You'll have a **fully functional AI Avatar Chat App** ready to show your friends and family!
 
 ---
+layout: section
+background: "#f0f9ff"
+---
+
+# 🎭 One-Shot Talking Face Generation
+## Making Photos Come Alive with AI
+
+Advanced Avatar Animation Technology
+
+---
+layout: two-cols-title
+columns: is-6
+align: c-lm-cm
+zoom: 1.0
+---
+
+:: title ::
+<div class="text-2xl">
+# 🎬 What is One-Shot Talking Face Generation?
+</div>
+
+:: left ::
+<div class="ns-c-tight">
+
+## Core Concept
+**Transform any static photo into a talking, animated face using just audio input**
+
+## Key Innovation
+- **Single photo** + **Audio clip** = **Talking avatar**
+- Uses **deep learning** to map audio to facial movements
+- Creates **lifelike lip-sync** and natural expressions
+- **No training data** needed for new faces
+
+## Real-World Impact
+- Virtual assistants and chatbots
+- Content creation and entertainment  
+- Educational applications
+- Accessibility tools for communication
+
+</div>
+
+:: right ::
+<div class="flex flex-col gap-4 items-center mt-8">
+  <img src="/images/image36.png" class="rounded max-h-64 w-full object-contain" />
+  <div class="text-center text-sm text-gray-600">
+    From static photo to animated talking face
+  </div>
+</div>
+
+---
+layout: two-cols-title
+columns: is-6
+align: c-lm-cm
+zoom: 1.0
+---
+
+:: title ::
+<div class="text-2xl">
+# 🧠 The Technology Behind the Magic
+</div>
+
+:: left ::
+<div class="ns-c-tight">
+
+## Deep Learning Models
+- **Audio-Visual Correlation Learning**
+- **Facial Landmark Detection** 
+- **Lip-Sync Neural Networks**
+- **Expression Transfer Models**
+
+## Training Process
+- Models trained on thousands of video clips
+- Learn correlations between **phonetic sounds** and **facial movements**
+- Understand natural expressions and micro-movements
+- Generate smooth, realistic animations
+
+## Key Advantages
+- **One-shot**: No per-person training needed
+- **Real-time**: Fast inference for live applications
+- **High quality**: Photorealistic results
+- **Flexible**: Works with any face photo
+
+</div>
+
+:: right ::
+<div class="flex flex-col gap-4 mt-8">
+  <div class="bg-blue-50 p-4 rounded-lg">
+    <h3 class="font-bold text-blue-800 mb-2">🎯 Audio Processing</h3>
+    <p class="text-sm">Extract phonetic features and timing from speech</p>
+  </div>
+  <div class="bg-green-50 p-4 rounded-lg">
+    <h3 class="font-bold text-green-800 mb-2">👁️ Face Analysis</h3>
+    <p class="text-sm">Detect facial landmarks and structure</p>
+  </div>
+  <div class="bg-purple-50 p-4 rounded-lg">
+    <h3 class="font-bold text-purple-800 mb-2">🎨 Animation</h3>
+    <p class="text-sm">Generate synchronized lip movements and expressions</p>
+  </div>
+</div>
+
+---
+layout: two-cols-title
+columns: is-4
+align: c-lm-ct
+zoom: 1.0
+---
+
+:: title ::
+<div class="text-2xl">
+
+# 💻 Implementation Guide
+
+</div>
+
+:: left ::
+<div class="ns-c-tight">
+
+## Setup Process
+1. **Clone the repository**
+2. **Install dependencies** 
+3. **Load pre-trained model**
+4. **Prepare your data**
+
+## Data Requirements
+- **High-quality photo** (clear face visible)
+- **Clean audio file** (noise-free speech)
+- **Proper file formats** (JPG/PNG + WAV/MP3)
+
+## Best Practices
+- Use **well-lit, front-facing photos**
+- Ensure **clear audio recording**
+- **GPU acceleration** for real-time performance
+- **Model quantization** for mobile deployment
+
+</div>
+
+:: right ::
+<div class="flex flex-col gap-3">
+  
+```bash
+# 1. Setup Environment
+git clone https://github.com/FuxiVirtualHuman/AAAI22-one-shot-talking-face.git
+cd AAAI22-one-shot-talking-face
+pip install -r requirements.txt
+```
+
+```python
+# 2. Load Model
+from models import AudioVisualModel
+
+model = AudioVisualModel()
+model.load_state_dict(torch.load('model.pth'))
+model.eval()
+```
+
+```python
+# 3. Process Data
+from utils import preprocess_image, preprocess_audio
+
+image = preprocess_image('photo.jpg')
+audio = preprocess_audio('speech.wav')
+```
+
+```python
+# 4. Generate Talking Face
+output = model.generate_talking_face(image, audio)
+output.save('talking_avatar.mp4')
+```
+
+</div>
+
+---
+layout: two-cols-title
+columns: is-6
+align: c-lm-ct
+zoom: 1.0
+---
+
+:: title ::
+<div class="text-2xl">
+# 🚀 Applications & Future Potential
+</div>
+
+:: left ::
+<div class="ns-c-tight">
+
+## Current Applications
+- **Virtual Influencers** and content creation
+- **Customer Service** avatars
+- **Educational** talking tutors
+- **Gaming** and entertainment
+- **Accessibility** communication aids
+
+## Emerging Use Cases
+- **Multilingual** content localization
+- **Historical figures** brought to life
+- **Personalized** marketing avatars
+- **Therapy** and mental health applications
+
+## Technical Challenges
+- **Real-time performance** optimization
+- **Cross-cultural** expression accuracy
+- **Emotional authenticity** in animations
+- **Privacy** and ethical considerations
+
+</div>
+
+:: right ::
+<div class="grid grid-cols-2 gap-3 mt-4">
+  <div class="bg-gradient-to-br from-blue-100 to-blue-200 p-4 rounded-lg text-center">
+    <div class="text-2xl mb-2">🎥</div>
+    <div class="text-sm font-semibold">Content Creation</div>
+  </div>
+  <div class="bg-gradient-to-br from-green-100 to-green-200 p-4 rounded-lg text-center">
+    <div class="text-2xl mb-2">🏢</div>
+    <div class="text-sm font-semibold">Business Apps</div>
+  </div>
+  <div class="bg-gradient-to-br from-purple-100 to-purple-200 p-4 rounded-lg text-center">
+    <div class="text-2xl mb-2">🎓</div>
+    <div class="text-sm font-semibold">Education</div>
+  </div>
+  <div class="bg-gradient-to-br from-orange-100 to-orange-200 p-4 rounded-lg text-center">
+    <div class="text-2xl mb-2">🎮</div>
+    <div class="text-sm font-semibold">Gaming</div>
+  </div>
+</div>
+
+<div class="mt-6 p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-400">
+  <h3 class="font-bold text-yellow-800 mb-2">🔮 Future Vision</h3>
+  <p class="text-sm text-yellow-700">Real-time, photorealistic talking avatars for every application - from personal assistants to immersive virtual worlds</p>
+</div>
+
+---
 layout: two-cols-title
 columns: is-6
 align: c-lm-cm
