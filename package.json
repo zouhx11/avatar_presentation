@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "slidev",
     "build": "slidev build",
-    "export": "slidev export",
-    "vercel-build": "npm run build"
+    "build:github": "slidev build --base /avatar_presentation/",
+    "protect": "staticrypt dist/index.html AvatarWorkshop2025 -o dist/index.html --short --title \"AI Avatar Workshop - Enter Password\"",
+    "export": "slidev export"
   },
   "keywords": ["slidev", "ai", "avatar", "workshop", "presentation"],
   "author": "zouhx",
@@ -15,7 +16,8 @@
   "type": "commonjs",
   "devDependencies": {
     "@slidev/cli": "^51.8.2",
-    "@slidev/theme-default": "^0.25.0"
+    "@slidev/theme-default": "^0.25.0",
+    "staticrypt": "^3.3.0"
   },
   "dependencies": {
     "slidev-theme-neversink": "^0.3.6"

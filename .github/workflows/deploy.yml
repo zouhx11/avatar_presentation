@@ -31,8 +31,11 @@ jobs:
       - name: Install theme explicitly
         run: npm install slidev-theme-neversink
 
-      - name: Build
-        run: npm run build -- --base /${{github.event.repository.name}}/
+      - name: Build slides
+        run: npm run build:github
+
+      - name: Protect with password
+        run: npm run protect
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
