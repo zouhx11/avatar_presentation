@@ -674,10 +674,27 @@ color: white
 </div>
 
 ---
-layout: full
+layout: center
+class: text-center
 ---
 
-<iframe src="http://80.241.209.58:8501" class="w-full h-full border-0" frameborder="0" allowfullscreen></iframe>
+<div class="flex flex-col items-center justify-center h-full space-y-8">
+  <div class="text-4xl font-bold text-blue-600">
+    🎯 Live Avatar Demo
+  </div>
+  
+  <div class="text-xl text-gray-600">
+    Interactive Avatar Application
+  </div>
+  
+  <a href="http://80.241.209.58:8501" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition-colors duration-200 shadow-lg">
+    🚀 Open Avatar Demo
+  </a>
+  
+  <div class="text-sm text-gray-500 mt-4">
+    Opens in new tab
+  </div>
+</div>
 
 ---
 layout: section
