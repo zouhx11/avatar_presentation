@@ -674,6 +674,12 @@ color: white
 </div>
 
 ---
+layout: full
+---
+
+<iframe src="http://80.241.209.58:8501" class="w-full h-full border-0" frameborder="0" allowfullscreen></iframe>
+
+---
 layout: section
 background: "#e0f2fe"
 ---
