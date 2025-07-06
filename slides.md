@@ -697,6 +697,29 @@ class: text-center
 </div>
 
 ---
+layout: center
+class: text-center
+---
+
+<div class="flex flex-col items-center justify-center h-full space-y-8">
+  <div class="text-4xl font-bold text-green-600">
+    🎬 Streaming Avatar Demo
+  </div>
+  
+  <div class="text-xl text-gray-600">
+    Real-time Avatar Streaming
+  </div>
+  
+  <a href="http://80.241.209.58:3000" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition-colors duration-200 shadow-lg">
+    🎥 Open Streaming Demo
+  </a>
+  
+  <div class="text-sm text-gray-500 mt-4">
+    Opens in new tab
+  </div>
+</div>
+
+---
 layout: section
 background: "#e0f2fe"
 ---
