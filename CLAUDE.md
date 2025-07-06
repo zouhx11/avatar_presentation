@@ -36,7 +36,25 @@ Image or media here
 - `columns: is-6` - Balanced (50/50) - Good for equal text/image weight  
 - `columns: is-8` - Wide left (67%), narrow right (33%) - Good for lots of text + small images
 
-#### 2. Center Layout
+#### 2. Top Title Layout
+**Usage:** Slides with prominent title and centered content below
+```markdown
+---
+layout: top-title
+align: c
+color: light
+---
+
+:: title ::
+# Slide Title
+
+:: content ::
+<div class="flex justify-center mt-8">
+Content or media here
+</div>
+```
+
+#### 3. Center Layout
 **Usage:** Title slides, single-focus content
 ```markdown
 ---
@@ -45,7 +63,7 @@ class: text-center
 ---
 ```
 
-#### 3. Three-Column Grid
+#### 4. Three-Column Grid
 **Usage:** When need text between two images
 ```markdown
 <div class="grid grid-cols-3 gap-8 items-center mt-8">

@@ -658,6 +658,22 @@ Virtual meeting, Education, Social media, etc.
 <img src="/images/image33.jpeg" alt="Avatar Making" class="rounded max-h-80 w-full object-contain" />
 
 ---
+layout: top-title
+align: c
+color: white
+---
+
+:: title ::
+
+# Avatar App Showcase
+
+:: content ::
+
+<div class="flex justify-center mt-8">
+<video src="/images/avatar_chat.mp4" class="rounded max-h-100 w-full object-contain" controls autoplay loop muted></video>
+</div>
+
+---
 layout: section
 background: "#e0f2fe"
 ---
@@ -1475,7 +1491,7 @@ print(f"Avatar: {avatar}")
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lm-ct
 zoom: 1.0
 ---
 
