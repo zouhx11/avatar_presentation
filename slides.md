@@ -13,6 +13,7 @@ drawings:
 transition: slide-left
 title: AI Avatar Workshop
 mdc: true
+layout: cover
 ---
 
 <style>
