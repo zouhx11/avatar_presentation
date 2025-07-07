@@ -1287,8 +1287,8 @@ layout: section
 
 ---
 layout: two-cols-title
-columns: is-6
-align: c-lm-cm
+columns: is-8
+align: c-lt-cm
 zoom: 1.0
 ---
 
@@ -1323,15 +1323,15 @@ zoom: 1.0
 <div class="bg-gray-100 p-6 rounded-lg">
   <h3 class="text-lg font-bold mb-4 text-center">Live Demo Station! 🎮</h3>
   <div class="space-y-4">
-    <button @click="window.open('https://colab.research.google.com/', '_blank')" class="w-full bg-orange-500 text-white px-4 py-3 rounded-lg hover:bg-orange-600 transition-colors">
+    <a href="https://colab.research.google.com/" target="_blank" class="block w-full bg-orange-500 text-white px-4 py-3 rounded-lg hover:bg-orange-600 transition-colors text-center">
       🔗 Open Google Colab
-    </button>
-    <button @click="window.open('https://colab.research.google.com/notebooks/intro.ipynb', '_blank')" class="w-full bg-blue-500 text-white px-4 py-3 rounded-lg hover:bg-blue-600 transition-colors">
+    </a>
+    <a href="https://colab.research.google.com/notebooks/intro.ipynb" target="_blank" class="block w-full bg-blue-500 text-white px-4 py-3 rounded-lg hover:bg-blue-600 transition-colors text-center">
       📖 Colab Tutorial
-    </button>
-    <button @click="window.open('https://colab.research.google.com/github/tensorflow/examples/blob/master/courses/udacity_intro_to_tensorflow_for_deep_learning/l01c01_introduction_to_colab_and_python.ipynb', '_blank')" class="w-full bg-green-500 text-white px-4 py-3 rounded-lg hover:bg-green-600 transition-colors">
+    </a>
+    <a href="https://colab.research.google.com/github/tensorflow/examples/blob/master/courses/udacity_intro_to_tensorflow_for_deep_learning/l01c01_introduction_to_colab_and_python.ipynb" target="_blank" class="block w-full bg-green-500 text-white px-4 py-3 rounded-lg hover:bg-green-600 transition-colors text-center">
       🧠 AI Starter Notebook
-    </button>
+    </a>
   </div>
 </div>
 
