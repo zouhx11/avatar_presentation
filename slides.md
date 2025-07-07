@@ -1370,9 +1370,9 @@ class: text-center
 
 ---
 layout: two-cols-title
-columns: is-8
-align: c-lm-cm
-zoom: 1.0
+columns: is-6
+align: c-lt-cm
+zoom: 0.8
 ---
 
 :: title ::
@@ -1388,22 +1388,18 @@ zoom: 1.0
 <div class="ns-c-tight">
 
 ## 🐍 Core Python Concepts
-
 ### Data Structures
 - **Lists**: `messages = ["Hello", "How are you?"]`
 - **Dictionaries**: `user = {"name": "Alice", "age": 16}`
 - **JSON**: Perfect for API communication
-
 ### Control Flow
 - **Conditional Logic**: Making decisions
 - **Loops**: Processing multiple items
 - **Functions**: Reusable code blocks
-
 ### Working with APIs
 - **Requests**: Sending HTTP requests
 - **JSON Parsing**: Processing API responses
 - **Error Handling**: Graceful failure management
-
 ### File Operations
 - **Reading/Writing**: Save conversation history
 - **CSV/JSON**: Data persistence
@@ -1414,9 +1410,9 @@ zoom: 1.0
 
 <div class="bg-purple-100 p-4 rounded-lg">
   <h3 class="text-lg font-bold text-purple-800 mb-3">🎮 Live Coding Station</h3>
-  <button @click="window.open('https://colab.research.google.com/drive/1K8N8VGOVKxM8tC9V9fRw8V8nQvJ8NsGC?usp=sharing', '_blank')" class="w-full bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 mb-3">
+  <a href="https://colab.research.google.com/drive/1K8N8VGOVKxM8tC9V9fRw8V8nQvJ8NsGC?usp=sharing" target="_blank" class="block w-full bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 mb-3 text-center">
     💻 Python Basics Notebook
-  </button>
+  </a>
   <div class="text-sm">
     <strong>Exercise 1:</strong> Build a simple chatbot<br/>
     <strong>Exercise 2:</strong> Work with JSON data<br/>
@@ -1481,8 +1477,8 @@ def ai_chatbot(message):<br/>
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
-zoom: 1.0
+align: c-lt-cm
+zoom: 0.8
 ---
 
 :: title ::
@@ -1495,7 +1491,7 @@ zoom: 1.0
 
 :: left ::
 
-<div class="ns-c-tight">
+<div class="ns-c-supertight">
 
 ## 📝 What is JSON?
 **JavaScript Object Notation** - The language of APIs
@@ -1656,6 +1652,7 @@ zoom: 1.0
 ---
 layout: center
 class: text-center
+zoom: 0.9
 ---
 
 # 🎉 Class 1 Complete!
