@@ -772,6 +772,28 @@ zoom: 0.75
 :: right ::
 <img src="/images/Neural_Network_Brain_Mimic.webp" class="rounded max-h-120 w-full object-contain" />
 <img src="/images/neural_network_dog.jpg" class="rounded max-h-120 w-full object-contain" />
+
+---
+layout: center
+class: text-center
+zoom: 1.5
+---
+
+<div class="grid grid-cols-2 gap-4 h-full w-full p-4">
+  <div class="aspect-video">
+    <Youtube id="aircAruvnKk" class="w-full h-full rounded"/>
+  </div>
+  <div class="aspect-video">
+    <Youtube id="IHZwWFHWa-w" class="w-full h-full rounded"/>
+  </div>
+  <div class="aspect-video">
+    <Youtube id="Ilg3gGewQ5U" class="w-full h-full rounded"/>
+  </div>
+  <div class="aspect-video">
+    <Youtube id="tIeHLnjs5U8" class="w-full h-full rounded"/>
+  </div>
+</div>
+
 ---
 layout: two-cols-title
 columns: is-6
@@ -1236,6 +1258,26 @@ zoom: 0.8
 </div>
 </div>
 
+---
+layout: center
+class: text-center
+zoom: 1.5
+---
+
+<div class="grid grid-cols-2 gap-4 h-full w-full p-4">
+  <div class="aspect-video">
+    <Youtube id="LPZh9BOjkQs" class="w-full h-full rounded"/>
+  </div>
+  <div class="aspect-video">
+    <Youtube id="wjZofJX0v4M" class="w-full h-full rounded"/>
+  </div>
+  <div class="aspect-video">
+    <Youtube id="eMlx5fFNoYc" class="w-full h-full rounded"/>
+  </div>
+  <div class="aspect-video">
+    <Youtube id="9-Jl0dxWQs8" class="w-full h-full rounded"/>
+  </div>
+</div>
 ---
 layout: section
 ---

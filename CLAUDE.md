@@ -344,6 +344,32 @@ npm run export
    - Deploys to GitHub Pages
 4. Site accessible at https://zouhx11.github.io/avatar_presentation with password
 
+### 📝 Git Workflow Policy
+**IMPORTANT**: When instructed to "commit and push", always commit ALL changes in the project:
+
+```bash
+# Always stage ALL changes (not just specific files)
+git add .
+
+# Commit with descriptive message
+git commit -m "Descriptive commit message with all changes"
+
+# Push to origin
+git push origin main
+```
+
+**Why this matters:**
+- Ensures no files are left uncommitted (especially new images in `/public/images/`)
+- Maintains complete project history
+- Prevents deployment issues with missing assets
+- Keeps repository in sync with all changes
+
+**Common files to watch for:**
+- New images in `/public/images/`
+- Modified slides.md
+- Updated configuration files
+- Any other project assets
+
 ## Future Enhancements
 
 - More interactive demos and live coding stations
