@@ -765,7 +765,7 @@ class: text-center
     Real-time Avatar Streaming
   </div>
   
-  <a href="http://80.241.209.58:3000" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition-colors duration-200 shadow-lg">
+  <a href="https://80.241.209.58:3000" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition-colors duration-200 shadow-lg">
     🎥 Open Streaming Demo
   </a>
   
