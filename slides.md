@@ -801,25 +801,25 @@ class: text-center
 
 # 🧠 Neural Network Interactive Playground
 
-<div class="flex flex-col items-center justify-center h-full space-y-8">
-  <div class="text-xl text-gray-600 max-w-2xl">
-    Before diving into activation functions, let's explore how neural networks work visually!
-  </div>
-  
-  <div class="bg-blue-50 p-8 rounded-xl shadow-lg">
-    <h3 class="text-2xl font-bold text-blue-800 mb-6">🎮 TensorFlow Playground</h3>
-    <p class="text-lg text-gray-700 mb-6">
-      Interactive neural network visualizer - see how different architectures, activation functions, and datasets affect learning!
-    </p>
-    
-    <a href="https://playground.tensorflow.org/" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition-colors duration-200 shadow-lg inline-block">
-      🚀 Open TensorFlow Playground
-    </a>
-  </div>
-  
-  <div class="text-sm text-gray-500 mt-4">
-    Try different activation functions and see their impact in real-time!
-  </div>
+<div class="text-xl text-gray-600 max-w-2xl mx-auto text-center mb-8">
+Before diving into activation functions, let's explore how neural networks work visually!
+</div>
+
+<div class="bg-blue-50 p-8 rounded-xl shadow-lg max-w-2xl mx-auto">
+<h3 class="text-2xl font-bold text-blue-800 mb-6 text-center">🎮 TensorFlow Playground</h3>
+<p class="text-lg text-gray-700 mb-6 text-center">
+Interactive neural network visualizer - see how different architectures, activation functions, and datasets affect learning!
+</p>
+
+<div class="text-center">
+<a href="https://playground.tensorflow.org/" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition-colors duration-200 shadow-lg inline-block">
+🚀 Open TensorFlow Playground
+</a>
+</div>
+</div>
+
+<div class="text-sm text-gray-500 mt-4 text-center">
+Try different activation functions and see their impact in real-time!
 </div>
 
 ---
@@ -978,25 +978,25 @@ class: text-center
 
 # 🧠 Interactive CNN Explainer
 
-<div class="flex flex-col items-center justify-center h-full space-y-8">
-  <div class="text-xl text-gray-600 max-w-2xl">
-    Before exploring sequence models, let's understand how Convolutional Neural Networks process visual data!
-  </div>
-  
-  <div class="bg-green-50 p-8 rounded-xl shadow-lg">
-    <h3 class="text-2xl font-bold text-green-800 mb-6">👁️ CNN Explainer</h3>
-    <p class="text-lg text-gray-700 mb-6">
-      Interactive visualization of how CNNs learn to recognize images - perfect for understanding computer vision in avatars!
-    </p>
-    
-    <a href="https://poloclub.github.io/cnn-explainer/" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition-colors duration-200 shadow-lg inline-block">
-      🔍 Explore CNN Learning
-    </a>
-  </div>
-  
-  <div class="text-sm text-gray-500 mt-4">
-    Watch how filters detect features layer by layer!
-  </div>
+<div class="text-xl text-gray-600 max-w-2xl mx-auto text-center mb-8">
+Before exploring sequence models, let's understand how Convolutional Neural Networks process visual data!
+</div>
+
+<div class="bg-green-50 p-8 rounded-xl shadow-lg max-w-2xl mx-auto">
+<h3 class="text-2xl font-bold text-green-800 mb-6 text-center">👁️ CNN Explainer</h3>
+<p class="text-lg text-gray-700 mb-6 text-center">
+Interactive visualization of how CNNs learn to recognize images - perfect for understanding computer vision in avatars!
+</p>
+
+<div class="text-center">
+<a href="https://poloclub.github.io/cnn-explainer/" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition-colors duration-200 shadow-lg inline-block">
+🔍 Explore CNN Learning
+</a>
+</div>
+</div>
+
+<div class="text-sm text-gray-500 mt-4 text-center">
+Watch how filters detect features layer by layer!
 </div>
 
 ---
