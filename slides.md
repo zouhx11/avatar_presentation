@@ -77,16 +77,16 @@ class: text-center
   <button @click="$slidev.nav.go(3)" class="bg-blue-500 text-white px-6 py-4 rounded-lg hover:bg-blue-600 transition-colors">
     🧠 Class 1: AI Foundations & Python
   </button>
-  <button @click="$slidev.nav.go(12)" class="bg-green-500 text-white px-6 py-4 rounded-lg hover:bg-green-600 transition-colors">
-    🌐 Class 2: Web Apps & APIs
+  <button @click="$slidev.nav.go(49)" class="bg-green-500 text-white px-6 py-4 rounded-lg hover:bg-green-600 transition-colors">
+    🌐 Class 2: Web Apps & PyTorch
   </button>
-  <button @click="$slidev.nav.go(21)" class="bg-purple-500 text-white px-6 py-4 rounded-lg hover:bg-purple-600 transition-colors">
+  <button @click="$slidev.nav.go(67)" class="bg-purple-500 text-white px-6 py-4 rounded-lg hover:bg-purple-600 transition-colors">
     🎭 Class 3: Avatar Technology
   </button>
-  <button @click="$slidev.nav.go(30)" class="bg-orange-500 text-white px-6 py-4 rounded-lg hover:bg-orange-600 transition-colors">
+  <button @click="$slidev.nav.go(98)" class="bg-orange-500 text-white px-6 py-4 rounded-lg hover:bg-orange-600 transition-colors">
     ⚡ Class 4: Integration & Features
   </button>
-  <button @click="$slidev.nav.go(39)" class="bg-red-500 text-white px-6 py-4 rounded-lg hover:bg-red-600 transition-colors">
+  <button @click="$slidev.nav.go(115)" class="bg-red-500 text-white px-6 py-4 rounded-lg hover:bg-red-600 transition-colors">
     🏆 Class 5: Demo Day & Projects
   </button>
 </div>
@@ -795,6 +795,34 @@ zoom: 1.5
 </div>
 
 ---
+layout: center
+class: text-center
+---
+
+# 🧠 Neural Network Interactive Playground
+
+<div class="flex flex-col items-center justify-center h-full space-y-8">
+  <div class="text-xl text-gray-600 max-w-2xl">
+    Before diving into activation functions, let's explore how neural networks work visually!
+  </div>
+  
+  <div class="bg-blue-50 p-8 rounded-xl shadow-lg">
+    <h3 class="text-2xl font-bold text-blue-800 mb-6">🎮 TensorFlow Playground</h3>
+    <p class="text-lg text-gray-700 mb-6">
+      Interactive neural network visualizer - see how different architectures, activation functions, and datasets affect learning!
+    </p>
+    
+    <a href="https://playground.tensorflow.org/" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition-colors duration-200 shadow-lg inline-block">
+      🚀 Open TensorFlow Playground
+    </a>
+  </div>
+  
+  <div class="text-sm text-gray-500 mt-4">
+    Try different activation functions and see their impact in real-time!
+  </div>
+</div>
+
+---
 layout: two-cols-title
 columns: is-6
 align: c-lt-lt
@@ -941,6 +969,34 @@ zoom: 0.8
 <strong>🎯 Avatar Magic:</strong> CNNs can detect over 500 different facial expressions with 95%+ accuracy!
 </div>
 
+</div>
+
+---
+layout: center
+class: text-center
+---
+
+# 🧠 Interactive CNN Explainer
+
+<div class="flex flex-col items-center justify-center h-full space-y-8">
+  <div class="text-xl text-gray-600 max-w-2xl">
+    Before exploring sequence models, let's understand how Convolutional Neural Networks process visual data!
+  </div>
+  
+  <div class="bg-green-50 p-8 rounded-xl shadow-lg">
+    <h3 class="text-2xl font-bold text-green-800 mb-6">👁️ CNN Explainer</h3>
+    <p class="text-lg text-gray-700 mb-6">
+      Interactive visualization of how CNNs learn to recognize images - perfect for understanding computer vision in avatars!
+    </p>
+    
+    <a href="https://poloclub.github.io/cnn-explainer/" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition-colors duration-200 shadow-lg inline-block">
+      🔍 Explore CNN Learning
+    </a>
+  </div>
+  
+  <div class="text-sm text-gray-500 mt-4">
+    Watch how filters detect features layer by layer!
+  </div>
 </div>
 
 ---
@@ -1410,10 +1466,10 @@ zoom: 0.8
 
 <div class="bg-purple-100 p-4 rounded-lg">
   <h3 class="text-lg font-bold text-purple-800 mb-3">🎮 Live Coding Station</h3>
-  <a href="https://colab.research.google.com/drive/1K8N8VGOVKxM8tC9V9fRw8V8nQvJ8NsGC?usp=sharing" target="_blank" class="block w-full bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 mb-3 text-center">
+  <a href="https://colab.research.google.com/github/data-psl/lectures2020/blob/master/notebooks/01_python_basics.ipynb" target="_blank" class="block w-full bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 mb-3 text-center">
     💻 Python Basics Notebook
   </a>
-  <div class="text-sm">
+  <div class="text-sm text-center">
     <strong>Exercise 1:</strong> Build a simple chatbot<br/>
     <strong>Exercise 2:</strong> Work with JSON data<br/>
     <strong>Exercise 3:</strong> Make your first API call
@@ -1558,7 +1614,7 @@ class: text-center
 <div class="grid grid-cols-2 gap-8 mt-8">
   <div class="bg-purple-50 p-6 rounded-lg">
     <h3 class="text-xl font-bold text-purple-800 mb-4">🏋️ Exercise: Parse This JSON</h3>
-    <div class="bg-white p-4 rounded font-mono text-sm">
+    <div class="bg-white p-4 rounded font-mono text-sm text-center">
 user_data = {<br/>
 &nbsp;&nbsp;"conversations": [<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{"msg": "Hi", "time": "10:00"},<br/>
@@ -1570,12 +1626,12 @@ user_data = {<br/>
 &nbsp;&nbsp;}<br/>
 }
     </div>
-    <p class="mt-4 text-sm"><strong>Task:</strong> Extract the last message and preferred avatar</p>
+    <p class="mt-4 text-sm text-center"><strong>Task:</strong> Extract the last message and preferred avatar</p>
   </div>
 
   <div class="bg-orange-50 p-6 rounded-lg">
     <h3 class="text-xl font-bold text-orange-800 mb-4">💡 Solution Approach</h3>
-    <div class="bg-white p-4 rounded font-mono text-sm">
+    <div class="bg-white p-4 rounded font-mono text-sm text-center">
 # Get last message<br/>
 last_msg = user_data["conversations"][-1]["msg"]<br/><br/>
 # Get preferred avatar<br/>
@@ -1588,9 +1644,9 @@ print(f"Avatar: {avatar}")
 </div>
 
 <div class="mt-6">
-  <button @click="window.open('https://colab.research.google.com/drive/1JSON_Practice_Notebook', '_blank')" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors">
+  <a href="https://colab.research.google.com/drive/1JSON_Practice_Notebook" target="_blank" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors inline-block text-center">
     🚀 Try It in Colab!
-  </button>
+  </a>
 </div>
 
 ---
@@ -1634,7 +1690,7 @@ zoom: 1.0
 <div class="space-y-4">
   <div class="bg-gradient-to-r from-blue-400 to-purple-500 text-white p-4 rounded-lg">
     <h4 class="font-bold mb-2">🎯 Your Final Project</h4>
-    <p class="text-sm">A fully functional AI Avatar Chat App that you built from scratch!</p>
+    <p class="text-sm text-center">A fully functional AI Avatar Chat App that you built from scratch!</p>
   </div>
   
   <div class="bg-yellow-100 p-4 rounded-lg">
@@ -1692,7 +1748,7 @@ background: "#dcfce7"
 ---
 
 # 🌐 Class 2
-## Web Apps & API Magic
+## Web Apps & PyTorch Deep Learning
 
 ---
 layout: center
@@ -1706,17 +1762,17 @@ class: text-center
 <div class="grid grid-cols-3 gap-6 mt-8">
   <div class="bg-blue-100 p-6 rounded-lg">
     <h3 class="text-xl font-bold text-blue-800 mb-4">🏗️ Web Architecture</h3>
-    <p class="text-sm">Understand how modern web apps work and why Streamlit revolutionizes development</p>
+    <p class="text-sm text-center">Understand how modern web apps work and why Streamlit revolutionizes development</p>
   </div>
   
   <div class="bg-green-100 p-6 rounded-lg">
     <h3 class="text-xl font-bold text-green-800 mb-4">🔌 API Integration</h3>
-    <p class="text-sm">Connect to Claude AI and learn the secrets of seamless AI communication</p>
+    <p class="text-sm text-center">Connect to Claude AI and learn the secrets of seamless AI communication</p>
   </div>
   
   <div class="bg-purple-100 p-6 rounded-lg">
     <h3 class="text-xl font-bold text-purple-800 mb-4">💬 Chat Interface</h3>
-    <p class="text-sm">Build a professional chat app that rivals commercial applications</p>
+    <p class="text-sm text-center">Build a professional chat app that rivals commercial applications</p>
   </div>
 </div>
 
@@ -1728,7 +1784,7 @@ class: text-center
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -1827,15 +1883,15 @@ class: text-center
   <div class="bg-green-50 p-6 rounded-lg">
     <h3 class="text-xl font-bold text-green-800 mb-4">⚡ Live Demo Station</h3>
     <div class="space-y-3">
-      <button @click="window.open('https://streamlit.io/gallery', '_blank')" class="w-full bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
+      <a href="https://streamlit.io/gallery" target="_blank" class="block w-full bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 text-center">
         🎨 Streamlit Gallery
-      </button>
-      <button @click="window.open('https://docs.streamlit.io/library/api-reference', '_blank')" class="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+      </a>
+      <a href="https://docs.streamlit.io/library/api-reference" target="_blank" class="block w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 text-center">
         📚 API Reference
-      </button>
-      <button @click="window.open('https://30days.streamlit.app/', '_blank')" class="w-full bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600">
+      </a>
+      <a href="https://30days.streamlit.app/" target="_blank" class="block w-full bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 text-center">
         📅 30 Days of Streamlit
-      </button>
+      </a>
     </div>
     
     <div class="mt-4 p-3 bg-yellow-100 rounded">
@@ -1981,9 +2037,9 @@ except Exception as e:<br/>
 </div>
 
 <div class="mt-6">
-  <button @click="window.open('https://docs.anthropic.com/claude/reference/getting-started-with-the-api', '_blank')" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors">
+  <a href="https://docs.anthropic.com/claude/reference/getting-started-with-the-api" target="_blank" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors inline-block text-center">
     📖 Claude API Documentation
-  </button>
+  </a>
 </div>
 
 ---
@@ -2048,17 +2104,17 @@ if st.button("Send") and user_input:
   <h3 class="text-lg font-bold text-blue-800 mb-3">🔬 Live Coding Station</h3>
   
   <div class="space-y-3">
-    <button @click="window.open('https://colab.research.google.com/drive/1ChatInterface_Starter', '_blank')" class="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+    <a href="https://colab.research.google.com/drive/1ChatInterface_Starter" target="_blank" class="block w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 block text-center">
       🚀 Starter Template
-    </button>
+    </a>
     
-    <button @click="window.open('https://colab.research.google.com/drive/1StreamlitTutorial', '_blank')" class="w-full bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
+    <a href="https://colab.research.google.com/drive/1StreamlitTutorial" target="_blank" class="block w-full bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 block text-center">
       📚 Streamlit Tutorial
-    </button>
+    </a>
     
-    <button @click="window.open('https://colab.research.google.com/drive/1ClaudeAPI_Examples', '_blank')" class="w-full bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600">
+    <a href="https://colab.research.google.com/drive/1ClaudeAPI_Examples" target="_blank" class="block w-full bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 block text-center">
       🤖 Claude API Examples
-    </button>
+    </a>
   </div>
   
   <div class="mt-4 p-3 bg-yellow-100 rounded">
@@ -2089,30 +2145,429 @@ class: text-center
   <div class="bg-orange-50 p-6 rounded-lg">
     <h3 class="text-xl font-bold text-orange-800 mb-4">🔥 PyTorch Playground</h3>
     <div class="space-y-3">
-      <button @click="window.open('https://playground.learnpytorch.io/', '_blank')" class="w-full bg-orange-500 text-white px-4 py-3 rounded-lg hover:bg-orange-600 transition-colors">
+      <a href="https://playground.learnpytorch.io/" target="_blank" class="block w-full bg-orange-500 text-white px-4 py-3 rounded-lg hover:bg-orange-600 transition-colors block text-center">
         🧠 Neural Network Visualizer
-      </button>
-      <button @click="window.open('https://poloclub.github.io/cnn-explainer/', '_blank')" class="w-full bg-red-500 text-white px-4 py-3 rounded-lg hover:bg-red-600 transition-colors">
+      </a>
+      <a href="https://poloclub.github.io/cnn-explainer/" target="_blank" class="block w-full bg-red-500 text-white px-4 py-3 rounded-lg hover:bg-red-600 transition-colors block text-center">
         👁️ CNN Explainer (Face Recognition)
-      </button>
+      </a>
     </div>
     <div class="mt-4 p-3 bg-white rounded">
-      <p class="text-sm"><strong>🎯 Mission:</strong> Build a neural network that can classify facial expressions! Experiment with different layer sizes and see how it affects accuracy.</p>
+      <p class="text-sm text-center"><strong>🎯 Mission:</strong> Build a neural network that can classify facial expressions! Experiment with different layer sizes and see how it affects accuracy.</p>
     </div>
   </div>
 
   <div class="bg-green-50 p-6 rounded-lg">
     <h3 class="text-xl font-bold text-green-800 mb-4">🎭 Avatar Technology Demos</h3>
     <div class="space-y-3">
-      <button @click="window.open('https://huggingface.co/spaces/fffiloni/First-Order-Motion-Model', '_blank')" class="w-full bg-green-500 text-white px-4 py-3 rounded-lg hover:bg-green-600 transition-colors">
+      <a href="https://huggingface.co/spaces/fffiloni/First-Order-Motion-Model" target="_blank" class="block w-full bg-green-500 text-white px-4 py-3 rounded-lg hover:bg-green-600 transition-colors block text-center">
         🎬 Face Animation Demo
-      </button>
-      <button @click="window.open('https://huggingface.co/spaces/stabilityai/stable-diffusion', '_blank')" class="w-full bg-blue-500 text-white px-4 py-3 rounded-lg hover:bg-blue-600 transition-colors">
+      </a>
+      <a href="https://huggingface.co/spaces/stabilityai/stable-diffusion" target="_blank" class="block w-full bg-blue-500 text-white px-4 py-3 rounded-lg hover:bg-blue-600 transition-colors block text-center">
         🎨 Image Generation
-      </button>
+      </a>
     </div>
     <div class="mt-4 p-3 bg-white rounded">
-      <p class="text-sm"><strong>🎯 Mission:</strong> Try animating a photo with different expressions. See how AI maps facial landmarks and generates realistic motion!</p>
+      <p class="text-sm text-center"><strong>🎯 Mission:</strong> Try animating a photo with different expressions. See how AI maps facial landmarks and generates realistic motion!</p>
+    </div>
+  </div>
+</div>
+
+---
+layout: section
+background: "#fef3c7"
+---
+
+# 🔥 PyTorch Deep Learning
+## Your Gateway to AI Development
+
+---
+layout: center
+class: text-center
+---
+
+# 🚀 Why PyTorch?
+
+<div class="grid grid-cols-3 gap-8 mt-8">
+  <div class="bg-blue-50 p-6 rounded-lg">
+    <h3 class="text-xl font-bold text-blue-800 mb-4">🧠 Dynamic Computing</h3>
+    <ul class="text-sm text-left space-y-2">
+      <li>• Define-by-run framework</li>
+      <li>• Dynamic computational graphs</li>
+      <li>• Perfect for research & experimentation</li>
+      <li>• Intuitive Python-first design</li>
+    </ul>
+  </div>
+  
+  <div class="bg-green-50 p-6 rounded-lg">
+    <h3 class="text-xl font-bold text-green-800 mb-4">⚡ Industry Standard</h3>
+    <ul class="text-sm text-left space-y-2">
+      <li>• Used by Meta, Tesla, OpenAI</li>
+      <li>• Powers ChatGPT, DALL-E</li>
+      <li>• Fastest growing ML framework</li>
+      <li>• Seamless deployment options</li>
+    </ul>
+  </div>
+  
+  <div class="bg-purple-50 p-6 rounded-lg">
+    <h3 class="text-xl font-bold text-purple-800 mb-4">🎯 Avatar Perfect</h3>
+    <ul class="text-sm text-left space-y-2">
+      <li>• Computer vision excellence</li>
+      <li>• Real-time processing</li>
+      <li>• GPU acceleration</li>
+      <li>• Rich ecosystem for avatars</li>
+    </ul>
+  </div>
+</div>
+
+---
+layout: two-cols-title
+columns: is-6
+align: c-lm-cm
+zoom: 1.0
+---
+
+:: title ::
+<div class="text-2xl">
+# 🏗️ PyTorch Fundamentals
+</div>
+
+:: left ::
+<div class="ns-c-tight">
+
+## Core Concepts
+
+### 📊 **Tensors**
+- Multi-dimensional arrays (like NumPy++)
+- GPU acceleration built-in
+- Automatic differentiation support
+
+### 🔄 **Autograd**
+- Automatic gradient computation
+- Backpropagation made easy
+- Track computational history
+
+### 🧮 **Neural Networks**
+- `torch.nn` module for building models
+- Pre-built layers and activation functions
+- Loss functions and optimizers
+
+### 🚀 **Device Management**
+- CPU/GPU seamless switching
+- CUDA support for acceleration
+- Memory efficient operations
+
+</div>
+
+:: right ::
+<div class="bg-gray-100 p-4 rounded-lg">
+<h3 class="text-lg font-bold mb-3">🔬 Quick Start Example</h3>
+<div class="font-mono text-sm space-y-1">
+<div class="text-green-600"># Import PyTorch</div>
+<div>import torch</div>
+<div>import torch.nn as nn</div>
+<div class="text-green-600 mt-2"># Create a tensor</div>
+<div>x = torch.tensor([1.0, 2.0, 3.0])</div>
+<div>print(x)  # tensor([1., 2., 3.])</div>
+<div class="text-green-600 mt-2"># GPU acceleration</div>
+<div>device = torch.device("cuda")</div>
+<div>x = x.to(device)</div>
+<div class="text-green-600 mt-2"># Simple neural network</div>
+<div>model = nn.Linear(3, 1)</div>
+<div>output = model(x)</div>
+</div>
+</div>
+
+---
+layout: center
+class: text-center
+---
+
+# 📊 Tensor Operations Mastery
+
+<div class="grid grid-cols-2 gap-8 mt-8">
+  <div class="bg-blue-50 p-6 rounded-lg">
+    <h3 class="text-xl font-bold text-blue-800 mb-4">🔢 Basic Operations</h3>
+    <div class="bg-white p-4 rounded font-mono text-sm space-y-1">
+      <div class="text-green-600"># Create tensors</div>
+      <div>a = torch.rand(3, 4)</div>
+      <div>b = torch.ones(3, 4)</div>
+      <div class="text-green-600 mt-2"># Mathematical operations</div>
+      <div>c = a + b</div>
+      <div>d = torch.matmul(a, b.T)</div>
+      <div>e = a.sum(dim=1)</div>
+      <div class="text-green-600 mt-2"># Reshape & view</div>
+      <div>f = a.view(2, 6)</div>
+      <div>g = a.reshape(-1, 1)</div>
+    </div>
+  </div>
+
+  <div class="bg-green-50 p-6 rounded-lg">
+    <h3 class="text-xl font-bold text-green-800 mb-4">🎯 Advanced Operations</h3>
+    <div class="bg-white p-4 rounded font-mono text-sm space-y-1">
+      <div class="text-green-600"># Gradients & autograd</div>
+      <div>x = torch.tensor([1.0], requires_grad=True)</div>
+      <div>y = x ** 2 + 2 * x + 1</div>
+      <div>y.backward()</div>
+      <div>print(x.grad)  # dy/dx = 2x + 2</div>
+      <div class="text-green-600 mt-2"># Broadcasting</div>
+      <div>a = torch.rand(3, 1)</div>
+      <div>b = torch.rand(1, 4)</div>
+      <div>c = a + b  # (3, 4) result</div>
+    </div>
+  </div>
+</div>
+
+---
+layout: two-cols-title
+columns: is-4
+align: c-lm-cm
+zoom: 1.0
+---
+
+:: title ::
+<div class="text-2xl">
+# 🧠 Building Neural Networks
+</div>
+
+:: left ::
+<div class="ns-c-tight">
+
+## Step-by-Step Process
+
+### 1️⃣ **Define Architecture**
+```python
+class AvatarNet(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.conv1 = nn.Conv2d(3, 64, 3)
+        self.fc1 = nn.Linear(64, 128)
+        self.fc2 = nn.Linear(128, 10)
+```
+
+### 2️⃣ **Forward Pass**
+```python
+def forward(self, x):
+    x = F.relu(self.conv1(x))
+    x = F.adaptive_avg_pool2d(x, 1)
+    x = x.view(x.size(0), -1)
+    x = F.relu(self.fc1(x))
+    return self.fc2(x)
+```
+
+### 3️⃣ **Training Loop**
+```python
+optimizer = torch.optim.Adam(model.parameters())
+criterion = nn.CrossEntropyLoss()
+
+for epoch in range(num_epochs):
+    for batch in dataloader:
+        optimizer.zero_grad()
+        loss = criterion(model(batch.x), batch.y)
+        loss.backward()
+        optimizer.step()
+```
+
+</div>
+
+:: right ::
+<div class="flex flex-col gap-4">
+  <div class="bg-yellow-100 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-yellow-800 mb-3">🎯 Live Demo Station</h3>
+    <div class="space-y-2">
+      <a href="https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/17a7c7cb80916fcdf921097825a0f562/tensor_tutorial.ipynb" target="_blank" class="block w-full bg-yellow-500 text-white px-3 py-2 rounded hover:bg-yellow-600 text-center text-sm text-center">
+        📊 Tensor Tutorial
+      </a>
+      <a href="https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/0979ba1d96d23f8ca1b9fe3c4d9d7d2d/neural_networks_tutorial.ipynb" target="_blank" class="block w-full bg-blue-500 text-white px-3 py-2 rounded hover:bg-blue-600 text-center text-sm text-center">
+        🧠 Neural Networks
+      </a>
+      <a href="https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/e9c8374ecc202120dc94db26bf08a00f/autograd_tutorial.ipynb" target="_blank" class="block w-full bg-green-500 text-white px-3 py-2 rounded hover:bg-green-600 text-center text-sm text-center">
+        🔄 Autograd Tutorial
+      </a>
+    </div>
+  </div>
+  
+  <div class="bg-purple-100 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-purple-800 mb-3">🎮 Hands-On Challenge</h3>
+    <ul class="text-sm space-y-1">
+      <li>• Build a simple image classifier</li>
+      <li>• Train on CIFAR-10 dataset</li>
+      <li>• Achieve 70%+ accuracy</li>
+      <li>• Visualize training progress</li>
+    </ul>
+  </div>
+</div>
+
+---
+layout: center
+class: text-center
+---
+
+# 🖼️ Computer Vision with PyTorch
+
+<div class="grid grid-cols-2 gap-8 mt-8">
+  <div class="bg-red-50 p-6 rounded-lg">
+    <h3 class="text-xl font-bold text-red-800 mb-4">🎯 Core Components</h3>
+    <div class="bg-white p-4 rounded font-mono text-sm space-y-1">
+      <div class="text-green-600"># Vision transforms</div>
+      <div>from torchvision import transforms</div>
+      <div>transform = transforms.Compose([</div>
+      <div>    transforms.Resize(224),</div>
+      <div>    transforms.ToTensor(),</div>
+      <div>    transforms.Normalize(mean=[0.485, 0.456, 0.406],</div>
+      <div>                        std=[0.229, 0.224, 0.225])</div>
+      <div>])</div>
+      <div class="text-green-600 mt-2"># Pretrained models</div>
+      <div>import torchvision.models as models</div>
+      <div>resnet = models.resnet50(pretrained=True)</div>
+    </div>
+  </div>
+
+  <div class="bg-blue-50 p-6 rounded-lg">
+    <h3 class="text-xl font-bold text-blue-800 mb-4">🤖 Avatar Applications</h3>
+    <ul class="text-sm space-y-2">
+      <li>• <strong>Face Detection:</strong> Identify facial landmarks</li>
+      <li>• <strong>Expression Recognition:</strong> Classify emotions</li>
+      <li>• <strong>Pose Estimation:</strong> Track body movements</li>
+      <li>• <strong>Style Transfer:</strong> Apply artistic effects</li>
+      <li>• <strong>Super Resolution:</strong> Enhance image quality</li>
+      <li>• <strong>3D Reconstruction:</strong> Build 3D models</li>
+    </ul>
+  </div>
+</div>
+
+---
+layout: two-cols-title
+columns: is-6
+align: c-lm-cm
+zoom: 1.0
+---
+
+:: title ::
+<div class="text-2xl">
+# 🔬 Google Colab PyTorch Lab
+</div>
+
+:: left ::
+<div class="ns-c-tight">
+
+## Interactive Learning Stations
+
+### 🎯 **Beginner Track**
+Complete these notebooks in order:
+1. **PyTorch Basics** - Tensors and operations
+2. **Neural Networks** - Build your first model
+3. **Training Loop** - Optimization and loss functions
+
+### 🚀 **Intermediate Track**
+Ready for more challenges:
+1. **Computer Vision** - CNNs for image classification
+2. **Transfer Learning** - Use pretrained models
+3. **Data Augmentation** - Improve model performance
+
+### 🏆 **Advanced Track**
+Push your limits:
+1. **Custom Datasets** - Load your own data
+2. **Model Deployment** - From training to production
+3. **Avatar Pipeline** - Build a complete system
+
+</div>
+
+:: right ::
+<div class="bg-gray-100 p-6 rounded-lg">
+  <h3 class="text-lg font-bold mb-4 text-center">🎮 Practice Stations</h3>
+  <div class="space-y-3">
+    <div class="bg-blue-100 p-3 rounded">
+      <h4 class="font-semibold text-blue-800">🔰 Beginner</h4>
+      <a href="https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/17a7c7cb80916fcdf921097825a0f562/tensor_tutorial.ipynb" target="_blank" class="block w-full bg-blue-500 text-white px-3 py-2 rounded hover:bg-blue-600 text-center text-sm mt-2">
+        🎯 Start Here: Tensors
+      </a>
+    </div>
+    
+    <div class="bg-green-100 p-3 rounded">
+      <h4 class="font-semibold text-green-800">🚀 Intermediate</h4>
+      <a href="https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/cifar10_tutorial.ipynb" target="_blank" class="block w-full bg-green-500 text-white px-3 py-2 rounded hover:bg-green-600 text-center text-sm mt-2">
+        🖼️ CIFAR-10 Challenge
+      </a>
+    </div>
+    
+    <div class="bg-purple-100 p-3 rounded">
+      <h4 class="font-semibold text-purple-800">🏆 Advanced</h4>
+      <a href="https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/transfer_learning_tutorial.ipynb" target="_blank" class="block w-full bg-purple-500 text-white px-3 py-2 rounded hover:bg-purple-600 text-center text-sm mt-2">
+        🎭 Transfer Learning
+      </a>
+    </div>
+  </div>
+  
+  <div class="mt-4 p-3 bg-yellow-100 rounded">
+    <p class="text-sm font-semibold">🏅 Achievement Goals:</p>
+    <ul class="text-xs mt-1">
+      <li>• Complete 3 beginner notebooks</li>
+      <li>• Build a working image classifier</li>
+      <li>• Achieve 75%+ accuracy on test set</li>
+    </ul>
+  </div>
+</div>
+
+---
+layout: center
+class: text-center
+---
+
+# 🎯 PyTorch Project Challenge
+
+<div class="grid grid-cols-3 gap-6 mt-8">
+  <div class="bg-bronze-50 p-6 rounded-lg border-2 border-yellow-600">
+    <h3 class="text-xl font-bold text-yellow-800 mb-4">🥉 Bronze Level</h3>
+    <div class="space-y-3">
+      <h4 class="font-semibold">Simple Classifier</h4>
+      <ul class="text-sm text-left space-y-1">
+        <li>• Load MNIST dataset</li>
+        <li>• Build 2-layer network</li>
+        <li>• Train for 5 epochs</li>
+        <li>• Achieve 90%+ accuracy</li>
+      </ul>
+      <div class="mt-3">
+        <a href="https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/mnist_tutorial.ipynb" target="_blank" class="block w-full bg-yellow-500 text-white px-3 py-2 rounded hover:bg-yellow-600 text-center text-sm text-center">
+          🎯 Start Bronze
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-gray-50 p-6 rounded-lg border-2 border-gray-400">
+    <h3 class="text-xl font-bold text-gray-700 mb-4">🥈 Silver Level</h3>
+    <div class="space-y-3">
+      <h4 class="font-semibold">CNN for Images</h4>
+      <ul class="text-sm text-left space-y-1">
+        <li>• Build CNN architecture</li>
+        <li>• Train on CIFAR-10</li>
+        <li>• Use data augmentation</li>
+        <li>• Achieve 75%+ accuracy</li>
+      </ul>
+      <div class="mt-3">
+        <a href="https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/cifar10_tutorial.ipynb" target="_blank" class="block w-full bg-gray-500 text-white px-3 py-2 rounded hover:bg-gray-600 text-center text-sm text-center">
+          🏆 Try Silver
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-yellow-50 p-6 rounded-lg border-2 border-yellow-500">
+    <h3 class="text-xl font-bold text-yellow-700 mb-4">🥇 Gold Level</h3>
+    <div class="space-y-3">
+      <h4 class="font-semibold">Avatar Face Detector</h4>
+      <ul class="text-sm text-left space-y-1">
+        <li>• Use transfer learning</li>
+        <li>• Custom face dataset</li>
+        <li>• Real-time inference</li>
+        <li>• Deploy to Streamlit</li>
+      </ul>
+      <div class="mt-3">
+        <a href="https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/transfer_learning_tutorial.ipynb" target="_blank" class="block w-full bg-yellow-600 text-white px-3 py-2 rounded hover:bg-yellow-700 text-center text-sm text-center">
+          🏅 Gold Challenge
+        </a>
+      </div>
     </div>
   </div>
 </div>
@@ -2172,12 +2627,12 @@ zoom: 1.0
   <div class="bg-yellow-100 p-4 rounded-lg">
     <h4 class="font-bold text-yellow-800 mb-2">📚 Resources</h4>
     <div class="space-y-2">
-      <button @click="window.open('https://colab.research.google.com/drive/1CompleteChat_Template', '_blank')" class="w-full bg-yellow-500 text-white px-3 py-2 rounded hover:bg-yellow-600 text-sm">
+      <a href="https://colab.research.google.com/drive/1CompleteChat_Template" target="_blank" class="block w-full bg-yellow-500 text-white px-3 py-2 rounded hover:bg-yellow-600 text-sm block text-center">
         📝 Complete Template
-      </button>
-      <button @click="window.open('https://streamlit-elements.readthedocs.io/', '_blank')" class="w-full bg-blue-500 text-white px-3 py-2 rounded hover:bg-blue-600 text-sm">
+      </a>
+      <a href="https://streamlit-elements.readthedocs.io/" target="_blank" class="block w-full bg-blue-500 text-white px-3 py-2 rounded hover:bg-blue-600 text-sm block text-center">
         🎨 Advanced Components
-      </button>
+      </a>
     </div>
   </div>
   
@@ -2328,17 +2783,17 @@ zoom: 1.0
   <h3 class="text-xl font-bold text-orange-800 mb-4">🔥 PyTorch Playground</h3>
   <p class="text-sm text-orange-700 mb-4">Experience neural networks in action! Visualize how layers process information.</p>
   
-  <button @click="window.open('https://playground.learnpytorch.io/', '_blank')" class="w-full bg-orange-500 text-white px-4 py-3 rounded-lg hover:bg-orange-600 transition-colors mb-4">
+  <a href="https://playground.learnpytorch.io/" target="_blank" class="block w-full bg-orange-500 text-white px-4 py-3 rounded-lg hover:bg-orange-600 transition-colors mb-4">
     🧠 Neural Network Visualizer
-  </button>
+  </a>
   
   <div class="space-y-2">
-    <button @click="window.open('https://tensorspace.org/html/playground/alexnet.html', '_blank')" class="w-full bg-blue-500 text-white px-3 py-2 text-sm rounded hover:bg-blue-600">
+    <a href="https://tensorspace.org/html/playground/alexnet.html" target="_blank" class="block w-full bg-blue-500 text-white px-3 py-2 text-sm text-center rounded hover:bg-blue-600">
       🔍 3D Network Explorer
-    </button>
-    <button @click="window.open('https://teachablemachine.withgoogle.com/', '_blank')" class="w-full bg-green-500 text-white px-3 py-2 text-sm rounded hover:bg-green-600">
+    </a>
+    <a href="https://teachablemachine.withgoogle.com/" target="_blank" class="block w-full bg-green-500 text-white px-3 py-2 text-sm text-center rounded hover:bg-green-600">
       🎓 Teachable Machine
-    </button>
+    </a>
   </div>
   
   <div class="mt-4 p-3 bg-yellow-100 rounded">
@@ -2714,12 +3169,12 @@ Attention allows neural networks to **focus on relevant parts** of the input whe
   <div class="bg-green-50 p-4 rounded-lg">
     <h3 class="text-lg font-bold text-green-800 mb-3">🔬 Attention Maps</h3>
     <div class="space-y-2">
-      <button @click="window.open('https://transformer-circuits.pub/2021/framework/index.html', '_blank')" class="w-full bg-green-500 text-white px-3 py-2 text-sm rounded hover:bg-green-600">
+      <a href="https://transformer-circuits.pub/2021/framework/index.html" target="_blank" class="block w-full bg-green-500 text-white px-3 py-2 text-sm text-center rounded hover:bg-green-600">
         🧠 Transformer Circuits
-      </button>
-      <button @click="window.open('https://distill.pub/2016/augmented-rnns/', '_blank')" class="w-full bg-blue-500 text-white px-3 py-2 text-sm rounded hover:bg-blue-600">
+      </a>
+      <a href="https://distill.pub/2016/augmented-rnns/" target="_blank" class="block w-full bg-blue-500 text-white px-3 py-2 text-sm text-center rounded hover:bg-blue-600">
         👁️ Attention Visualization
-      </button>
+      </a>
     </div>
   </div>
   
@@ -2781,15 +3236,15 @@ zoom: 1.0
   <h3 class="text-lg font-bold text-pink-800 mb-3">🎨 Live Avatar Generators</h3>
   
   <div class="space-y-3 mb-4">
-    <button @click="window.open('https://huggingface.co/spaces/stabilityai/stable-diffusion', '_blank')" class="w-full bg-pink-500 text-white px-3 py-2 text-sm rounded hover:bg-pink-600">
+    <a href="https://huggingface.co/spaces/stabilityai/stable-diffusion" target="_blank" class="block w-full bg-pink-500 text-white px-3 py-2 text-sm text-center rounded hover:bg-pink-600">
       🖼️ Stable Diffusion Demo
-    </button>
-    <button @click="window.open('https://www.heygen.com/', '_blank')" class="w-full bg-purple-500 text-white px-3 py-2 text-sm rounded hover:bg-purple-600">
+    </a>
+    <a href="https://www.heygen.com/" target="_blank" class="block w-full bg-purple-500 text-white px-3 py-2 text-sm text-center rounded hover:bg-purple-600">
       🎭 HeyGen Avatar Studio
-    </button>
-    <button @click="window.open('https://huggingface.co/spaces/AP123/IllusionDiffusion', '_blank')" class="w-full bg-blue-500 text-white px-3 py-2 text-sm rounded hover:bg-blue-600">
+    </a>
+    <a href="https://huggingface.co/spaces/AP123/IllusionDiffusion" target="_blank" class="block w-full bg-blue-500 text-white px-3 py-2 text-sm text-center rounded hover:bg-blue-600">
       ✨ Illusion Diffusion
-    </button>
+    </a>
   </div>
   
   <div class="bg-gray-100 p-3 rounded mb-4">
@@ -2975,9 +3430,9 @@ zoom: 1.0
   
   <div class="bg-green-50 p-4 rounded-lg">
     <h3 class="text-lg font-bold text-green-800 mb-3">🧪 Live Speech Analysis</h3>
-    <button @click="window.open('https://huggingface.co/spaces/facebook/wav2vec2-base-960h', '_blank')" class="w-full bg-green-500 text-white px-3 py-2 text-sm rounded hover:bg-green-600">
+    <a href="https://huggingface.co/spaces/facebook/wav2vec2-base-960h" target="_blank" class="block w-full bg-green-500 text-white px-3 py-2 text-sm text-center rounded hover:bg-green-600">
       🎤 Speech-to-Phoneme Demo
-    </button>
+    </a>
   </div>
 </div>
 
@@ -3041,19 +3496,19 @@ zoom: 1.0
     <h3 class="text-lg font-bold text-orange-800 mb-3">🌊 Audio Processing Pipeline</h3>
     <div class="space-y-3">
       <div class="bg-white p-3 rounded border-l-4 border-blue-500">
-        <h4 class="font-bold text-sm">1. Text Analysis</h4>
+        <h4 class="font-bold text-sm text-center">1. Text Analysis</h4>
         <p class="text-xs">Phoneme extraction, stress patterns</p>
       </div>
       <div class="bg-white p-3 rounded border-l-4 border-green-500">
-        <h4 class="font-bold text-sm">2. Mel-Spectrogram</h4>
+        <h4 class="font-bold text-sm text-center">2. Mel-Spectrogram</h4>
         <p class="text-xs">Text → frequency representation</p>
       </div>
       <div class="bg-white p-3 rounded border-l-4 border-yellow-500">
-        <h4 class="font-bold text-sm">3. Vocoder</h4>
+        <h4 class="font-bold text-sm text-center">3. Vocoder</h4>
         <p class="text-xs">Mel-spec → audio waveform</p>
       </div>
       <div class="bg-white p-3 rounded border-l-4 border-purple-500">
-        <h4 class="font-bold text-sm">4. Audio Output</h4>
+        <h4 class="font-bold text-sm text-center">4. Audio Output</h4>
         <p class="text-xs">High-quality speech synthesis</p>
       </div>
     </div>
@@ -3241,19 +3696,19 @@ Where neural networks learn the bidirectional reflectance distribution function 
     <h3 class="text-lg font-bold text-purple-800 mb-3">🎬 Rendering Pipeline</h3>
     <div class="space-y-3">
       <div class="bg-white p-3 rounded border-l-4 border-blue-500">
-        <h4 class="font-bold text-sm">1. 3D Geometry</h4>
+        <h4 class="font-bold text-sm text-center">1. 3D Geometry</h4>
         <p class="text-xs">Face mesh from 3DMM parameters</p>
       </div>
       <div class="bg-white p-3 rounded border-l-4 border-green-500">
-        <h4 class="font-bold text-sm">2. Neural Shading</h4>
+        <h4 class="font-bold text-sm text-center">2. Neural Shading</h4>
         <p class="text-xs">AI predicts surface appearance</p>
       </div>
       <div class="bg-white p-3 rounded border-l-4 border-yellow-500">
-        <h4 class="font-bold text-sm">3. Lighting Model</h4>
+        <h4 class="font-bold text-sm text-center">3. Lighting Model</h4>
         <p class="text-xs">Neural networks handle complex lighting</p>
       </div>
       <div class="bg-white p-3 rounded border-l-4 border-purple-500">
-        <h4 class="font-bold text-sm">4. Final Image</h4>
+        <h4 class="font-bold text-sm text-center">4. Final Image</h4>
         <p class="text-xs">Photorealistic avatar rendering</p>
       </div>
     </div>
@@ -3284,12 +3739,12 @@ Where neural networks learn the bidirectional reflectance distribution function 
   <div class="bg-green-50 p-4 rounded-lg">
     <h3 class="text-lg font-bold text-green-800 mb-3">🔬 Neural Rendering Demos</h3>
     <div class="space-y-2">
-      <button @click="window.open('https://www.matthewtancik.com/nerf', '_blank')" class="w-full bg-green-500 text-white px-3 py-2 text-sm rounded hover:bg-green-600">
+      <a href="https://www.matthewtancik.com/nerf" target="_blank" class="block w-full bg-green-500 text-white px-3 py-2 text-sm text-center rounded hover:bg-green-600">
         🌟 NeRF: View Synthesis
-      </button>
-      <button @click="window.open('https://gafniguy.github.io/4D-Facial-Avatars/', '_blank')" class="w-full bg-blue-500 text-white px-3 py-2 text-sm rounded hover:bg-blue-600">
+      </a>
+      <a href="https://gafniguy.github.io/4D-Facial-Avatars/" target="_blank" class="block w-full bg-blue-500 text-white px-3 py-2 text-sm text-center rounded hover:bg-blue-600">
         🎭 4D Facial Avatars
-      </button>
+      </a>
     </div>
   </div>
 </div>
@@ -3656,15 +4111,15 @@ headers = {
   <h3 class="text-lg font-bold mb-3">🧪 Live API Explorer</h3>
   
   <div class="space-y-3 mb-4">
-    <button @click="window.open('https://docs.heygen.com/reference/overview', '_blank')" class="w-full bg-blue-500 text-white px-3 py-2 text-sm rounded hover:bg-blue-600">
+    <a href="https://docs.heygen.com/reference/overview" target="_blank" class="block w-full bg-blue-500 text-white px-3 py-2 text-sm text-center rounded hover:bg-blue-600">
       📖 HeyGen API Docs
-    </button>
-    <button @click="window.open('https://www.d-id.com/api/', '_blank')" class="w-full bg-green-500 text-white px-3 py-2 text-sm rounded hover:bg-green-600">
+    </a>
+    <a href="https://www.d-id.com/api/" target="_blank" class="block w-full bg-green-500 text-white px-3 py-2 text-sm text-center rounded hover:bg-green-600">
       🎭 D-ID API Reference
-    </button>
-    <button @click="window.open('https://docs.runwayml.com/', '_blank')" class="w-full bg-purple-500 text-white px-3 py-2 text-sm rounded hover:bg-purple-600">
+    </a>
+    <a href="https://docs.runwayml.com/" target="_blank" class="block w-full bg-purple-500 text-white px-3 py-2 text-sm text-center rounded hover:bg-purple-600">
       🎬 Runway API Guide
-    </button>
+    </a>
   </div>
   
   <div class="bg-white p-3 rounded mb-4 font-mono text-xs">
@@ -3742,15 +4197,15 @@ Store your keys securely using Colab secrets:
   <div class="bg-blue-50 p-4 rounded-lg">
     <h3 class="text-lg font-bold text-blue-800 mb-3">🔗 Quick Start Resources</h3>
     <div class="space-y-2">
-      <button @click="window.open('https://colab.research.google.com/', '_blank')" class="w-full bg-blue-500 text-white px-3 py-2 text-sm rounded hover:bg-blue-600">
+      <a href="https://colab.research.google.com/" target="_blank" class="block w-full bg-blue-500 text-white px-3 py-2 text-sm text-center rounded hover:bg-blue-600">
         🚀 Open Google Colab
-      </button>
-      <button @click="window.open('https://github.com/streamlit/streamlit', '_blank')" class="w-full bg-green-500 text-white px-3 py-2 text-sm rounded hover:bg-green-600">
+      </a>
+      <a href="https://github.com/streamlit/streamlit" target="_blank" class="block w-full bg-green-500 text-white px-3 py-2 text-sm text-center rounded hover:bg-green-600">
         🌊 Streamlit Documentation
-      </button>
-      <button @click="window.open('https://docs.anthropic.com/', '_blank')" class="w-full bg-purple-500 text-white px-3 py-2 text-sm rounded hover:bg-purple-600">
+      </a>
+      <a href="https://docs.anthropic.com/" target="_blank" class="block w-full bg-purple-500 text-white px-3 py-2 text-sm text-center rounded hover:bg-purple-600">
         🤖 Claude API Docs
-      </button>
+      </a>
     </div>
   </div>
   
@@ -3812,17 +4267,17 @@ class: text-center
   <div class="grid grid-cols-3 gap-4">
     <div class="bg-white p-4 rounded text-center">
       <div class="text-2xl mb-2">🎯</div>
-      <h4 class="font-bold text-sm">1. User Selection</h4>
+      <h4 class="font-bold text-sm text-center">1. User Selection</h4>
       <p class="text-xs">Dropdown menus and preview images</p>
     </div>
     <div class="bg-white p-4 rounded text-center">
       <div class="text-2xl mb-2">⚙️</div>
-      <h4 class="font-bold text-sm">2. Parameter Mapping</h4>
+      <h4 class="font-bold text-sm text-center">2. Parameter Mapping</h4>
       <p class="text-xs">Convert UI choices to API parameters</p>
     </div>
     <div class="bg-white p-4 rounded text-center">
       <div class="text-2xl mb-2">🎬</div>
-      <h4 class="font-bold text-sm">3. Generation</h4>
+      <h4 class="font-bold text-sm text-center">3. Generation</h4>
       <p class="text-xs">Send request and handle response</p>
     </div>
   </div>
@@ -3912,12 +4367,12 @@ def generate_avatar_async(text, avatar_id):
   <div class="bg-green-50 p-4 rounded-lg">
     <h3 class="text-lg font-bold text-green-800 mb-3">🧪 Testing Tools</h3>
     <div class="space-y-2">
-      <button @click="window.open('https://httpbin.org/', '_blank')" class="w-full bg-green-500 text-white px-3 py-2 text-sm rounded hover:bg-green-600">
+      <a href="https://httpbin.org/" target="_blank" class="block w-full bg-green-500 text-white px-3 py-2 text-sm text-center rounded hover:bg-green-600">
         🔧 HTTP Testing Service
-      </button>
-      <button @click="window.open('https://docs.streamlit.io/library/api-reference/status', '_blank')" class="w-full bg-blue-500 text-white px-3 py-2 text-sm rounded hover:bg-blue-600">
+      </a>
+      <a href="https://docs.streamlit.io/library/api-reference/status" target="_blank" class="block w-full bg-blue-500 text-white px-3 py-2 text-sm text-center rounded hover:bg-blue-600">
         📊 Streamlit Status Elements
-      </button>
+      </a>
     </div>
   </div>
 </div>
@@ -3968,7 +4423,7 @@ class: text-center
 
 <div class="mt-8 bg-purple-100 p-6 rounded-lg">
   <h3 class="text-xl font-bold text-purple-800 mb-4">🛠️ Starter Code Template</h3>
-  <div class="bg-white p-4 rounded font-mono text-sm">
+  <div class="bg-white p-4 rounded font-mono text-sm text-center">
     <div class="text-blue-600 mb-2"># Get started with this template:</div>
     <div>🔗 <a href="https://colab.research.google.com/drive/1xyz" class="text-blue-500 underline">Avatar Challenge Starter Notebook</a></div>
   </div>
@@ -4490,7 +4945,7 @@ class: text-center
 
 <div class="mt-8 bg-gradient-to-r from-indigo-100 to-pink-100 p-6 rounded-lg max-w-4xl mx-auto">
   <h3 class="text-xl font-bold text-indigo-800 mb-4">🚀 Investment Opportunities (a16z Perspective)</h3>
-  <div class="grid grid-cols-3 gap-6 text-sm">
+  <div class="grid grid-cols-3 gap-6 text-sm text-center">
     <div>
       <strong class="text-indigo-700">Infrastructure:</strong>
       <div>Real-time rendering, edge computing, avatar APIs</div>
@@ -4631,15 +5086,15 @@ zoom: 1.0
 <div class="flex flex-col gap-4 mt-8">
   <div class="bg-blue-50 p-4 rounded-lg">
     <h3 class="font-bold text-blue-800 mb-2">🎯 Audio Processing</h3>
-    <p class="text-sm">Extract phonetic features and timing from speech</p>
+    <p class="text-sm text-center">Extract phonetic features and timing from speech</p>
   </div>
   <div class="bg-green-50 p-4 rounded-lg">
     <h3 class="font-bold text-green-800 mb-2">👁️ Face Analysis</h3>
-    <p class="text-sm">Detect facial landmarks and structure</p>
+    <p class="text-sm text-center">Detect facial landmarks and structure</p>
   </div>
   <div class="bg-purple-50 p-4 rounded-lg">
     <h3 class="font-bold text-purple-800 mb-2">🎨 Animation</h3>
-    <p class="text-sm">Generate synchronized lip movements and expressions</p>
+    <p class="text-sm text-center">Generate synchronized lip movements and expressions</p>
   </div>
 </div>
 
@@ -6364,7 +6819,7 @@ zoom: 0.8
 
 <div class="mt-8 bg-gradient-to-r from-purple-400 to-pink-500 text-white p-6 rounded-lg">
   <h3 class="text-lg font-bold mb-2">🌟 You're Now Ready!</h3>
-  <p class="text-sm">Build amazing AI avatar applications with confidence!</p>
+  <p class="text-sm text-center">Build amazing AI avatar applications with confidence!</p>
 </div>
 
 </div>

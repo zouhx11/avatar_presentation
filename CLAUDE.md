@@ -237,6 +237,41 @@ Use `ns-c-tight` class for compact text layouts:
 - **Development**: No password needed for `npm run dev`
 - **Production**: Password protection automatically applied during GitHub Actions deployment
 
+### ⚠️ Staticrypt Compatibility Issues
+**CRITICAL**: Vue.js `@click="window.open(...)"` buttons don't work with Staticrypt encryption.
+
+**The Problem:**
+- Vue.js click handlers get encrypted and become non-functional
+- External links using `@click="window.open('URL', '_blank')"` will not respond
+- iframes embedding external content also fail to load
+
+**The Solution:**
+```html
+<!-- ❌ DON'T: Vue.js @click (doesn't work with Staticrypt) -->
+<button @click="window.open('https://example.com', '_blank')" class="...">
+  Link Text
+</button>
+
+<!-- ✅ DO: HTML links (work with Staticrypt) -->
+<a href="https://example.com" target="_blank" class="... block text-center">
+  Link Text
+</a>
+```
+
+**Essential Styling Classes:**
+- Add `block` class for full-width button appearance
+- Add `text-center` class to center text like buttons
+- Maintain all original button styling (colors, hover effects, etc.)
+
+**Exceptions (Keep as Vue.js):**
+- Slidev navigation: `@click="$slidev.nav.go(X)"` - These work fine
+- Internal slide interactions within Slidev framework
+
+**Conversion Pattern:**
+1. Replace `<button @click="window.open('URL', '_blank')"` with `<a href="URL" target="_blank"`
+2. Replace `</button>` with `</a>`
+3. Add `block text-center` to classes for proper button-like appearance
+
 ### 🚀 Deployment Process
 1. **GitHub Actions** automatically builds slides on push to main branch
 2. **Slidev** generates static site with `/avatar_presentation/` base path
@@ -267,6 +302,14 @@ Use `ns-c-tight` class for compact text layouts:
    - Real-world applications
    - Future potential and challenges
 
+4. **PyTorch Deep Learning Integration** (Class 2)
+   - Comprehensive PyTorch curriculum from basics to advanced
+   - Tensor operations and neural network fundamentals
+   - Computer vision applications for avatar technology
+   - Structured Google Colab learning tracks (Beginner/Intermediate/Advanced)
+   - Bronze/Silver/Gold challenge projects with real datasets
+   - Interactive hands-on coding exercises
+
 ### 🎨 Design System Refinements
 - **Layout Optimization**: Removed custom layouts, using only neversink theme layouts
 - **Content Organization**: Split overly dense slides for better readability
@@ -288,11 +331,13 @@ Use `ns-c-tight` class for compact text layouts:
    - Machine learning concepts
    - Avatar technology foundations
 
-2. **Class 2: Web Apps & APIs** (20+ slides)  
-   - Web development basics
-   - API integration
-   - Frontend/backend architecture
-   - Real-time communication
+2. **Class 2: Web Apps & PyTorch Deep Learning** (25+ slides)  
+   - Web development basics with Streamlit
+   - API integration and HTTP protocols
+   - PyTorch fundamentals and tensor operations
+   - Neural network building with hands-on Colab labs
+   - Computer vision for avatar applications
+   - Interactive Google Colab practice stations
 
 3. **Class 3: Avatar Technology Deep Dive** (25+ slides)
    - Avatar industry landscape (a16z insights)
