@@ -726,13 +726,14 @@ background: "#e0f2fe"
 ---
 
 # 🧠 AI Breakthroughs & Milestones
-## The Neural Network Revolution That Powers Avatars
+
+### The Neural Network Revolution That Powers Avatars
 
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lt-cm
-zoom: 0.8
+align: c-lt-ct
+zoom: 0.75
 ---
 
 :: title ::
@@ -769,8 +770,8 @@ zoom: 0.8
 </div>
 
 :: right ::
-<img src="/images/image34.jpg" alt="Neural Network Architecture" class="rounded max-h-80 w-full object-contain" />
-
+<img src="/images/Neural_Network_Brain_Mimic.webp" class="rounded max-h-120 w-full object-contain" />
+<img src="/images/neural_network_dog.jpg" class="rounded max-h-120 w-full object-contain" />
 ---
 layout: two-cols-title
 columns: is-6
@@ -833,6 +834,26 @@ zoom: 0.8
 <strong>💡 Fun Fact:</strong> Modern avatar systems use networks with 50-200 layers, all possible because of ReLU!
 </div>
 
+</div>
+
+---
+layout: center
+class: text-center
+---
+
+<div class="grid grid-cols-2 gap-6 mt-8">
+  <div class="flex justify-center">
+    <img src="/images/ReLU.jpg" class="rounded max-h-64 w-full object-contain" />
+  </div>
+  <div class="flex justify-center">
+    <img src="/images/different_kinds_of_activation_functions.png" class="rounded max-h-64 w-full object-contain" />
+  </div>
+  <div class="flex justify-center">
+    <img src="/images/perceptron-strucuture.webp" class="rounded max-h-64 w-full object-contain" />
+  </div>
+  <div class="flex justify-center">
+    <img src="/images/activation_functions.jpg" class="rounded max-h-64 w-full object-contain" />
+  </div>
 </div>
 
 ---
@@ -970,8 +991,8 @@ Your speech → LSTM → Avatar lip sync
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lt-ct
-zoom: 0.8
+align: c-lt-lt
+zoom: 0.75
 ---
 
 :: title ::
@@ -1003,6 +1024,10 @@ zoom: 0.8
 - **Eye Gaze**: Focus on where the person is looking
 - **Expression Priority**: Emphasize key emotional features
 
+<div class="mt-4 bg-yellow-100 p-4 rounded-lg">
+<strong>🚀 Impact:</strong> Attention mechanisms made avatars 10x more expressive and contextually aware!
+</div>
+
 </div>
 
 :: right ::
@@ -1028,17 +1053,13 @@ zoom: 0.8
 - **Quality Control**: Attend to potential artifacts
 - **Style Transfer**: Focus on characteristic animations
 
-<div class="mt-4 bg-yellow-100 p-4 rounded-lg">
-<strong>🚀 Impact:</strong> Attention mechanisms made avatars 10x more expressive and contextually aware!
-</div>
-
 </div>
 
 ---
 layout: two-cols-title
 columns: is-6
 align: c-lt-lt
-zoom: 0.8
+zoom: 0.75
 ---
 
 :: title ::
@@ -1107,7 +1128,7 @@ Text Input → Transformer → Avatar Actions
 layout: two-cols-title
 columns: is-6
 align: c-lt-lt
-zoom: 0.8
+zoom: 0.7
 ---
 
 :: title ::
@@ -1217,11 +1238,10 @@ zoom: 0.8
 
 ---
 layout: section
-background: "#dcfce7"
 ---
 
 # 🐍 Python Environment & Programming
-## Setting Up Your AI Development Toolkit
+### Setting Up Your AI Development Toolkit
 
 ---
 layout: two-cols-title
