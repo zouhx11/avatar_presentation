@@ -202,12 +202,14 @@ image: /images/image10.png
 
 # What About the Brain?
 
+<v-clicks>
+
 - Brains (human minds) are very good at making rational decisions, but not perfect
 - Brains aren't as modular as software, so hard to reverse engineer!
 - **"Brains are to intelligence as wings are to flight"**
 - Lessons learned from the brain: memory and simulation are key to decision making
 
-
+</v-clicks>
 ---
 layout: center
 class: text-center
@@ -270,6 +272,8 @@ zoom: 0.7
 
 <div class="ns-c-supertight">
 
+<v-clicks depth="2">
+
 ## 1940-1950: Early days
   - 1943: McCulloch & Pitts: Boolean circuit model of brain
   - 1950: Turing's "Computing Machinery and Intelligence"
@@ -289,6 +293,8 @@ zoom: 0.7
   - General increase in technical depth
   - Agents and learning systems… "AI Spring"?
 ## 2000—: Where are we now?
+
+</v-clicks>
 
 </div>
 
@@ -319,6 +325,8 @@ class: text-sm
 
 ## Quiz: Which of the following can be done at present?
 
+<v-clicks>
+
   - Play a decent game of table tennis?
   - Play a decent game of Jeopardy?
   - Drive safely along a curving mountain road?
@@ -331,6 +339,8 @@ class: text-sm
   - Put away the dishes and fold the laundry?
   - Translate spoken Chinese into spoken English in real time?
   - Write an intentionally funny story?
+
+</v-clicks>
 
 </div>
 
@@ -358,10 +368,15 @@ zoom: 1.0
 :: left ::
 
 ## Language processing technologies
+
+<v-clicks>
+
 - Question answering
 - Machine translation
 - Web search
 - Text classification, spam filtering, etc…
+
+</v-clicks>
 
 ::right::
 
@@ -398,9 +413,14 @@ zoom: 1.0
 :: left ::
 
 ## Technologies
+
+<v-clicks>
+
 - Object and face recognition
 - Scene segmentation
 - Image classification
+
+</v-clicks>
 
 <img src="/images/image21.png" alt="Vision Technology" class="rounded mt-4" />
 
@@ -436,15 +456,25 @@ zoom: 1.0
 <div class="ns-c-tight">
 
 ## Technologies
+
+<v-clicks>
+
 - Part mechanical engineering
 - Part AI
 - Reality much harder than simulations!
 
+</v-clicks>
+
 ## Technologies
+
+<v-clicks>
+
 - Vehicles
 - Rescue
 - Soccer!
 - Lots of automation…
+
+</v-clicks>
 
 </div>
 
@@ -477,14 +507,24 @@ zoom: 1.0
 <div class="ns-c-tight">
 
 ## Logical systems
+
+<v-clicks>
+
 - Theorem provers
 - NASA fault diagnosis
 - Question answering
 
+</v-clicks>
+
 ## Methods:
+
+<v-clicks>
+
 - Deduction systems
 - Constraint satisfaction
 - Satisfiability solvers (huge advances!)
+
+</v-clicks>
 
 </div>
 
@@ -513,6 +553,8 @@ zoom: 0.7
 
 <div class="ns-c-supertight">
 
+<v-clicks depth="2">
+
 ## Classic Moment: May, '97: Deep Blue vs. Kasparov
 
 - First match won against world champion
@@ -535,6 +577,8 @@ zoom: 0.7
 "Deep Blue hasn't proven anything."
 
 ## Huge game-playing advances recently, e.g. in Go!
+
+</v-clicks>
 
 </div>
 
@@ -561,6 +605,7 @@ class: text-center
   <div class="text-left">
     <p class="mb-4 text-lg font-semibold whitespace-nowrap">Applied AI involves many kinds of automation:</p>
     <ul class="text-base space-y-2">
+      <v-clicks>
       <li>Scheduling, e.g. airline routing, military</li>
       <li>Route planning, e.g. Google maps</li>
       <li>Medical diagnosis</li>
@@ -570,6 +615,7 @@ class: text-center
       <li>Fraud detection</li>
       <li>Product recommendations</li>
       <li>… Lots more!</li>
+      </v-clicks>
     </ul>
   </div>
   
@@ -595,11 +641,15 @@ zoom: 1.0
 
 :: left ::
 
+<v-clicks>
+
 - An **agent** is an entity that **perceives** and **acts**
 
 - A **rational agent** selects actions that maximize its (expected) **utility**
 
 - Characteristics of the **percepts, environment, action space** dictate techniques for selecting rational actions
+
+</v-clicks>
 
 ::right::
 
@@ -641,6 +691,8 @@ zoom: 1.0
 
 <div class="ns-c-tight">
 
+<v-clicks depth="2">
+
 ## Recent News:
 [After Klarna, Zoom's CEO also uses an AI avatar on quarterly call](https://techcrunch.com/2025/05/22/after-klarna-zooms-ceo-also-uses-an-ai-avatar-on-quarterly-call/)
 
@@ -651,6 +703,8 @@ zoom: 1.0
 
 ## Throughout: Applications
 Virtual meeting, Education, Social media, etc.
+
+</v-clicks>
 
 </div>
 
@@ -748,6 +802,8 @@ zoom: 0.75
 
 ## What Are Neural Networks?
 
+<v-clicks depth="2">
+
 **Inspired by the human brain** - networks of interconnected nodes (neurons) that process information
 
 ### Key Components:
@@ -766,6 +822,8 @@ zoom: 0.75
 - **Expression Recognition**: Understand emotions  
 - **Voice Processing**: Convert speech to text
 - **Animation**: Generate realistic movements
+
+</v-clicks>
 
 </div>
 
@@ -839,6 +897,8 @@ zoom: 0.8
 :: left ::
 <div class="ns-c-tight">
 
+<v-clicks depth="3">
+
 ## The Problem with Old Activations
 
 **Before ReLU (Rectified Linear Unit):**
@@ -858,10 +918,14 @@ zoom: 0.8
 - **Sparsity**: Many neurons output zero (efficient)
 - **Biological Plausibility**: Similar to real neurons
 
+</v-clicks>
+
 </div>
 
 :: right ::
 <div class="ns-c-tight">
+
+<v-clicks depth="3">
 
 ## ReLU in Avatar Technology
 
@@ -883,6 +947,8 @@ zoom: 0.8
 <div class="mt-4 bg-blue-100 p-4 rounded-lg">
 <strong>💡 Fun Fact:</strong> Modern avatar systems use networks with 50-200 layers, all possible because of ReLU!
 </div>
+
+</v-clicks>
 
 </div>
 
@@ -923,6 +989,8 @@ zoom: 0.8
 :: left ::
 <div class="ns-c-tight">
 
+<v-clicks depth="3">
+
 ## Convolutional Neural Networks (1989→2012)
 
 **The Problem**: Regular neural networks couldn't handle images effectively
@@ -941,10 +1009,14 @@ zoom: 0.8
 3. **Face Assembly**: Understand facial structure
 4. **Expression Analysis**: Detect emotions and expressions
 
+</v-clicks>
+
 </div>
 
 :: right ::
 <div class="ns-c-tight">
+
+<v-clicks depth="3">
 
 ## CNN in Avatar Applications
 
@@ -968,6 +1040,8 @@ zoom: 0.8
 <div class="mt-4 bg-green-100 p-4 rounded-lg">
 <strong>🎯 Avatar Magic:</strong> CNNs can detect over 500 different facial expressions with 95%+ accuracy!
 </div>
+
+</v-clicks>
 
 </div>
 
@@ -1016,6 +1090,8 @@ zoom: 0.8
 :: left ::
 <div class="ns-c-tight">
 
+<v-clicks depth="3">
+
 ## Long Short-Term Memory (1997)
 
 **The Challenge**: Understanding sequences and context
@@ -1035,10 +1111,14 @@ zoom: 0.8
 - **Animation Smoothing**: Prevent jerky movements
 - **Emotion Persistence**: Maintain mood across time
 
+</v-clicks>
+
 </div>
 
 :: right ::
 <div class="ns-c-tight">
+
+<v-clicks depth="3">
 
 ## LSTM in Avatar Technology
 
@@ -1064,6 +1144,8 @@ Your speech → LSTM → Avatar lip sync
 <strong>⏰ Timeline:</strong> LSTMs enabled the first truly conversational avatars around 2015!
 </div>
 
+</v-clicks>
+
 </div>
 
 ---
@@ -1082,6 +1164,8 @@ zoom: 0.75
 
 :: left ::
 <div class="ns-c-tight">
+
+<v-clicks depth="3">
 
 ## Attention Mechanism (2014)
 
@@ -1106,10 +1190,14 @@ zoom: 0.75
 <strong>🚀 Impact:</strong> Attention mechanisms made avatars 10x more expressive and contextually aware!
 </div>
 
+</v-clicks>
+
 </div>
 
 :: right ::
 <div class="ns-c-tight">
+
+<v-clicks depth="3">
 
 ## Attention in Modern Avatars
 
@@ -1131,6 +1219,8 @@ zoom: 0.75
 - **Quality Control**: Attend to potential artifacts
 - **Style Transfer**: Focus on characteristic animations
 
+</v-clicks>
+
 </div>
 
 ---
@@ -1149,6 +1239,8 @@ zoom: 0.75
 
 :: left ::
 <div class="ns-c-tight">
+
+<v-clicks depth="3">
 
 ## Transformer Architecture (2017)
 
@@ -1170,10 +1262,14 @@ zoom: 0.75
 - **Gesture Generation**: Create natural hand movements
 - **Emotion Modeling**: Understand complex emotional states
 
+</v-clicks>
+
 </div>
 
 :: right ::
 <div class="ns-c-tight">
+
+<v-clicks depth="3">
 
 ## Transformers Power Modern Avatars
 
@@ -1200,6 +1296,8 @@ Text Input → Transformer → Avatar Actions
 <strong>🎭 Today's Avatars:</strong> Transformers enable photorealistic avatars that can hold natural conversations!
 </div>
 
+</v-clicks>
+
 </div>
 
 ---
@@ -1218,6 +1316,8 @@ zoom: 0.7
 
 :: left ::
 <div class="ns-c-tight">
+
+<v-clicks depth="3">
 
 ## Generative Pre-trained Transformers
 
@@ -1239,10 +1339,14 @@ zoom: 0.7
 - **Chain-of-Thought**: Logical reasoning
 - **Multi-turn Dialogue**: Extended conversations
 
+</v-clicks>
+
 </div>
 
 :: right ::
 <div class="ns-c-tight">
+
+<v-clicks depth="3">
 
 ## GPT-Powered Avatar Features
 
@@ -1267,6 +1371,8 @@ zoom: 0.7
 <div class="mt-4 bg-indigo-100 p-4 rounded-lg">
 <strong>🌟 Future:</strong> GPT-5 will enable avatars that are indistinguishable from humans in conversation!
 </div>
+
+</v-clicks>
 
 </div>
 
@@ -1443,6 +1549,8 @@ zoom: 0.8
 
 <div class="ns-c-tight">
 
+<v-clicks depth="3">
+
 ## 🐍 Core Python Concepts
 ### Data Structures
 - **Lists**: `messages = ["Hello", "How are you?"]`
@@ -1459,6 +1567,8 @@ zoom: 0.8
 ### File Operations
 - **Reading/Writing**: Save conversation history
 - **CSV/JSON**: Data persistence
+
+</v-clicks>
 
 </div>
 
@@ -1852,6 +1962,7 @@ if st.button("Send"):<br/>
     <p class="text-xs mt-2 text-green-600">Minutes to deploy!</p>
   </div>
 </div>
+
 
 ---
 layout: center

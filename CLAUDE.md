@@ -425,6 +425,71 @@ git push origin main
 - Additional industry case studies
 - Hands-on coding exercises integration
 
+## 🔧 Interactive ML Components TODO
+
+### Problem: Iframe and Script Tag Limitations
+- **Issue**: Direct iframe embeds and script tags don't work properly in Slidev Vue.js environment
+- **Root Cause**: Vue.js template compilation restrictions and Staticrypt compatibility issues
+- **Current State**: Basic iframe implementations attempted but not functional
+
+### Solution: Vue Component Wrapper Approach
+**TODO: Create custom Vue components for interactive ML demos**
+
+1. **Create Vue Component Files** (in `/components/` directory):
+   ```
+   /components/TensorFlowPlayground.vue
+   /components/ML5ImageClassifier.vue  
+   /components/ObservableNotebook.vue
+   /components/PlotlyVisualization.vue
+   ```
+
+2. **Component Structure Pattern**:
+   ```vue
+   <template>
+     <div class="interactive-ml-component">
+       <!-- Grid layout for multiple demos -->
+       <div class="grid grid-cols-2 gap-4">
+         <iframe :src="demoUrl1" class="w-full h-96" />
+         <iframe :src="demoUrl2" class="w-full h-96" />
+       </div>
+     </div>
+   </template>
+   
+   <script setup>
+   const demoUrl1 = 'https://...'
+   const demoUrl2 = 'https://...'
+   </script>
+   ```
+
+3. **Grid-Based Multi-Demo Layout**:
+   - 2x2 grid of interactive ML demos per slide
+   - Each demo in its own iframe within Vue component
+   - Responsive design with consistent sizing
+   - Better integration with Slidev's Vue ecosystem
+
+4. **Implementation Steps**:
+   - [ ] Create individual Vue component files
+   - [ ] Test iframe embedding within Vue components
+   - [ ] Implement grid layouts for multiple demos per slide
+   - [ ] Update slides.md to use `<ComponentName />` syntax
+   - [ ] Verify Staticrypt compatibility with Vue components
+   - [ ] Add proper error handling and loading states
+
+5. **Benefits of Vue Component Approach**:
+   - Proper integration with Slidev's Vue.js framework
+   - Better control over iframe sizing and responsiveness  
+   - Ability to add custom styling and interactions
+   - Grid layouts for showcasing multiple demos simultaneously
+   - Consistent with existing Slidev component patterns
+   - Compatible with Staticrypt encryption
+
+### Target Demo URLs for Grid Implementation:
+- **TensorFlow.js**: `https://playground.tensorflow.org/`
+- **ML5.js**: `https://editor.p5js.org/ml5/embed/ImageClassification`
+- **Observable**: `https://observablehq.com/embed/@observablehq/machine-learning`
+- **Plotly**: `https://plotly.com/~PlotlyBot/10.embed`
+- **Additional**: Teachable Machine, TensorFlow.js examples, etc.
+
 ---
 
 *This documentation captures the complete AI Avatar Workshop Slidev presentation system. The project includes comprehensive content covering AI foundations, practical implementation, and cutting-edge technologies like one-shot talking face generation. The presentation is deployed with password protection for secure access.*
