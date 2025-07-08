@@ -127,13 +127,13 @@ class: text-center
   <button @click="$slidev.nav.go(49)" class="bg-green-500 text-white px-6 py-4 rounded-lg hover:bg-green-600 transition-colors">
     🌐 Class 2: Web Apps & PyTorch
   </button>
-  <button @click="$slidev.nav.go(67)" class="bg-purple-500 text-white px-6 py-4 rounded-lg hover:bg-purple-600 transition-colors">
+  <button @click="$slidev.nav.go(86)" class="bg-purple-500 text-white px-6 py-4 rounded-lg hover:bg-purple-600 transition-colors">
     🎭 Class 3: Avatar Technology
   </button>
-  <button @click="$slidev.nav.go(98)" class="bg-orange-500 text-white px-6 py-4 rounded-lg hover:bg-orange-600 transition-colors">
+  <button @click="$slidev.nav.go(117)" class="bg-orange-500 text-white px-6 py-4 rounded-lg hover:bg-orange-600 transition-colors">
     ⚡ Class 4: Integration & Features
   </button>
-  <button @click="$slidev.nav.go(115)" class="bg-red-500 text-white px-6 py-4 rounded-lg hover:bg-red-600 transition-colors">
+  <button @click="$slidev.nav.go(134)" class="bg-red-500 text-white px-6 py-4 rounded-lg hover:bg-red-600 transition-colors">
     🏆 Class 5: Demo Day & Projects
   </button>
 </div>
@@ -2473,10 +2473,10 @@ zoom: 0.8
 
 ## Clone & Run Commands
 ```bash
-git clone https://github.com/streamlit/cookbook
-cd cookbook/VacAIgent
-pip install -r requirements.txt
-streamlit run streamlit_app.py
+git clone https://github.com/AzeemWaqarRao/ChatBot-HugChat
+cd ChatBot-HugChat
+pip install streamlit hugchat
+streamlit run app.py
 ```
 
 </div>
