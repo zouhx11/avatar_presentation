@@ -41,14 +41,61 @@ layout: cover
   padding-left: 1em !important;
 }
 
+.ns-c-supertight h3 + ul {
+  margin-left: 1.5em !important;
+  padding-left: 1em !important;
+}
+
+.ns-c-supertight h3 {
+  margin-bottom: 0.2em !important;
+}
+
 .ns-c-supertight ul {
   margin-left: 1.5em !important;
   padding-left: 1em !important;
+  margin-top: 0.2em !important;
 }
 
 .ns-c-supertight ul ul {
   margin-left: 3em !important;
   padding-left: 1.5em !important;
+}
+
+/* Add spacing between h2 sections in tight containers */
+.ns-c-tight h2 {
+  margin-top: 1.5em !important;
+  margin-bottom: 0.5em !important;
+}
+
+.ns-c-tight h2:first-child {
+  margin-top: 0 !important;
+}
+
+/* Add spacing between h2 sections in supertight containers */
+.ns-c-supertight h2 {
+  margin-top: 1.5em !important;
+  margin-bottom: 0.5em !important;
+}
+
+.ns-c-supertight h2:first-child {
+  margin-top: 0 !important;
+}
+
+/* Fix spacing between h3 and following text in tight containers */
+.ns-c-tight h3 {
+  margin-bottom: 0.3em !important;
+}
+
+.ns-c-tight h3 + p {
+  margin-top: 0.3em !important;
+}
+
+.ns-c-supertight h3 {
+  margin-bottom: 0.3em !important;
+}
+
+.ns-c-supertight h3 + p {
+  margin-top: 0.3em !important;
 }
 
 </style>
@@ -222,7 +269,7 @@ class: text-center
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -353,7 +400,7 @@ class: text-sm
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -398,7 +445,7 @@ zoom: 1.0
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -490,7 +537,7 @@ zoom: 1.0
 ---
 layout: two-cols-title
 columns: is-4
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -627,7 +674,7 @@ class: text-center
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -675,7 +722,7 @@ class: text-center
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -1965,6 +2012,318 @@ if st.button("Send"):<br/>
 
 
 ---
+layout: section
+background: "#e0f2fe"
+---
+
+# 🛠️ Development Environment Setup
+## Building Your Local Coding Workspace
+
+---
+layout: two-cols-title
+columns: is-6
+align: c-lt-ct
+zoom: 0.8
+---
+
+:: title ::
+
+# 📦 Step 1: GitHub Setup
+
+:: left ::
+
+<div class="ns-c-tight">
+
+## Why GitHub?
+- **Version Control** - Track all your code changes
+- **Collaboration** - Work with others seamlessly
+- **Portfolio** - Showcase your projects
+- **Backup** - Never lose your work again!
+
+## Account Setup
+1. Visit **github.com** and create free account
+2. Choose a professional username (you'll use this professionally!)
+3. Verify your email address
+4. Complete your profile with a photo
+
+## Download GitHub Desktop
+- **Easy GUI** instead of command line
+- **Visual diffs** to see your changes
+- **One-click sync** with GitHub
+- **Perfect for beginners**
+
+</div>
+
+:: right ::
+
+<div class="space-y-4">
+  <div class="bg-blue-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-blue-800 mb-3">🔗 Essential Links</h3>
+    <div class="space-y-2">
+      <a href="https://github.com" target="_blank" class="block w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 text-center text-sm">
+        🌐 Create GitHub Account
+      </a>
+      <a href="https://desktop.github.com" target="_blank" class="block w-full bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-800 text-center text-sm">
+        📱 Download GitHub Desktop
+      </a>
+    </div>
+  </div>
+  
+  <div class="bg-green-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-green-800 mb-3">✅ Quick Setup Checklist</h3>
+    <ul class="text-sm space-y-1">
+      <li>□ Create GitHub account</li>
+      <li>□ Verify email address</li>
+      <li>□ Download GitHub Desktop</li>
+      <li>□ Sign in to GitHub Desktop</li>
+      <li>□ Create your first repository</li>
+    </ul>
+  </div>
+</div>
+
+--- 
+layout: two-cols-title
+columns: is-6
+align: c-lt-ct
+zoom: 0.9
+---
+
+:: title ::
+
+# 🐍 Step 2: Anaconda Python Environment
+
+:: left ::
+
+<div class="ns-c-tight">
+
+## Why Anaconda?
+- **Complete Python package** - Everything included
+- **Package management** - Easy library installation
+- **Virtual environments** - Isolate projects
+- **Cross-platform** - Works on Windows, Mac, Linux
+
+## Installation Steps
+1. **Download** Anaconda from anaconda.com
+2. **Run installer** - Accept all defaults
+3. **Open Anaconda Prompt** (search in Start menu)
+4. **Enable conda in PowerShell:**
+   ```bash
+   conda init powershell
+   ```
+
+## PowerShell Configuration
+**Important**: You may need to change execution policy:
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope LocalMachine -Force
+```
+
+</div>
+
+:: right ::
+
+<div class="space-y-4">
+  <div class="bg-green-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-green-800 mb-3">📥 Download Links</h3>
+    <div class="space-y-2">
+      <a href="https://www.anaconda.com/download" target="_blank" class="block w-full bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 text-center text-sm">
+        🐍 Download Anaconda
+      </a>
+    </div>
+  </div>
+  
+  <div class="bg-yellow-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-yellow-800 mb-3">⚠️ Common Issues</h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-white p-2 rounded">
+        <strong>PowerShell Error?</strong><br/>
+        Run as Administrator and execute:<br/>
+        <code class="text-xs">Set-ExecutionPolicy RemoteSigned</code>
+      </div>
+      <div class="bg-white p-2 rounded">
+        <strong>Can't find conda?</strong><br/>
+        Restart computer after installation<br/>
+        Use Anaconda Prompt instead
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+layout: two-cols-title
+columns: is-6
+align: c-lt-ct
+zoom: 0.9
+---
+
+:: title ::
+
+# 💻 Step 3: VS Code Editor Setup
+
+:: left ::
+
+<div class="ns-c-supertight">
+
+## Why VS Code?
+- **Free & powerful** - Professional-grade editor
+- **Python support** - Excellent debugging and IntelliSense
+- **Extensions** - Customize for any workflow
+- **Integrated terminal** - Run code directly
+- **Git integration** - Works perfectly with GitHub
+
+## Installation & Setup
+1. **Download** VS Code from code.visualstudio.com
+2. **Install** with default settings
+3. **Install Python extension** (Microsoft)
+4. **Configure Python interpreter** to use Anaconda
+
+## Essential Extensions
+- **Python** (Microsoft) - Core Python support
+- **Pylance** - Advanced Python features
+- **GitLens** - Enhanced Git capabilities
+- **Streamlit** - Streamlit app support
+
+</div>
+
+:: right ::
+
+<div class="space-y-4">
+  <div class="bg-blue-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-blue-800 mb-3">📥 Download & Extensions</h3>
+    <div class="space-y-2">
+      <a href="https://code.visualstudio.com" target="_blank" class="block w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 text-center text-sm">
+        💻 Download VS Code
+      </a>
+      <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" target="_blank" class="block w-full bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 text-center text-sm">
+        🐍 Python Extension
+      </a>
+    </div>
+  </div>
+  
+  <div class="bg-purple-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-purple-800 mb-3">🎯 Quick Setup Guide</h3>
+    <ol class="text-sm space-y-1">
+      <li>1. Open VS Code</li>
+      <li>2. Press <code>Ctrl+Shift+P</code></li>
+      <li>3. Type "Python: Select Interpreter"</li>
+      <li>4. Choose Anaconda Python</li>
+      <li>5. Create new .py file and test!</li>
+    </ol>
+  </div>
+</div>
+
+---
+layout: two-cols-title
+columns: is-6
+align: c-lt-ct
+zoom: 0.8
+---
+
+:: title ::
+
+# 🧪 Step 4: Test Your Setup
+
+:: left ::
+
+<div class="ns-c-tight">
+
+## Verification Steps
+
+### 1. Test Python Environment
+Open Anaconda Prompt and run:
+```bash
+python --version
+conda --version
+pip --version
+```
+
+### 2. Test PowerShell Integration
+Open PowerShell and run:
+```bash
+conda activate base
+python -c "print('Hello from Python!')"
+```
+
+### 3. Test VS Code + Python
+1. Open VS Code
+2. Create new file: `test.py`
+3. Write: `print("Development environment ready!")`
+4. Run with F5 or Ctrl+F5
+
+### 4. Test GitHub Desktop
+1. Clone a sample repository
+2. Make a small change
+3. Commit and push to test workflow
+
+</div>
+
+:: right ::
+
+<div class="space-y-4">
+  <div class="bg-green-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-green-800 mb-3">✅ Success Checklist</h3>
+    <ul class="text-sm space-y-1">
+      <li>□ Python runs from Anaconda Prompt</li>
+      <li>□ Conda works in PowerShell</li>
+      <li>□ VS Code recognizes Python</li>
+      <li>□ Can run Python files in VS Code</li>
+      <li>□ GitHub Desktop connects to account</li>
+      <li>□ Can clone/commit repositories</li>
+    </ul>
+  </div>
+  
+  <div class="bg-orange-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-orange-800 mb-3">🔧 Troubleshooting</h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-white p-2 rounded">
+        <strong>Python not found?</strong><br/>
+        Restart computer and check PATH
+      </div>
+      <div class="bg-white p-2 rounded">
+        <strong>VS Code can't find Python?</strong><br/>
+        Manually set interpreter path
+      </div>
+      <div class="bg-white p-2 rounded">
+        <strong>PowerShell issues?</strong><br/>
+        Use Anaconda Prompt as backup
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+layout: center
+class: text-center
+---
+
+# 🎉 Development Environment Complete!
+
+<div class="bg-gradient-to-r from-blue-100 to-green-100 p-8 rounded-lg mt-8">
+  <h3 class="text-2xl font-bold text-gray-800 mb-4">🚀 You're Ready to Code!</h3>
+  <div class="grid grid-cols-3 gap-6 text-center">
+    <div class="bg-white p-4 rounded-lg">
+      <div class="text-3xl mb-2">📦</div>
+      <div class="font-semibold">GitHub</div>
+      <div class="text-sm text-gray-600">Version Control</div>
+    </div>
+    <div class="bg-white p-4 rounded-lg">
+      <div class="text-3xl mb-2">🐍</div>
+      <div class="font-semibold">Anaconda</div>
+      <div class="text-sm text-gray-600">Python Environment</div>
+    </div>
+    <div class="bg-white p-4 rounded-lg">
+      <div class="text-3xl mb-2">💻</div>
+      <div class="font-semibold">VS Code</div>
+      <div class="text-sm text-gray-600">Code Editor</div>
+    </div>
+  </div>
+  <div class="mt-6 text-lg">
+    <span class="bg-yellow-200 px-4 py-2 rounded-full">
+      🎯 Next: Let's build your first Streamlit app!
+    </span>
+  </div>
+</div>
+
+---
 layout: center
 class: text-center
 ---
@@ -2005,31 +2364,400 @@ class: text-center
       </a>
     </div>
     
-    <div class="mt-4 p-3 bg-yellow-100 rounded">
-      <p class="text-sm font-semibold">🎯 Challenge:</p>
-      <p class="text-xs">Explore the gallery and find 3 apps that inspire your avatar chat design!</p>
-    </div>
+    
+<div class="mt-4 p-3 bg-yellow-100 rounded">
+  <p class="text-sm font-semibold">🎯 Challenge:</p>
+  <p class="text-xs">Explore the gallery and find 3 apps that inspire your avatar chat design!</p>
+</div>
+  </div>
+</div>
+
+---
+layout: section
+background: "#f0f9ff"
+---
+
+# 🛠️ Hands-On Streamlit Projects
+## Clone, Run, and Explore Real Apps!
+
+---
+layout: two-cols-title
+columns: is-6
+align: c-lt-ct
+zoom: 0.8
+---
+
+:: title ::
+
+# 📊 Project 1: NYC Uber Pickups Dashboard
+
+:: left ::
+
+<div class="ns-c-tight">
+
+## What You'll Learn
+- **Data visualization** with interactive maps
+- **Time-series filtering** and animations
+- **3D hex mapping** with PyDeck
+- **Real-time data exploration**
+
+## Key Streamlit Features
+- `st.map()` - Display data on maps
+- `st.slider()` - Filter by time
+- `st.pydeck_chart()` - 3D visualizations
+- `st.dataframe()` - Show filtered data
+
+## Clone & Run Commands
+```bash
+git clone https://github.com/streamlit/demo-uber-nyc-pickups
+cd demo-uber-nyc-pickups
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
+
+</div>
+
+:: right ::
+
+<div class="space-y-4">
+  <div class="bg-blue-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-blue-800 mb-3">🔗 Repository Link</h3>
+    <a href="https://github.com/streamlit/demo-uber-nyc-pickups" target="_blank" class="block w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 text-center text-sm">
+      🗽 Clone NYC Uber Demo
+    </a>
+  </div>
+  
+  <div class="bg-green-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-green-800 mb-3">🎯 Your Mission</h3>
+    <ul class="text-sm space-y-1">
+      <li>□ Use the hour slider to see patterns</li>
+      <li>□ Explore different map views</li>
+      <li>□ Check out airport pickup hotspots</li>
+      <li>□ Modify the color scheme</li>
+      <li>□ Add your own data filters</li>
+    </ul>
+  </div>
+  
+  <div class="bg-yellow-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-yellow-800 mb-3">⚡ Quick Start Tip</h3>
+    <p class="text-sm">This is a working demo that loads real Uber data! Drag the hour slider to see pickup patterns throughout the day.</p>
   </div>
 </div>
 
 ---
 layout: two-cols-title
-columns: is-8
-align: c-lm-cm
-zoom: 1.0
+columns: is-6
+align: c-lt-ct
+zoom: 0.8
 ---
 
 :: title ::
 
-<div class="text-2xl">
-
-# 🔬 HTTP Protocol Deep Dive
-
-</div>
+# 🤖 Project 2: Chatbot Interface
 
 :: left ::
 
 <div class="ns-c-tight">
+
+## What You'll Learn
+- **Session state** for conversation history
+- **Chat interface** design patterns
+- **User input handling** and validation
+- **Real-time responses** and streaming
+
+## Key Streamlit Features
+- `st.session_state` - Remember conversation
+- `st.chat_message()` - Display chat bubbles
+- `st.chat_input()` - User message input
+- `st.rerun()` - Update interface
+
+## Clone & Run Commands
+```bash
+git clone https://github.com/streamlit/cookbook
+cd cookbook/VacAIgent
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
+
+</div>
+
+:: right ::
+
+<div class="space-y-4">
+  <div class="bg-purple-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-purple-800 mb-3">🔗 Repository Link</h3>
+    <a href="https://github.com/streamlit/cookbook" target="_blank" class="block w-full bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 text-center text-sm">
+      🤖 Clone Streamlit Cookbook
+    </a>
+  </div>
+  
+  <div class="bg-orange-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-orange-800 mb-3">🎯 Your Mission</h3>
+    <ul class="text-sm space-y-1">
+      <li>□ Test the chat interface</li>
+      <li>□ Modify the welcome message</li>
+      <li>□ Add emoji responses</li>
+      <li>□ Change the avatar icons</li>
+      <li>□ Add a "clear chat" button</li>
+    </ul>
+  </div>
+  
+  <div class="bg-red-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-red-800 mb-3">💡 Avatar Connection</h3>
+    <p class="text-sm">This is the foundation for your AI avatar chat! Study how messages flow and how to maintain conversation context.</p>
+  </div>
+</div>
+
+---
+layout: two-cols-title
+columns: is-6
+align: c-lt-ct
+zoom: 0.8
+---
+
+:: title ::
+
+# 🎨 Project 3: 30 Days Challenge
+
+:: left ::
+
+<div class="ns-c-tight">
+
+## What You'll Learn
+- **Daily coding challenges** with Streamlit
+- **Step-by-step tutorials** for beginners
+- **Widget mastery** and UI components
+- **Deployment** to Streamlit Cloud
+
+## Key Streamlit Features
+- `st.write()` - Display text and data
+- `st.button()` - Interactive buttons
+- `st.checkbox()` - User selections
+- `st.selectbox()` - Dropdown menus
+
+## Clone & Run Commands
+```bash
+git clone https://github.com/streamlit/30days
+cd 30days
+pip install streamlit
+streamlit run streamlit_app.py
+```
+
+</div>
+
+:: right ::
+
+<div class="space-y-4">
+  <div class="bg-indigo-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-indigo-800 mb-3">🔗 Repository Link</h3>
+    <a href="https://github.com/streamlit/30days" target="_blank" class="block w-full bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600 text-center text-sm">
+      📅 Clone 30 Days Challenge
+    </a>
+  </div>
+  
+  <div class="bg-pink-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-pink-800 mb-3">🎯 Your Mission</h3>
+    <ul class="text-sm space-y-1">
+      <li>□ Try Day 1: Hello World app</li>
+      <li>□ Complete Day 3: Button widget</li>
+      <li>□ Explore Day 8: Checkbox widget</li>
+      <li>□ Master Day 12: Selectbox</li>
+      <li>□ Build Day 15: Multiselect</li>
+    </ul>
+  </div>
+  
+  <div class="bg-cyan-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-cyan-800 mb-3">🎯 Perfect for Beginners</h3>
+    <p class="text-sm">Start with simple widgets and build up to complex apps. Each day teaches one new concept!</p>
+  </div>
+</div>
+
+---
+layout: two-cols-title
+columns: is-6
+align: c-lt-ct
+zoom: 0.8
+---
+
+:: title ::
+
+# 📈 Project 4: Quick ML Demo
+
+:: left ::
+
+<div class="ns-c-tight">
+
+## What You'll Learn
+- **Simple ML predictions** with user input
+- **Interactive sliders** for parameters
+- **Real-time visualization** of results
+- **Basic model integration** patterns
+
+## Key Streamlit Features
+- `st.sidebar` - Parameter controls
+- `st.slider()` - Numeric inputs
+- `st.line_chart()` - Live charts
+- `st.write()` - Display predictions
+
+## Quick Start - No Clone Needed!
+```bash
+# Run this directly from URL:
+streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/main/streamlit_app.py
+
+# Or create your own simple ML app:
+pip install streamlit scikit-learn
+# Then create a simple prediction app
+```
+
+</div>
+
+:: right ::
+
+<div class="space-y-4">
+  <div class="bg-emerald-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-emerald-800 mb-3">🔗 Quick Demo</h3>
+    <a href="https://share.streamlit.io/dataprofessor/iris-classifier" target="_blank" class="block w-full bg-emerald-500 text-white px-4 py-2 rounded hover:bg-emerald-600 text-center text-sm">
+      🌸 Try Iris Classifier Demo
+    </a>
+  </div>
+  
+  <div class="bg-violet-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-violet-800 mb-3">🎯 Your Mission</h3>
+    <ul class="text-sm space-y-1">
+      <li>□ Adjust the slider values</li>
+      <li>□ See how predictions change</li>
+      <li>□ Try extreme values</li>
+      <li>□ Understand the model output</li>
+      <li>□ Think about avatar applications</li>
+    </ul>
+  </div>
+  
+  <div class="bg-amber-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-amber-800 mb-3">🧠 AI Integration</h3>
+    <p class="text-sm">Perfect introduction to ML in Streamlit! This pattern works for any AI model including avatar generation.</p>
+  </div>
+</div>
+
+---
+layout: two-cols-title
+columns: is-6
+align: c-lt-ct
+zoom: 0.8
+---
+
+:: title ::
+
+# 🎮 Project 5: Build Your Own Mini App
+
+:: left ::
+
+<div class="ns-c-tight">
+
+## What You'll Learn
+- **Session state** for memory between interactions
+- **Forms and widgets** for user input
+- **Conditional logic** and app flow
+- **Fun interactions** like balloons and progress
+
+## Key Streamlit Features
+- `st.session_state` - Remember data
+- `st.form()` - Collect inputs
+- `st.progress()` - Show progress
+- `st.balloons()` - Celebrate success!
+
+## Create Your Own App
+```bash
+# Start with a simple calculator or quiz:
+mkdir my-streamlit-app
+cd my-streamlit-app
+echo 'import streamlit as st' > app.py
+echo 'st.title("My First App!")' >> app.py
+streamlit run app.py
+```
+
+</div>
+
+:: right ::
+
+<div class="space-y-4">
+  <div class="bg-rose-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-rose-800 mb-3">🔗 Get Inspired</h3>
+    <a href="https://streamlit.io/gallery" target="_blank" class="block w-full bg-rose-500 text-white px-4 py-2 rounded hover:bg-rose-600 text-center text-sm">
+      🎨 Browse Streamlit Gallery
+    </a>
+  </div>
+  
+  <div class="bg-lime-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-lime-800 mb-3">🎯 Your Mission</h3>
+    <ul class="text-sm space-y-1">
+      <li>□ Create a simple calculator</li>
+      <li>□ Add a counter with buttons</li>
+      <li>□ Try different widgets</li>
+      <li>□ Add some fun animations</li>
+      <li>□ Deploy to Streamlit Cloud</li>
+    </ul>
+  </div>
+  
+  <div class="bg-teal-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-teal-800 mb-3">🎭 Your Creativity!</h3>
+    <p class="text-sm">Now it's time to be creative! Build something fun that could become part of your avatar app.</p>
+  </div>
+</div>
+
+---
+layout: center
+class: text-center
+---
+
+# 🏆 Streamlit Project Challenge Complete!
+
+<div class="bg-gradient-to-r from-purple-100 to-pink-100 p-8 rounded-lg mt-8">
+  <h3 class="text-2xl font-bold text-gray-800 mb-6">🚀 You've Explored 5 Amazing Streamlit Apps!</h3>
+  
+  <div class="grid grid-cols-5 gap-4 mb-6">
+    <div class="bg-white p-3 rounded-lg">
+      <div class="text-2xl mb-1">📊</div>
+      <div class="text-sm font-semibold">Data Dashboard</div>
+    </div>
+    <div class="bg-white p-3 rounded-lg">
+      <div class="text-2xl mb-1">🤖</div>
+      <div class="text-sm font-semibold">Chatbot</div>
+    </div>
+    <div class="bg-white p-3 rounded-lg">
+      <div class="text-2xl mb-1">🎨</div>
+      <div class="text-sm font-semibold">Image Processing</div>
+    </div>
+    <div class="bg-white p-3 rounded-lg">
+      <div class="text-2xl mb-1">📈</div>
+      <div class="text-sm font-semibold">ML Dashboard</div>
+    </div>
+    <div class="bg-white p-3 rounded-lg">
+      <div class="text-2xl mb-1">🎮</div>
+      <div class="text-sm font-semibold">Interactive Quiz</div>
+    </div>
+  </div>
+  
+  <div class="bg-yellow-100 p-4 rounded-lg">
+    <h4 class="font-bold text-yellow-800 mb-2">🎯 Next Challenge: Combine These Concepts!</h4>
+    <p class="text-sm">Now you have the building blocks to create your own AI Avatar app combining chat, image processing, and ML!</p>
+  </div>
+</div>
+
+---
+layout: two-cols-title
+columns: is-7
+align: c-lt-ct
+zoom: 0.7
+---
+
+:: title ::
+
+# 🔬 HTTP Protocol Deep Dive
+
+
+:: left ::
+
+<div class="ns-c-supertight">
 
 ## 📡 Request-Response Cycle
 **Every API call follows this pattern:**
@@ -2092,6 +2820,7 @@ All modern APIs communicate in JSON format
 ---
 layout: center
 class: text-center
+zoom: 0.9
 ---
 
 # 🤖 Claude API Integration Deep Dive
@@ -2155,9 +2884,9 @@ except Exception as e:<br/>
 
 ---
 layout: two-cols-title
-columns: is-6
-align: c-lm-cm
-zoom: 1.0
+columns: is-8
+align: c-lt-ct
+zoom: 0.85
 ---
 
 :: title ::
@@ -2212,74 +2941,83 @@ if st.button("Send") and user_input:
 ::right::
 
 <div class="bg-blue-50 p-4 rounded-lg">
-  <h3 class="text-lg font-bold text-blue-800 mb-3">🔬 Live Coding Station</h3>
-  
-  <div class="space-y-3">
-    <a href="https://colab.research.google.com/drive/1ChatInterface_Starter" target="_blank" class="block w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 block text-center">
-      🚀 Starter Template
-    </a>
-    
-    <a href="https://colab.research.google.com/drive/1StreamlitTutorial" target="_blank" class="block w-full bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 block text-center">
-      📚 Streamlit Tutorial
-    </a>
-    
-    <a href="https://colab.research.google.com/drive/1ClaudeAPI_Examples" target="_blank" class="block w-full bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 block text-center">
-      🤖 Claude API Examples
-    </a>
-  </div>
-  
-  <div class="mt-4 p-3 bg-yellow-100 rounded">
-    <h4 class="font-bold text-yellow-800 mb-2">🎯 Challenge Goals</h4>
-    <ul class="text-xs space-y-1">
-      <li>✅ Create working chat interface</li>
-      <li>✅ Connect to Claude API</li>
-      <li>✅ Add conversation history</li>
-      <li>✅ Style your app beautifully</li>
-    </ul>
-  </div>
+<h3 class="text-lg font-bold text-blue-800 mb-3">🔬 Live Coding Station</h3>
+
+<div class="space-y-3">
+
+<a href="https://colab.research.google.com/" target="_blank" class="block w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 block text-center">
+🚀 Google Colab
+</a>
+
+<a href="https://docs.streamlit.io/library/get-started" target="_blank" class="block w-full bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 block text-center">
+📚 Streamlit Tutorial
+</a>
+
+<a href="https://docs.anthropic.com/claude/reference/getting-started-with-the-api" target="_blank" class="block w-full bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 block text-center">
+🤖 Claude API Examples
+</a>
+
+</div>
+
+<div class="mt-4 p-3 bg-yellow-100 rounded">
+<h4 class="font-bold text-yellow-800 mb-2">🎯 Challenge Goals</h4>
+<ul class="text-xs space-y-1">
+<li>✅ Create working chat interface</li>
+<li>✅ Connect to Claude API</li>
+<li>✅ Add conversation history</li>
+<li>✅ Style your app beautifully</li>
+</ul>
+</div>
 </div>
 
 ---
 layout: center
 class: text-center
+zoom: 0.9
 ---
 
-# 🧠 Neural Network Playground: Understanding Avatar AI
+# 🤖 Ready-to-Play Avatar Apps: Hugging Face Spaces
 
 <div class="bg-purple-100 p-6 rounded-lg mb-6">
-  <h3 class="text-2xl font-bold text-purple-800 mb-4">🎮 Interactive Learning Stations</h3>
-  <p class="text-lg">Before we generate avatars, let's understand the neural networks that power them!</p>
+  <h3 class="text-2xl font-bold text-purple-800 mb-4">🎮 Interactive Avatar Playground</h3>
+  <p class="text-lg">Try these amazing AI avatar apps right now - no coding required!</p>
 </div>
 
 <div class="grid grid-cols-2 gap-8">
   
-  <div class="bg-orange-50 p-6 rounded-lg">
-    <h3 class="text-xl font-bold text-orange-800 mb-4">🔥 PyTorch Playground</h3>
+  <div class="bg-blue-50 p-6 rounded-lg">
+    <h3 class="text-xl font-bold text-blue-800 mb-4">🎭 Talking Face Animation</h3>
     <div class="space-y-3">
-      <a href="https://playground.learnpytorch.io/" target="_blank" class="block w-full bg-orange-500 text-white px-4 py-3 rounded-lg hover:bg-orange-600 transition-colors block text-center">
-        🧠 Neural Network Visualizer
+      <a href="https://huggingface.co/spaces/vinthony/SadTalker" target="_blank" class="block w-full bg-blue-500 text-white px-4 py-3 rounded-lg hover:bg-blue-600 transition-colors block text-center">
+        😢 SadTalker - Photo + Audio = Talking Avatar
       </a>
-      <a href="https://poloclub.github.io/cnn-explainer/" target="_blank" class="block w-full bg-red-500 text-white px-4 py-3 rounded-lg hover:bg-red-600 transition-colors block text-center">
-        👁️ CNN Explainer (Face Recognition)
+      <a href="https://huggingface.co/spaces/KwaiVGI/LivePortrait" target="_blank" class="block w-full bg-purple-500 text-white px-4 py-3 rounded-lg hover:bg-purple-600 transition-colors block text-center">
+        🎬 LivePortrait - Animate Any Portrait
+      </a>
+      <a href="https://huggingface.co/spaces/CVPR/ml-talking-face" target="_blank" class="block w-full bg-green-500 text-white px-4 py-3 rounded-lg hover:bg-green-600 transition-colors block text-center">
+        🗣️ ML Talking Face - Text to Video
       </a>
     </div>
     <div class="mt-4 p-3 bg-white rounded">
-      <p class="text-sm text-center"><strong>🎯 Mission:</strong> Build a neural network that can classify facial expressions! Experiment with different layer sizes and see how it affects accuracy.</p>
+      <p class="text-sm text-center"><strong>🎯 Try This:</strong> Upload a photo and make it talk! Test different voices and expressions.</p>
     </div>
   </div>
 
-  <div class="bg-green-50 p-6 rounded-lg">
-    <h3 class="text-xl font-bold text-green-800 mb-4">🎭 Avatar Technology Demos</h3>
+  <div class="bg-orange-50 p-6 rounded-lg">
+    <h3 class="text-xl font-bold text-orange-800 mb-4">🎨 Avatar Creation & Animation</h3>
     <div class="space-y-3">
-      <a href="https://huggingface.co/spaces/fffiloni/First-Order-Motion-Model" target="_blank" class="block w-full bg-green-500 text-white px-4 py-3 rounded-lg hover:bg-green-600 transition-colors block text-center">
-        🎬 Face Animation Demo
+      <a href="https://huggingface.co/spaces/akhaliq/AnimeGANv2" target="_blank" class="block w-full bg-orange-500 text-white px-4 py-3 rounded-lg hover:bg-orange-600 transition-colors block text-center">
+        🎭 AnimeGAN - Photo to Anime Avatar
       </a>
-      <a href="https://huggingface.co/spaces/stabilityai/stable-diffusion" target="_blank" class="block w-full bg-blue-500 text-white px-4 py-3 rounded-lg hover:bg-blue-600 transition-colors block text-center">
-        🎨 Image Generation
+      <a href="https://huggingface.co/spaces/TWO/sutra-avatar-v2" target="_blank" class="block w-full bg-red-500 text-white px-4 py-3 rounded-lg hover:bg-red-600 transition-colors block text-center">
+        🎬 Sutra Avatar v2 - Add Speech to Images
+      </a>
+      <a href="https://huggingface.co/spaces/seawolf2357/3D-Avatar-Generator" target="_blank" class="block w-full bg-yellow-500 text-white px-4 py-3 rounded-lg hover:bg-yellow-600 transition-colors block text-center">
+        🎨 3D Avatar Generator
       </a>
     </div>
     <div class="mt-4 p-3 bg-white rounded">
-      <p class="text-sm text-center"><strong>🎯 Mission:</strong> Try animating a photo with different expressions. See how AI maps facial landmarks and generates realistic motion!</p>
+      <p class="text-sm text-center"><strong>🎯 Challenge:</strong> Transform your photo into an anime avatar and create a 3D version!</p>
     </div>
   </div>
 </div>
@@ -2334,17 +3072,16 @@ class: text-center
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
 :: title ::
-<div class="text-2xl">
+
 # 🏗️ PyTorch Fundamentals
-</div>
 
 :: left ::
-<div class="ns-c-tight">
+<div class="ns-c-supertight">
 
 ## Core Concepts
 
@@ -2431,18 +3168,18 @@ class: text-center
 
 ---
 layout: two-cols-title
-columns: is-4
-align: c-lm-cm
-zoom: 1.0
+columns: is-6
+align: c-lt-cm
+zoom: 0.8
 ---
 
 :: title ::
-<div class="text-2xl">
+
 # 🧠 Building Neural Networks
-</div>
+
 
 :: left ::
-<div class="ns-c-tight">
+<div class="ns-c-supertight">
 
 ## Step-by-Step Process
 
@@ -2501,10 +3238,10 @@ for epoch in range(num_epochs):
   <div class="bg-purple-100 p-4 rounded-lg">
     <h3 class="text-lg font-bold text-purple-800 mb-3">🎮 Hands-On Challenge</h3>
     <ul class="text-sm space-y-1">
-      <li>• Build a simple image classifier</li>
-      <li>• Train on CIFAR-10 dataset</li>
-      <li>• Achieve 70%+ accuracy</li>
-      <li>• Visualize training progress</li>
+      <li>Build a simple image classifier</li>
+      <li>Train on CIFAR-10 dataset</li>
+      <li>Achieve 70%+ accuracy</li>
+      <li>Visualize training progress</li>
     </ul>
   </div>
 </div>
@@ -2537,12 +3274,12 @@ class: text-center
   <div class="bg-blue-50 p-6 rounded-lg">
     <h3 class="text-xl font-bold text-blue-800 mb-4">🤖 Avatar Applications</h3>
     <ul class="text-sm space-y-2">
-      <li>• <strong>Face Detection:</strong> Identify facial landmarks</li>
-      <li>• <strong>Expression Recognition:</strong> Classify emotions</li>
-      <li>• <strong>Pose Estimation:</strong> Track body movements</li>
-      <li>• <strong>Style Transfer:</strong> Apply artistic effects</li>
-      <li>• <strong>Super Resolution:</strong> Enhance image quality</li>
-      <li>• <strong>3D Reconstruction:</strong> Build 3D models</li>
+      <li><strong>Face Detection:</strong> Identify facial landmarks</li>
+      <li><strong>Expression Recognition:</strong> Classify emotions</li>
+      <li><strong>Pose Estimation:</strong> Track body movements</li>
+      <li><strong>Style Transfer:</strong> Apply artistic effects</li>
+      <li><strong>Super Resolution:</strong> Enhance image quality</li>
+      <li><strong>3D Reconstruction:</strong> Build 3D models</li>
     </ul>
   </div>
 </div>
@@ -2550,34 +3287,35 @@ class: text-center
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
-zoom: 1.0
+align: c-lm-ct
+zoom: 0.9
 ---
 
 :: title ::
-<div class="text-2xl">
+
 # 🔬 Google Colab PyTorch Lab
-</div>
+
 
 :: left ::
+
 <div class="ns-c-tight">
 
 ## Interactive Learning Stations
 
 ### 🎯 **Beginner Track**
-Complete these notebooks in order:
+
 1. **PyTorch Basics** - Tensors and operations
 2. **Neural Networks** - Build your first model
 3. **Training Loop** - Optimization and loss functions
 
 ### 🚀 **Intermediate Track**
-Ready for more challenges:
+
 1. **Computer Vision** - CNNs for image classification
 2. **Transfer Learning** - Use pretrained models
 3. **Data Augmentation** - Improve model performance
 
 ### 🏆 **Advanced Track**
-Push your limits:
+
 1. **Custom Datasets** - Load your own data
 2. **Model Deployment** - From training to production
 3. **Avatar Pipeline** - Build a complete system
@@ -2585,39 +3323,42 @@ Push your limits:
 </div>
 
 :: right ::
+
 <div class="bg-gray-100 p-6 rounded-lg">
-  <h3 class="text-lg font-bold mb-4 text-center">🎮 Practice Stations</h3>
-  <div class="space-y-3">
-    <div class="bg-blue-100 p-3 rounded">
-      <h4 class="font-semibold text-blue-800">🔰 Beginner</h4>
-      <a href="https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/17a7c7cb80916fcdf921097825a0f562/tensor_tutorial.ipynb" target="_blank" class="block w-full bg-blue-500 text-white px-3 py-2 rounded hover:bg-blue-600 text-center text-sm mt-2">
-        🎯 Start Here: Tensors
-      </a>
-    </div>
-    
-    <div class="bg-green-100 p-3 rounded">
-      <h4 class="font-semibold text-green-800">🚀 Intermediate</h4>
-      <a href="https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/cifar10_tutorial.ipynb" target="_blank" class="block w-full bg-green-500 text-white px-3 py-2 rounded hover:bg-green-600 text-center text-sm mt-2">
-        🖼️ CIFAR-10 Challenge
-      </a>
-    </div>
-    
-    <div class="bg-purple-100 p-3 rounded">
-      <h4 class="font-semibold text-purple-800">🏆 Advanced</h4>
-      <a href="https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/transfer_learning_tutorial.ipynb" target="_blank" class="block w-full bg-purple-500 text-white px-3 py-2 rounded hover:bg-purple-600 text-center text-sm mt-2">
-        🎭 Transfer Learning
-      </a>
-    </div>
-  </div>
-  
-  <div class="mt-4 p-3 bg-yellow-100 rounded">
-    <p class="text-sm font-semibold">🏅 Achievement Goals:</p>
-    <ul class="text-xs mt-1">
-      <li>• Complete 3 beginner notebooks</li>
-      <li>• Build a working image classifier</li>
-      <li>• Achieve 75%+ accuracy on test set</li>
-    </ul>
-  </div>
+<h3 class="text-lg font-bold mb-4 text-center">🎮 Practice Stations</h3>
+<div class="space-y-3">
+
+<div class="bg-blue-100 p-3 rounded">
+<h4 class="font-semibold text-blue-800">🔰 Beginner</h4>
+<a href="https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/17a7c7cb80916fcdf921097825a0f562/tensor_tutorial.ipynb" target="_blank" class="block w-full bg-blue-500 text-white px-3 py-2 rounded hover:bg-blue-600 text-center text-sm mt-2">
+🎯 Start Here: Tensors
+</a>
+</div>
+
+<div class="bg-green-100 p-3 rounded">
+<h4 class="font-semibold text-green-800">🚀 Intermediate</h4>
+<a href="https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/cifar10_tutorial.ipynb" target="_blank" class="block w-full bg-green-500 text-white px-3 py-2 rounded hover:bg-green-600 text-center text-sm mt-2">
+🖼️ CIFAR-10 Challenge
+</a>
+</div>
+
+<div class="bg-purple-100 p-3 rounded">
+<h4 class="font-semibold text-purple-800">🏆 Advanced</h4>
+<a href="https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/transfer_learning_tutorial.ipynb" target="_blank" class="block w-full bg-purple-500 text-white px-3 py-2 rounded hover:bg-purple-600 text-center text-sm mt-2">
+🎭 Transfer Learning
+</a>
+</div>
+
+</div>
+
+<div class="mt-4 p-3 bg-yellow-100 rounded">
+<p class="text-sm font-semibold">🏅 Achievement Goals:</p>
+<ul class="text-xs mt-1">
+<li>Complete 3 beginner notebooks</li>
+<li>Build a working image classifier</li>
+<li>Achieve 75%+ accuracy on test set</li>
+</ul>
+</div>
 </div>
 
 ---
@@ -2683,24 +3424,363 @@ class: text-center
   </div>
 </div>
 
+
+---
+layout: section
+background: "#fff7ed"
+---
+
+# 🔥 PyTorch Training Lab
+## Watch Your Model Learn in Real-Time!
+
 ---
 layout: two-cols-title
 columns: is-8
-align: c-lm-cm
-zoom: 1.0
+align: c-lt-ct
+zoom: 0.8
 ---
 
 :: title ::
 
-<div class="text-2xl">
-
-# 🎯 Hands-On Challenge: Complete Chat App
-
-</div>
+# 🚀 Step 1: Clone & Setup PyTorch MNIST
 
 :: left ::
 
 <div class="ns-c-tight">
+
+## Why This Project?
+- **Official PyTorch example** - Battle-tested and reliable
+- **CPU-friendly** - No GPU required, trains in 2-3 minutes
+- **Visual feedback** - Watch loss decrease and accuracy improve
+- **Real weights & biases** - See actual parameter updates
+
+## What You'll Experience
+- **Live training progress** with loss/accuracy graphs
+- **Weight visualization** - See how neural networks learn
+- **Prediction testing** - Try your trained model
+- **Streamlit integration** - Deploy your model as a web app
+
+## Clone Commands
+```bash
+git clone https://github.com/pytorch/examples.git
+cd examples/mnist
+pip install torch torchvision matplotlib
+python main.py --epochs 3 --save-model
+```
+
+</div>
+
+:: right ::
+
+<div class="space-y-4">
+  <div class="bg-orange-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-orange-800 mb-3">🔗 Official Repository</h3>
+    <a href="https://github.com/pytorch/examples/tree/main/mnist" target="_blank" class="block w-full bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 text-center text-sm">
+      🔥 Clone PyTorch MNIST
+    </a>
+  </div>
+  
+  <div class="bg-green-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-green-800 mb-3">⚡ Expected Results</h3>
+    <ul class="text-sm space-y-1">
+      <li>• Training time: ~2-3 minutes on CPU</li>
+      <li>• Final accuracy: ~98-99%</li>
+      <li>• Model size: ~500KB</li>
+      <li>• 10 digit classes (0-9)</li>
+    </ul>
+  </div>
+  
+  <div class="bg-blue-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-blue-800 mb-3">👁️ What You'll See</h3>
+    <div class="text-sm">
+      Watch in real-time:
+      <ul class="mt-1 space-y-1">
+        <li>• Loss decreasing from ~2.3 to ~0.1</li>
+        <li>• Accuracy climbing to 99%</li>
+        <li>• Training speed per batch</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+---
+layout: two-cols-title
+columns: is-6
+align: c-lt-ct
+zoom: 0.75
+---
+
+:: title ::
+
+# 🧠 Step 2: Understanding the Training Process
+
+:: left ::
+
+<div class="ns-c-tight">
+
+## Training Output You'll See
+```bash
+Train Epoch: 1 [0/60000 (0%)]  Loss: 2.308
+Train Epoch: 1 [640/60000 (1%)]  Loss: 1.632
+Train Epoch: 1 [1280/60000 (2%)]  Loss: 0.742
+...
+Train Epoch: 3 [59520/60000 (99%)]  Loss: 0.089
+
+Test set: Average loss: 0.0567, 
+Accuracy: 9821/10000 (98%)
+```
+
+## What Each Line Means
+- **Epoch**: Complete pass through training data
+- **Progress**: [current/total samples (percentage)]
+- **Loss**: How "wrong" the model is (lower = better)
+- **Accuracy**: Percentage of correct predictions
+
+## The Learning Process
+1. **Forward pass**: Model makes predictions
+2. **Loss calculation**: Compare with correct answers
+3. **Backward pass**: Calculate gradients
+4. **Weight update**: Adjust parameters to improve
+
+</div>
+
+:: right ::
+
+<div class="space-y-4">
+  <div class="bg-purple-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-purple-800 mb-3">📊 Training Visualization</h3>
+    <div class="bg-white p-3 rounded">
+      <div class="text-xs font-mono">
+        <div class="text-red-600">Epoch 1: Loss 2.30 → 0.89</div>
+        <div class="text-yellow-600">Epoch 2: Loss 0.89 → 0.23</div>
+        <div class="text-green-600">Epoch 3: Loss 0.23 → 0.09</div>
+        <div class="mt-2 font-bold">Final: 98.2% Accuracy! 🎉</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-cyan-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-cyan-800 mb-3">🔍 Weights & Biases</h3>
+    <div class="text-sm">
+      <p>The model learns by updating:</p>
+      <ul class="mt-1 space-y-1">
+        <li>• <strong>Weights</strong>: Connection strengths</li>
+        <li>• <strong>Biases</strong>: Neuron activation thresholds</li>
+        <li>• <strong>Gradients</strong>: Direction to improve</li>
+      </ul>
+      <p class="mt-2 text-xs italic">You'll see these values change during training!</p>
+    </div>
+  </div>
+</div>
+
+---
+layout: two-cols-title
+columns: is-6
+align: c-lt-ct
+zoom: 0.75
+---
+
+:: title ::
+
+# 📱 Step 3: Test Your Trained Model
+
+:: left ::
+
+<div class="ns-c-tight">
+
+## Interactive Testing
+After training completes, test your model:
+
+```bash
+# The model is saved as 'mnist_cnn.pt'
+# You can load and test it:
+
+python -c "
+import torch
+import torchvision.transforms as transforms
+from PIL import Image
+
+# Load your trained model
+model = torch.load('mnist_cnn.pt')
+model.eval()
+
+print('Model loaded! Draw a digit and test it.')
+print('Accuracy on test set: ~98%')
+print('Ready for Streamlit integration!')
+"
+```
+
+## Model Performance
+- **Training time**: 2-3 minutes on CPU
+- **Model accuracy**: 98%+ on test digits
+- **File size**: ~500KB (perfect for web apps)
+- **Inference speed**: Milliseconds per prediction
+
+</div>
+
+:: right ::
+
+<div class="space-y-4">
+  <div class="bg-emerald-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-emerald-800 mb-3">🎯 Your Achievements</h3>
+    <ul class="text-sm space-y-1">
+      <li>✅ Watched neural network training live</li>
+      <li>✅ Saw loss decrease and accuracy improve</li>
+      <li>✅ Understood weights and biases updates</li>
+      <li>✅ Created a working digit classifier</li>
+      <li>🎯 Ready for Streamlit deployment!</li>
+    </ul>
+  </div>
+  
+  <div class="bg-yellow-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-yellow-800 mb-3">🔮 What's Next?</h3>
+    <div class="text-sm">
+      <p>Your trained model can now:</p>
+      <ul class="mt-1 space-y-1">
+        <li>• Recognize handwritten digits</li>
+        <li>• Be deployed in a Streamlit app</li>
+        <li>• Process images in real-time</li>
+        <li>• Serve as foundation for avatar apps</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+---
+layout: two-cols-title
+columns: is-6
+align: c-lt-ct
+zoom: 0.75
+---
+
+:: title ::
+
+# 🌟 Step 4: Deploy Model in Streamlit
+
+:: left ::
+
+<div class="ns-c-tight">
+
+## Create Streamlit App
+Build a web interface for your model:
+
+```python
+import streamlit as st
+import torch
+import torchvision.transforms as transforms
+from PIL import Image
+import numpy as np
+
+# Load your trained model
+@st.cache_resource
+def load_model():
+    model = torch.load('mnist_cnn.pt', 
+                       map_location='cpu')
+    model.eval()
+    return model
+
+st.title("🧠 My MNIST Digit Classifier")
+st.write("Upload a digit image to classify!")
+
+# File uploader
+uploaded_file = st.file_uploader(
+    "Choose an image...", 
+    type=['png', 'jpg', 'jpeg']
+)
+
+if uploaded_file:
+    # Process and predict
+    model = load_model()
+    # ... prediction code ...
+    st.write(f"Prediction: {prediction}")
+```
+
+</div>
+
+:: right ::
+
+<div class="space-y-4">
+  <div class="bg-indigo-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-indigo-800 mb-3">🚀 Quick Deploy</h3>
+    <div class="text-sm">
+      <p>Save as <code>app.py</code> and run:</p>
+      <div class="bg-white p-2 rounded font-mono text-xs mt-2">
+        streamlit run app.py
+      </div>
+      <p class="mt-2">Your model is now a web app! 🎉</p>
+    </div>
+  </div>
+  
+  <div class="bg-pink-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-pink-800 mb-3">🎨 Features to Add</h3>
+    <ul class="text-sm space-y-1">
+      <li>• Draw digits with st.canvas</li>
+      <li>• Show prediction confidence</li>
+      <li>• Display training metrics</li>
+      <li>• Add model explanations</li>
+      <li>• Style with custom CSS</li>
+    </ul>
+  </div>
+  
+  <div class="bg-teal-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-teal-800 mb-3">🤖 Avatar Connection</h3>
+    <p class="text-sm">This same pattern works for avatar models: train PyTorch model → save → load in Streamlit → create interactive web app!</p>
+  </div>
+</div>
+
+---
+layout: center
+class: text-center
+---
+
+# 🏆 PyTorch Training Lab Complete!
+
+<div class="bg-gradient-to-r from-orange-100 to-red-100 p-8 rounded-lg mt-8">
+  <h3 class="text-2xl font-bold text-gray-800 mb-6">🔥 You've Experienced Real AI Training!</h3>
+  
+  <div class="grid grid-cols-4 gap-4 mb-6">
+    <div class="bg-white p-4 rounded-lg">
+      <div class="text-3xl mb-2">👁️</div>
+      <div class="font-semibold">Watched Training</div>
+      <div class="text-sm text-gray-600">Live loss/accuracy</div>
+    </div>
+    <div class="bg-white p-4 rounded-lg">
+      <div class="text-3xl mb-2">🧠</div>
+      <div class="font-semibold">Understood Learning</div>
+      <div class="text-sm text-gray-600">Weights & biases</div>
+    </div>
+    <div class="bg-white p-4 rounded-lg">
+      <div class="text-3xl mb-2">🎯</div>
+      <div class="font-semibold">Trained Model</div>
+      <div class="text-sm text-gray-600">98% accuracy</div>
+    </div>
+    <div class="bg-white p-4 rounded-lg">
+      <div class="text-3xl mb-2">🌐</div>
+      <div class="font-semibold">Built Web App</div>
+      <div class="text-sm text-gray-600">Streamlit deployment</div>
+    </div>
+  </div>
+  
+  <div class="bg-yellow-100 p-4 rounded-lg">
+    <h4 class="font-bold text-yellow-800 mb-2">🎯 Ready for Avatar AI!</h4>
+    <p class="text-sm">You now understand the complete AI workflow: data → training → model → deployment. Perfect for building avatar apps!</p>
+  </div>
+</div>
+
+---
+layout: two-cols-title
+columns: is-8
+align: c-lt-ct
+zoom: 0.9
+---
+
+:: title ::
+
+# 🎯 Hands-On Challenge: Complete Chat App
+
+:: left ::
+
+<div class="ns-c-supertight">
 
 ## 🏆 Final Implementation Challenge
 **Time Limit: 45 minutes**
@@ -2724,12 +3804,6 @@ zoom: 1.0
 - ✅ Typing indicators
 - ✅ Beautiful styling and animations
 
-## 🎯 Bonus Challenges
-- **Avatar Preview**: Show selected avatar image
-- **Voice Input**: Record and transcribe messages
-- **Emoji Reactions**: Add reaction buttons
-- **Dark Mode**: Theme switcher
-
 </div>
 
 ::right::
@@ -2738,11 +3812,11 @@ zoom: 1.0
   <div class="bg-yellow-100 p-4 rounded-lg">
     <h4 class="font-bold text-yellow-800 mb-2">📚 Resources</h4>
     <div class="space-y-2">
-      <a href="https://colab.research.google.com/drive/1CompleteChat_Template" target="_blank" class="block w-full bg-yellow-500 text-white px-3 py-2 rounded hover:bg-yellow-600 text-sm block text-center">
-        📝 Complete Template
+      <a href="https://docs.streamlit.io/library/api-reference/chat" target="_blank" class="block w-full bg-yellow-500 text-white px-3 py-2 rounded hover:bg-yellow-600 text-sm block text-center">
+        📝 Chat API Reference
       </a>
-      <a href="https://streamlit-elements.readthedocs.io/" target="_blank" class="block w-full bg-blue-500 text-white px-3 py-2 rounded hover:bg-blue-600 text-sm block text-center">
-        🎨 Advanced Components
+      <a href="https://github.com/streamlit/cookbook" target="_blank" class="block w-full bg-blue-500 text-white px-3 py-2 rounded hover:bg-blue-600 text-sm block text-center">
+        🎨 Streamlit Cookbook
       </a>
     </div>
   </div>
@@ -2772,6 +3846,7 @@ zoom: 1.0
 ---
 layout: center
 class: text-center
+zoom: 0.8
 ---
 
 # 🎉 Class 2 Achievement Unlocked!
@@ -2854,7 +3929,7 @@ class: text-center
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -2916,7 +3991,7 @@ zoom: 1.0
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -2976,7 +4051,7 @@ Modify the TensorFlow Playground to see how changing weights affects the decisio
 ---
 layout: two-cols-title
 columns: is-8
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -3040,7 +4115,7 @@ Traditional neural networks treat images as flat lists of pixels. CNNs understan
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -3108,7 +4183,7 @@ zoom: 1.0
 ---
 layout: two-cols-title
 columns: is-8
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -3200,7 +4275,7 @@ zoom: 1.0
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -3298,7 +4373,7 @@ Attention allows neural networks to **focus on relevant parts** of the input whe
 ---
 layout: two-cols-title
 columns: is-8
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -3377,7 +4452,7 @@ zoom: 1.0
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -3441,7 +4516,7 @@ Processing 68 landmarks at 30 FPS requires calculating 4,080 coordinates per sec
 ---
 layout: two-cols-title
 columns: is-8
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -3550,7 +4625,7 @@ zoom: 1.0
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -3663,7 +4738,7 @@ zoom: 1.0
 ---
 layout: two-cols-title
 columns: is-8
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -3749,7 +4824,7 @@ Total: 156 parameters control entire face!
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -3863,7 +4938,7 @@ Where neural networks learn the bidirectional reflectance distribution function 
 ---
 layout: two-cols-title
 columns: is-8
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -3957,7 +5032,7 @@ L_smooth = ||∇_t I||₂
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -4044,7 +5119,7 @@ Avatar generation must be **fast enough for live interaction** - ideally under 1
 ---
 layout: two-cols-title
 columns: is-8
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -4168,7 +5243,7 @@ class: text-center
 ---
 layout: two-cols-title
 columns: is-8
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -4255,7 +5330,7 @@ headers = {
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -4397,7 +5472,7 @@ class: text-center
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -4591,7 +5666,7 @@ background: "#f3e5f5"
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 0.8
 ---
 
@@ -4663,7 +5738,7 @@ zoom: 0.8
 ---
 layout: two-cols-title
 columns: is-4
-align: c-lm-cm
+align: c-lt-ct
 zoom: 0.8
 ---
 
@@ -4758,7 +5833,7 @@ zoom: 0.8
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 0.8
 ---
 
@@ -4838,7 +5913,7 @@ zoom: 0.8
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 0.8
 ---
 
@@ -4919,7 +5994,7 @@ zoom: 0.8
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 0.8
 ---
 
@@ -5121,7 +6196,7 @@ Advanced Avatar Animation Technology
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -5161,7 +6236,7 @@ zoom: 1.0
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -5344,7 +6419,7 @@ zoom: 1.0
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -5416,7 +6491,7 @@ zoom: 1.0
 ---
 layout: two-cols-title
 columns: is-8
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -5951,7 +7026,7 @@ class: text-center
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -6210,7 +7285,7 @@ Choose your adventure:
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -6410,7 +7485,7 @@ class: text-center
 ---
 layout: two-cols-title
 columns: is-8
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -6662,7 +7737,7 @@ class: text-center
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -6881,7 +7956,7 @@ class: text-center
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 0.8
 ---
 
@@ -6938,7 +8013,7 @@ zoom: 0.8
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
