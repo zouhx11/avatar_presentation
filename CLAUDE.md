@@ -13,7 +13,7 @@ This is a 5-class AI Avatar Workshop presentation built with Slidev. The slides 
 ---
 layout: two-cols-title
 columns: is-X
-align: c-lm-cm
+align: c-lt-ct
 zoom: 1.0
 ---
 
@@ -215,6 +215,16 @@ Use `ns-c-tight` class for compact text layouts:
 - Content too spread: Use `ns-c-tight` class
 - Images misaligned: Check grid structure and gap settings
 
+### CSS Spacing Issues
+- **H2/H3 spacing problems**: Fixed with custom CSS rules for ns-c-tight and ns-c-supertight
+- **Raw HTML display**: Remove excessive indentation in Slidev sections
+- **Alignment issues**: Use c-lt-ct instead of c-lm-cm for better visual balance
+
+### Repository Link Verification
+- **Always verify links**: Check GitHub repositories before adding to slides
+- **Use official sources**: Prefer official repositories (e.g., pytorch/examples, streamlit/cookbook)
+- **Test functionality**: Ensure examples can be cloned and run successfully
+
 ## Development Workflow
 
 1. **Design Pattern**: Establish layout type based on content
@@ -310,6 +320,26 @@ Use `ns-c-tight` class for compact text layouts:
    - Bronze/Silver/Gold challenge projects with real datasets
    - Interactive hands-on coding exercises
 
+5. **Development Environment Setup** (Class 2)
+   - Complete local development setup guide
+   - GitHub account creation and GitHub Desktop installation
+   - Anaconda Python environment with PowerShell configuration
+   - VS Code editor setup with essential extensions
+   - Step-by-step testing and verification procedures
+
+6. **Hands-On Streamlit Projects** (Class 2)
+   - 5 verified working project examples with real repositories
+   - NYC Uber Pickups dashboard, chatbot interfaces, 30 Days Challenge
+   - Machine learning demos and custom app building
+   - All repository links tested and verified working
+
+7. **PyTorch Training Lab** (Class 2)
+   - Real-time model training experience with MNIST dataset
+   - Live observation of weights, biases, and loss progression
+   - CPU-friendly training requiring no GPU (2-3 minutes)
+   - Complete pipeline from training to Streamlit deployment
+   - Official PyTorch examples repository integration
+
 ### 🎨 Design System Refinements
 - **Layout Optimization**: Removed custom layouts, using only neversink theme layouts
 - **Content Organization**: Split overly dense slides for better readability
@@ -321,6 +351,8 @@ Use `ns-c-tight` class for compact text layouts:
 - **Password Protection**: Implemented Staticrypt for secure access
 - **GitHub Actions**: Automated build and deployment pipeline
 - **Performance**: Optimized for fast loading and responsive design
+- **CSS Spacing Fixes**: Added h2/h3 spacing rules for ns-c-tight and ns-c-supertight containers
+- **Alignment Updates**: Changed all c-lm-cm to c-lt-ct for better visual balance
 
 ## Content Structure Overview
 
@@ -331,13 +363,16 @@ Use `ns-c-tight` class for compact text layouts:
    - Machine learning concepts
    - Avatar technology foundations
 
-2. **Class 2: Web Apps & PyTorch Deep Learning** (25+ slides)  
+2. **Class 2: Web Apps & PyTorch Deep Learning** (50+ slides)  
+   - Development environment setup (GitHub, Anaconda, VS Code)
    - Web development basics with Streamlit
+   - Hands-on Streamlit projects with working repositories
    - API integration and HTTP protocols
    - PyTorch fundamentals and tensor operations
    - Neural network building with hands-on Colab labs
+   - Real-time PyTorch training lab with MNIST
    - Computer vision for avatar applications
-   - Interactive Google Colab practice stations
+   - Complete pipeline from training to deployment
 
 3. **Class 3: Avatar Technology Deep Dive** (25+ slides)
    - Avatar industry landscape (a16z insights)
@@ -489,6 +524,46 @@ git push origin main
 - **Observable**: `https://observablehq.com/embed/@observablehq/machine-learning`
 - **Plotly**: `https://plotly.com/~PlotlyBot/10.embed`
 - **Additional**: Teachable Machine, TensorFlow.js examples, etc.
+
+## 📚 Verified Working Repositories
+
+### Development Environment & Tutorials
+- **GitHub Setup**: Official GitHub and GitHub Desktop downloads
+- **Anaconda**: `https://www.anaconda.com/download`
+- **VS Code**: `https://code.visualstudio.com`
+
+### Streamlit Projects (All Verified Working)
+- **NYC Uber Pickups**: `https://github.com/streamlit/demo-uber-nyc-pickups`
+- **Streamlit Cookbook**: `https://github.com/streamlit/cookbook`
+- **30 Days Challenge**: `https://github.com/streamlit/30days`
+- **Official Gallery**: `https://streamlit.io/gallery`
+
+### PyTorch Training
+- **Official Examples**: `https://github.com/pytorch/examples/tree/main/mnist`
+- **MNIST Training**: CPU-friendly, 2-3 minute training time
+- **Expected Results**: 98%+ accuracy, 500KB model size
+
+### API Documentation
+- **Streamlit Chat API**: `https://docs.streamlit.io/library/api-reference/chat`
+- **PyTorch Tutorials**: `https://docs.pytorch.org/tutorials/`
+
+## 🎯 Recent Major Updates (Latest Session)
+
+### ✅ Completed Enhancements
+1. **Development Environment Setup** - 6 comprehensive slides covering GitHub, Anaconda, VS Code
+2. **Hands-On Streamlit Projects** - 7 slides with 5 verified working repositories
+3. **PyTorch Training Lab** - 6 slides with real-time MNIST training experience
+4. **CSS Spacing Fixes** - Resolved h2/h3 spacing issues in tight containers
+5. **Repository Link Verification** - Replaced all broken links with working alternatives
+6. **Alignment Standardization** - Updated all c-lm-cm to c-lt-ct for consistency
+
+### 📊 Current Slide Count
+- **Total Slides**: ~120+ slides
+- **Class 1**: 30+ slides (AI Foundations & Python)
+- **Class 2**: 50+ slides (Development Setup, Streamlit, PyTorch)
+- **Class 3**: 25+ slides (Avatar Technology)
+- **Class 4**: 20+ slides (Integration & Advanced)
+- **Class 5**: 15+ slides (Demo Day & Projects)
 
 ---
 
