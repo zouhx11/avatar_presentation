@@ -1801,7 +1801,7 @@ print(f"Avatar: {avatar}")
 </div>
 
 <div class="mt-6">
-  <a href="https://colab.research.google.com/drive/1JSON_Practice_Notebook" target="_blank" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors inline-block text-center">
+  <a href="https://colab.research.google.com/github/Tanu-N-Prabhu/Python/blob/master/How_to_handle_JSON_in_Python%3F.ipynb" target="_blank" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors inline-block text-center">
     🚀 Try It in Colab!
   </a>
 </div>
@@ -2324,6 +2324,125 @@ class: text-center
 </div>
 
 ---
+layout: two-cols-title
+columns: is-6
+align: c-lt-ct
+zoom: 0.85
+---
+
+:: title ::
+
+<div class="text-2xl">
+
+# ☁️ Alternative: Code in Cloud with Replit
+
+</div>
+
+:: left ::
+
+<div class="ns-c-supertight">
+
+## 🌟 No Laptop? No Problem!
+
+**Replit** lets you code entirely in your browser - perfect for students without laptops or setup issues.
+
+### ✨ Why Replit?
+- **Zero Setup** - No installations needed
+- **Any Device** - Works on phones, tablets, Chromebooks
+- **Instant Access** - Start coding in seconds
+- **Free Tier** - Perfect for learning and experimenting
+
+### 🛠️ What You Get
+- **Python Environment** - Pre-configured and ready
+- **Code Editor** - VS Code-like interface
+- **Terminal Access** - Full command line support
+- **Package Manager** - Install any Python library
+- **Live Hosting** - Share your apps instantly
+
+### 🎯 Perfect For
+- **Streamlit Apps** - Build and deploy web apps
+- **PyTorch Training** - Run ML models (with limitations)
+- **API Testing** - Make HTTP requests
+- **Collaboration** - Share code with classmates
+
+</div>
+
+::right::
+
+<div class="space-y-4">
+  
+  <div class="bg-purple-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-purple-800 mb-3">🚀 Quick Start Guide</h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-white p-2 rounded">
+        <strong>1.</strong> Visit replit.com and create free account
+      </div>
+      <div class="bg-white p-2 rounded">
+        <strong>2.</strong> Click "Create Repl" → Choose Python
+      </div>
+      <div class="bg-white p-2 rounded">
+        <strong>3.</strong> Start coding immediately!
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-green-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-green-800 mb-3">📦 Install Streamlit</h3>
+    <div class="bg-gray-800 text-green-400 p-2 rounded font-mono text-xs">
+      pip install streamlit
+    </div>
+    <div class="text-sm mt-2">Then run your app:</div>
+    <div class="bg-gray-800 text-green-400 p-2 rounded font-mono text-xs">
+      streamlit run app.py
+    </div>
+  </div>
+
+  <div class="bg-orange-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-orange-800 mb-3">⚡ Pro Tips</h3>
+    <div class="text-sm space-y-1">
+      <div>• Use the <strong>Shell</strong> tab for terminal commands</div>
+      <div>• Click <strong>Run</strong> to execute your main.py</div>
+      <div>• Share your Repl URL with others</div>
+      <div>• Fork interesting projects to experiment</div>
+    </div>
+  </div>
+
+</div>
+
+---
+layout: center
+class: text-center
+---
+
+# 🎮 Try Replit Now!
+
+<div class="bg-gradient-to-br from-purple-100 to-blue-100 p-8 rounded-xl shadow-lg mt-8 max-w-2xl mx-auto">
+  <h3 class="text-2xl font-bold text-purple-800 mb-4">☁️ Start Coding in the Cloud</h3>
+  <p class="text-lg mb-6 text-gray-700">Perfect for students without laptops or complex setups</p>
+  
+  <a href="https://replit.com" target="_blank" class="inline-block bg-purple-600 text-white px-8 py-4 rounded-lg hover:bg-purple-700 transition-colors font-semibold text-lg mb-6">
+    🚀 Launch Replit
+  </a>
+  
+  <div class="grid grid-cols-2 gap-4 text-sm">
+    <div class="bg-white p-3 rounded">
+      <div class="font-semibold text-purple-800">👥 Follow Along</div>
+      <div class="text-gray-600">Use Replit for all coding demos</div>
+    </div>
+    <div class="bg-white p-3 rounded">
+      <div class="font-semibold text-purple-800">🏠 Take Home</div>
+      <div class="text-gray-600">Continue projects at home</div>
+    </div>
+  </div>
+</div>
+
+<div class="mt-8 text-base text-gray-600">
+
+  💡 **Instructor Note:** Replit works great for Streamlit apps and basic PyTorch training!
+
+</div>
+
+---
 layout: center
 class: text-center
 ---
@@ -2442,6 +2561,141 @@ streamlit run streamlit_app.py
     <h3 class="text-lg font-bold text-yellow-800 mb-3">⚡ Quick Start Tip</h3>
     <p class="text-sm">This is a working demo that loads real Uber data! Drag the hour slider to see pickup patterns throughout the day.</p>
   </div>
+</div>
+
+---
+layout: two-cols-title
+columns: is-6
+align: c-lt-ct
+zoom: 0.7
+---
+
+:: title ::
+
+<div class="text-2xl">
+
+# ☁️ Replit Tutorial: Clone & Run NYC Uber Demo
+
+</div>
+
+:: left ::
+
+<div class="ns-c-tight">
+
+## 🎯 Step-by-Step Guide
+
+### 1. Import from GitHub
+- Go to **Replit.com** and sign in
+- Click **"Create Repl"**
+- Choose **"Import from GitHub"**
+- Paste URL: `https://github.com/streamlit/demo-uber-nyc-pickups`
+- Click **"Import from GitHub"**
+
+### 2. Install Dependencies
+Open the **Shell** tab and run:
+```bash
+pip install streamlit pandas numpy pydeck
+```
+
+### 3. Configure Run Command
+- Click the **"Configure the run button"** link
+- Set run command to:
+```bash
+streamlit run streamlit_app.py
+```
+- Click **"Done"**
+
+### 4. Run the App
+- Click the **"Run"** button
+- Wait for Streamlit to start
+- Your app will open in a new tab!
+
+</div>
+
+::right::
+
+<div class="space-y-4">
+  
+  <div class="bg-purple-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-purple-800 mb-3">🔗 Try It Now!</h3>
+    <a href="https://replit.com" target="_blank" class="block w-full bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 text-center text-sm mb-3">
+      🚀 Open Replit
+    </a>
+    <div class="text-xs text-gray-600">
+      <strong>Repo URL:</strong><br/>
+      <code class="bg-gray-100 p-1 rounded">https://github.com/streamlit/demo-uber-nyc-pickups</code>
+    </div>
+  </div>
+
+  <div class="bg-green-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-green-800 mb-3">✅ Success Indicators</h3>
+    <ul class="text-sm space-y-1">
+      <li>□ Repository imports successfully</li>
+      <li>□ Dependencies install without errors</li>
+      <li>□ Run command configured correctly</li>
+      <li>□ Streamlit app launches in preview</li>
+      <li>□ Interactive map displays with data</li>
+    </ul>
+  </div>
+
+  <div class="bg-orange-50 p-4 rounded-lg">
+    <h3 class="text-lg font-bold text-orange-800 mb-3">🛠️ Troubleshooting</h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-white p-2 rounded">
+        <strong>Import fails?</strong><br/>
+        Make sure URL is correct and try again
+      </div>
+      <div class="bg-white p-2 rounded">
+        <strong>Dependencies fail?</strong><br/>
+        Run each pip install command separately
+      </div>
+      <div class="bg-white p-2 rounded">
+        <strong>App won't start?</strong><br/>
+        Check the run command is exactly:<br/>
+        <code>streamlit run streamlit_app.py</code>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+---
+layout: center
+class: text-center
+---
+
+# 🎉 Your First Streamlit App in Replit!
+
+<div class="grid grid-cols-2 gap-8 mt-8 max-w-4xl mx-auto">
+  
+  <div class="bg-blue-50 p-6 rounded-lg">
+    <h3 class="text-xl font-bold text-blue-800 mb-4">🗺️ What You Should See</h3>
+    <div class="text-sm space-y-2 text-left">
+      <div>• Interactive map of NYC with pickup points</div>
+      <div>• Time slider to filter by hour</div>
+      <div>• 3D visualization of pickup density</div>
+      <div>• Real-time data filtering</div>
+      <div>• Smooth animations and transitions</div>
+    </div>
+  </div>
+
+  <div class="bg-green-50 p-6 rounded-lg">
+    <h3 class="text-xl font-bold text-green-800 mb-4">🎮 Things to Try</h3>
+    <div class="text-sm space-y-2 text-left">
+      <div>• Move the hour slider (0-23)</div>
+      <div>• Watch pickup patterns change</div>
+      <div>• Notice airport vs downtown trends</div>
+      <div>• Check out the data table below</div>
+      <div>• Experiment with different views</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mt-8 text-lg text-gray-600">
+
+  🎯 **Next:** Try the same process with other Streamlit projects!
+
 </div>
 
 ---
@@ -4447,6 +4701,122 @@ zoom: 1.0
     <p class="text-xs font-semibold">🎯 Challenge:</p>
     <p class="text-xs">Generate 3 different avatar styles using various prompts!</p>
   </div>
+</div>
+
+---
+layout: center
+class: text-center
+---
+
+# 🎬 Generative AI in Action
+
+<div class="aspect-video w-full max-w-4xl mx-auto mt-8">
+  <iframe 
+    src="https://www.youtube.com/embed/G2fqAlgmoPo" 
+    class="w-full h-full rounded-lg shadow-lg"
+    frameborder="0" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+<div class="mt-6 text-base text-gray-600">
+
+  🎯 **Watch:** Deep dive into Generative AI technologies powering modern avatar creation
+
+</div>
+
+---
+layout: two-cols-title
+columns: is-6
+align: c-lt-lt
+zoom: 0.9
+---
+
+:: title ::
+
+<div class="text-2xl">
+
+# 🚀 AI Generation Playground
+
+</div>
+
+:: left ::
+
+<div class="ns-c-tight">
+
+## 🎬 OpenAI Sora - Video Generation
+Revolutionary **text-to-video** AI that creates stunning video content from simple descriptions.
+
+### ✨ Key Features
+- **Realistic Physics** - Understands real-world motion
+- **Complex Scenes** - Multiple characters and environments
+- **60-Second Videos** - Extended narrative capabilities
+- **High Resolution** - Professional quality output
+
+### 🎯 Perfect for Avatar Projects
+- **Character Animations** - Bring avatars to life
+- **Scene Creation** - Build immersive environments
+- **Storytelling** - Create avatar-driven narratives
+
+</div>
+
+::right::
+
+<div class="ns-c-tight">
+
+## 🎨 Google AI Studio - Image Generation
+Powerful **native image generation** with advanced prompting capabilities.
+
+### ✨ Key Features
+- **Gemini Integration** - Latest Google AI models
+- **Advanced Prompting** - Sophisticated control options
+- **Real-time Generation** - Fast iteration cycles
+- **Style Control** - Artistic and photorealistic options
+
+### 🎯 Avatar Applications
+- **Character Design** - Create unique avatar appearances
+- **Background Assets** - Generate environments and props
+- **Style Variations** - Explore different artistic approaches
+
+</div>
+
+---
+layout: center
+class: text-center
+---
+
+# 🎮 Interactive Demo Time!
+
+<div class="grid grid-cols-2 gap-8 mt-12 max-w-4xl mx-auto">
+  
+  <div class="bg-gradient-to-br from-purple-100 to-pink-100 p-8 rounded-xl shadow-lg">
+    <h3 class="text-2xl font-bold text-purple-800 mb-4">🎬 OpenAI Sora</h3>
+    <p class="text-base mb-6 text-gray-700">Create stunning videos from text descriptions</p>
+    <a href="https://sora.chatgpt.com/explore" target="_blank" class="inline-block w-full bg-purple-600 text-white px-6 py-4 rounded-lg hover:bg-purple-700 transition-colors font-semibold">
+      🚀 Try Sora Now
+    </a>
+    <div class="mt-4 text-sm text-gray-600">
+      <p><strong>Try:</strong> "A cute avatar character waving hello"</p>
+    </div>
+  </div>
+
+  <div class="bg-gradient-to-br from-blue-100 to-green-100 p-8 rounded-xl shadow-lg">
+    <h3 class="text-2xl font-bold text-blue-800 mb-4">🎨 Google AI Studio</h3>
+    <p class="text-base mb-6 text-gray-700">Generate images with advanced AI prompting</p>
+    <a href="https://aistudio.google.com/prompts/new_chat" target="_blank" class="inline-block w-full bg-blue-600 text-white px-6 py-4 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+      ✨ Launch AI Studio
+    </a>
+    <div class="mt-4 text-sm text-gray-600">
+      <p><strong>Try:</strong> "Professional avatar headshot, modern style"</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="mt-8 text-lg text-gray-600">
+
+  ⏰ **Activity:** Spend 10 minutes exploring both platforms and create your first AI-generated content!
+
 </div>
 
 ---
