@@ -4182,7 +4182,7 @@ class: text-center
 
 ---
 layout: two-cols-title
-columns: is-6
+columns: is-8
 align: c-lt-ct
 zoom: 1.0
 ---
@@ -4197,7 +4197,7 @@ zoom: 1.0
 
 :: left ::
 
-<div class="ns-c-tight">
+<div class="ns-c-supertight">
 
 ## 🔬 What Are Neural Networks?
 - **Inspired by Biology** - Mimic how brain neurons work
@@ -4205,10 +4205,10 @@ zoom: 1.0
 - **Layered Learning** - Build complex understanding step by step
 
 ## 🎯 How They Learn to Create Faces
-1. **Training Data** - Millions of face photos
-2. **Pattern Analysis** - Identify common facial features
-3. **Generation** - Create new, realistic combinations
-4. **Refinement** - Improve through feedback loops
+- **Training Data** - Millions of face photos
+- **Pattern Analysis** - Identify common facial features
+- **Generation** - Create new, realistic combinations
+- **Refinement** - Improve through feedback loops
 
 ## 🌟 Why This Matters for Avatars
 - **Photorealism** - Generate incredibly lifelike faces
@@ -4223,8 +4223,8 @@ zoom: 1.0
   <h3 class="text-xl font-bold text-orange-800 mb-4">🔥 PyTorch Playground</h3>
   <p class="text-sm text-orange-700 mb-4">Experience neural networks in action! Visualize how layers process information.</p>
   
-  <a href="https://playground.learnpytorch.io/" target="_blank" class="block w-full bg-orange-500 text-white px-4 py-3 rounded-lg hover:bg-orange-600 transition-colors mb-4">
-    🧠 Neural Network Visualizer
+  <a href="https://playground.tensorflow.org/" target="_blank" class="block w-full bg-orange-500 text-white px-4 py-3 rounded-lg hover:bg-orange-600 transition-colors mb-4">
+    🧠 TensorFlow Playground
   </a>
   
   <div class="space-y-2">
@@ -4244,9 +4244,9 @@ zoom: 1.0
 
 ---
 layout: two-cols-title
-columns: is-6
+columns: is-8
 align: c-lt-ct
-zoom: 1.0
+zoom: 0.8
 ---
 
 :: title ::
@@ -4259,7 +4259,7 @@ zoom: 1.0
 
 :: left ::
 
-<div class="ns-c-tight">
+<div class="ns-c-supertight">
 
 ## 🔢 Vector Mathematics in AI
 Neural networks are essentially **massive mathematical functions** that transform input vectors into output vectors.
@@ -4306,7 +4306,7 @@ Modify the TensorFlow Playground to see how changing weights affects the decisio
 layout: two-cols-title
 columns: is-8
 align: c-lt-ct
-zoom: 1.0
+zoom: 0.75
 ---
 
 :: title ::
@@ -4368,9 +4368,9 @@ Traditional neural networks treat images as flat lists of pixels. CNNs understan
 
 ---
 layout: two-cols-title
-columns: is-6
+columns: is-7
 align: c-lt-ct
-zoom: 1.0
+zoom: 0.7
 ---
 
 :: title ::
@@ -4383,7 +4383,7 @@ zoom: 1.0
 
 :: left ::
 
-<div class="ns-c-tight">
+<div class="ns-c-supertight">
 
 ## 🥊 The AI Art War: Generator vs Discriminator
 
@@ -4438,7 +4438,7 @@ zoom: 1.0
 layout: two-cols-title
 columns: is-8
 align: c-lt-ct
-zoom: 1.0
+zoom: 0.7
 ---
 
 :: title ::
@@ -4451,7 +4451,7 @@ zoom: 1.0
 
 :: left ::
 
-<div class="ns-c-tight">
+<div class="ns-c-supertight">
 
 ## 🌊 The Diffusion Process: From Noise to Art
 
@@ -4491,33 +4491,33 @@ zoom: 1.0
   <h3 class="text-lg font-bold mb-3">🔍 Diffusion Step-by-Step</h3>
   
   <div class="space-y-3">
-    <div class="bg-white p-3 rounded border">
-      <h4 class="font-bold text-sm text-green-700">Step 0: Original Image</h4>
-      <div class="bg-green-100 h-8 rounded mt-2 flex items-center justify-center text-xs">
-        Clear, detailed image
-      </div>
-    </div>
-    
-    <div class="bg-white p-3 rounded border">
-      <h4 class="font-bold text-sm text-blue-700">Step 250: Light Noise</h4>
-      <div class="bg-blue-100 h-8 rounded mt-2 flex items-center justify-center text-xs">
-        Slightly blurry, still recognizable
-      </div>
-    </div>
-    
-    <div class="bg-white p-3 rounded border">
-      <h4 class="font-bold text-sm text-yellow-700">Step 500: Medium Noise</h4>
-      <div class="bg-yellow-100 h-8 rounded mt-2 flex items-center justify-center text-xs">
-        Very blurry, hard to recognize
-      </div>
-    </div>
-    
-    <div class="bg-white p-3 rounded border">
-      <h4 class="font-bold text-sm text-red-700">Step 1000: Pure Noise</h4>
-      <div class="bg-red-100 h-8 rounded mt-2 flex items-center justify-center text-xs">
-        Complete static, no structure
-      </div>
-    </div>
+<div class="bg-white p-3 rounded border">
+  <h4 class="font-bold text-sm text-green-700">Step 0: Original Image</h4>
+  <div class="bg-green-100 h-8 rounded mt-2 flex items-center justify-center text-xs">
+    Clear, detailed image
+  </div>
+</div>
+
+<div class="bg-white p-3 rounded border">
+  <h4 class="font-bold text-sm text-blue-700">Step 250: Light Noise</h4>
+  <div class="bg-blue-100 h-8 rounded mt-2 flex items-center justify-center text-xs">
+    Slightly blurry, still recognizable
+  </div>
+</div>
+
+<div class="bg-white p-3 rounded border">
+  <h4 class="font-bold text-sm text-yellow-700">Step 500: Medium Noise</h4>
+  <div class="bg-yellow-100 h-8 rounded mt-2 flex items-center justify-center text-xs">
+    Very blurry, hard to recognize
+  </div>
+</div>
+
+<div class="bg-white p-3 rounded border">
+  <h4 class="font-bold text-sm text-red-700">Step 1000: Pure Noise</h4>
+  <div class="bg-red-100 h-8 rounded mt-2 flex items-center justify-center text-xs">
+    Complete static, no structure
+  </div>
+</div>
   </div>
   
   <div class="mt-4 p-3 bg-purple-100 rounded">
@@ -4528,9 +4528,9 @@ zoom: 1.0
 
 ---
 layout: two-cols-title
-columns: is-6
+columns: is-8
 align: c-lt-ct
-zoom: 1.0
+zoom: 0.75
 ---
 
 :: title ::
@@ -4543,7 +4543,7 @@ zoom: 1.0
 
 :: left ::
 
-<div class="ns-c-tight">
+<div class="ns-c-supertight">
 
 ## 👁️ What is Attention?
 Attention allows neural networks to **focus on relevant parts** of the input when making predictions.
@@ -4628,20 +4628,16 @@ Attention allows neural networks to **focus on relevant parts** of the input whe
 layout: two-cols-title
 columns: is-8
 align: c-lt-ct
-zoom: 1.0
+zoom: 0.8
 ---
 
 :: title ::
 
-<div class="text-2xl">
-
 # 🎨 Generative AI: The Avatar Creation Engine
-
-</div>
 
 :: left ::
 
-<div class="ns-c-tight">
+<div class="ns-c-supertight">
 
 ## 🌟 Diffusion Models: The Magic Behind Avatar Creation
 
@@ -4821,22 +4817,18 @@ class: text-center
 
 ---
 layout: two-cols-title
-columns: is-6
-align: c-lt-ct
-zoom: 1.0
+columns: is-8
+align: c-lt-lt
+zoom: 0.7
 ---
 
 :: title ::
 
-<div class="text-2xl">
-
 # 🎭 Facial Landmark Detection: The Foundation
-
-</div>
 
 :: left ::
 
-<div class="ns-c-tight">
+<div class="ns-c-supertight">
 
 ## 📍 What Are Facial Landmarks?
 Facial landmarks are **specific points** on a face that AI can detect and track with mathematical precision.
@@ -4887,7 +4879,7 @@ Processing 68 landmarks at 30 FPS requires calculating 4,080 coordinates per sec
 layout: two-cols-title
 columns: is-8
 align: c-lt-ct
-zoom: 1.0
+zoom: 0.65
 ---
 
 :: title ::
@@ -4900,29 +4892,32 @@ zoom: 1.0
 
 :: left ::
 
-<div class="ns-c-tight">
+<div class="ns-c-supertight">
 
 ## 🗣️ What Are Visemes?
 **Visemes** are the visual equivalents of **phonemes** (speech sounds). They represent distinct mouth shapes that correspond to specific sounds.
 
-### 📊 The 15 English Visemes
-1. **SIL** - Silence (mouth closed)
-2. **PP** - P, B, M sounds (lips together)
-3. **FF** - F, V sounds (lower lip to upper teeth)
-4. **TH** - Th sounds (tongue between teeth)
-5. **DD** - T, D, K, G sounds (tongue to roof)
-6. **kk** - K, G sounds (back of tongue up)
-7. **CH** - Ch, J, Sh sounds (lips forward)
-8. **SS** - S, Z sounds (tongue groove)
-9. **nn** - N, L sounds (tongue to front)
-10. **RR** - R sound (tongue curl)
-11. **AA** - A sounds (mouth wide open)
-12. **E** - E sounds (slight smile)
-13. **I** - I sounds (mouth narrow)
-14. **O** - O sounds (lips round)
-15. **U** - U sounds (lips pursed)
+## 📊 The 15 English Visemes
 
-### 🔄 Speech Processing Pipeline
+<div class="grid grid-cols-2 gap-x-4 gap-y-1 text-sm">
+  <div>1. <strong>SIL</strong> - Silence (mouth closed)</div>
+  <div>2. <strong>PP</strong> - P, B, M sounds (lips together)</div>
+  <div>3. <strong>FF</strong> - F, V sounds (lower lip to upper teeth)</div>
+  <div>4. <strong>TH</strong> - Th sounds (tongue between teeth)</div>
+  <div>5. <strong>DD</strong> - T, D, K, G sounds (tongue to roof)</div>
+  <div>6. <strong>kk</strong> - K, G sounds (back of tongue up)</div>
+  <div>7. <strong>CH</strong> - Ch, J, Sh sounds (lips forward)</div>
+  <div>8. <strong>SS</strong> - S, Z sounds (tongue groove)</div>
+  <div>9. <strong>nn</strong> - N, L sounds (tongue to front)</div>
+  <div>10. <strong>RR</strong> - R sound (tongue curl)</div>
+  <div>11. <strong>AA</strong> - A sounds (mouth wide open)</div>
+  <div>12. <strong>E</strong> - E sounds (slight smile)</div>
+  <div>13. <strong>I</strong> - I sounds (mouth narrow)</div>
+  <div>14. <strong>O</strong> - O sounds (lips round)</div>
+  <div>15. <strong>U</strong> - U sounds (lips pursed)</div>
+</div>
+
+## 🔄 Speech Processing Pipeline
 1. **Audio Analysis** - Extract phonemes from speech
 2. **Phoneme-to-Viseme** - Map sounds to mouth shapes
 3. **Temporal Alignment** - Sync timing with audio
@@ -4994,9 +4989,9 @@ zoom: 1.0
 
 ---
 layout: two-cols-title
-columns: is-6
+columns: is-8
 align: c-lt-ct
-zoom: 1.0
+zoom: 0.6
 ---
 
 :: title ::
@@ -5009,7 +5004,7 @@ zoom: 1.0
 
 :: left ::
 
-<div class="ns-c-tight">
+<div class="ns-c-supertight">
 
 ## 🎵 The TTS Revolution: From Robotic to Human
 
@@ -5047,69 +5042,83 @@ zoom: 1.0
 
 ::right::
 
+<div class="grid grid-cols-2 gap-4">
+
 <div class="space-y-4">
-  <div class="bg-orange-50 p-4 rounded-lg">
-    <h3 class="text-lg font-bold text-orange-800 mb-3">🌊 Audio Processing Pipeline</h3>
-    <div class="space-y-3">
-      <div class="bg-white p-3 rounded border-l-4 border-blue-500">
-        <h4 class="font-bold text-sm text-center">1. Text Analysis</h4>
-        <p class="text-xs">Phoneme extraction, stress patterns</p>
-      </div>
-      <div class="bg-white p-3 rounded border-l-4 border-green-500">
-        <h4 class="font-bold text-sm text-center">2. Mel-Spectrogram</h4>
-        <p class="text-xs">Text → frequency representation</p>
-      </div>
-      <div class="bg-white p-3 rounded border-l-4 border-yellow-500">
-        <h4 class="font-bold text-sm text-center">3. Vocoder</h4>
-        <p class="text-xs">Mel-spec → audio waveform</p>
-      </div>
-      <div class="bg-white p-3 rounded border-l-4 border-purple-500">
-        <h4 class="font-bold text-sm text-center">4. Audio Output</h4>
-        <p class="text-xs">High-quality speech synthesis</p>
-      </div>
+<div class="bg-orange-50 p-4 rounded-lg">
+  <h3 class="text-lg font-bold text-orange-800 mb-3">🌊 Audio Processing Pipeline</h3>
+  <div class="space-y-2">
+    <div class="bg-white p-2 rounded border-l-4 border-blue-500">
+      <h4 class="font-bold text-sm text-center">1. Text Analysis</h4>
+      <p class="text-xs">Phoneme extraction, stress patterns</p>
+    </div>
+    <div class="bg-white p-2 rounded border-l-4 border-green-500">
+      <h4 class="font-bold text-sm text-center">2. Mel-Spectrogram</h4>
+      <p class="text-xs">Text → frequency representation</p>
+    </div>
+    <div class="bg-white p-2 rounded border-l-4 border-yellow-500">
+      <h4 class="font-bold text-sm text-center">3. Vocoder</h4>
+      <p class="text-xs">Mel-spec → audio waveform</p>
+    </div>
+    <div class="bg-white p-2 rounded border-l-4 border-purple-500">
+      <h4 class="font-bold text-sm text-center">4. Audio Output</h4>
+      <p class="text-xs">High-quality speech synthesis</p>
     </div>
   </div>
-  
-  <div class="bg-blue-50 p-4 rounded-lg">
-    <h3 class="text-lg font-bold text-blue-800 mb-3">📊 Spectrogram Visualization</h3>
-    <div class="bg-white p-3 rounded">
-      <div class="h-20 bg-gradient-to-r from-blue-900 via-blue-500 to-blue-100 rounded mb-2"></div>
-      <div class="text-xs text-center space-y-1">
-        <div>Frequency (Hz) → Vertical Axis</div>
-        <div>Time (seconds) → Horizontal Axis</div>
-        <div>Intensity → Color Brightness</div>
-      </div>
+</div>
+
+<div class="bg-green-50 p-4 rounded-lg">
+  <h3 class="text-lg font-bold text-green-800 mb-3">🎤 Voice Quality Metrics</h3>
+  <div class="text-xs space-y-2">
+    <div class="flex justify-between">
+      <span>Naturalness (MOS):</span>
+      <span>4.8/5.0</span>
+    </div>
+    <div class="flex justify-between">
+      <span>Intelligibility:</span>
+      <span>99.2%</span>
+    </div>
+    <div class="flex justify-between">
+      <span>Generation Speed:</span>
+      <span>Real-time</span>
+    </div>
+    <div class="flex justify-between">
+      <span>Voice Similarity:</span>
+      <span>96.5%</span>
     </div>
   </div>
-  
-  <div class="bg-green-50 p-4 rounded-lg">
-    <h3 class="text-lg font-bold text-green-800 mb-3">🎤 Voice Quality Metrics</h3>
-    <div class="text-xs space-y-2">
-      <div class="flex justify-between">
-        <span>Naturalness (MOS):</span>
-        <span>4.8/5.0</span>
-      </div>
-      <div class="flex justify-between">
-        <span>Intelligibility:</span>
-        <span>99.2%</span>
-      </div>
-      <div class="flex justify-between">
-        <span>Generation Speed:</span>
-        <span>Real-time</span>
-      </div>
-      <div class="flex justify-between">
-        <span>Voice Similarity:</span>
-        <span>96.5%</span>
-      </div>
-    </div>
+</div>
+</div>
+
+<div class="bg-blue-50 p-4 rounded-lg">
+<h3 class="text-lg font-bold text-blue-800 mb-3">📊 Spectrogram Visualization</h3>
+<div class="bg-white p-3 rounded">
+  <div class="h-32 bg-gradient-to-r from-blue-900 via-blue-500 to-blue-100 rounded mb-2"></div>
+  <div class="text-xs text-center space-y-1">
+    <div>Frequency (Hz) → Vertical Axis</div>
+    <div>Time (seconds) → Horizontal Axis</div>
+    <div>Intensity → Color Brightness</div>
   </div>
+</div>
+
+<div class="mt-4 bg-white p-3 rounded border">
+  <h4 class="font-bold text-sm text-center mb-2">Key Features</h4>
+  <div class="text-xs space-y-1">
+    <div>• Mel-scale frequency warping</div>
+    <div>• 80-dimensional feature vectors</div>
+    <div>• 12.5ms frame shift</div>
+    <div>• Fundamental frequency tracking</div>
+  </div>
+</div>
+</div>
+
 </div>
 
 ---
 layout: two-cols-title
 columns: is-8
-align: c-lt-ct
-zoom: 1.0
+align: c-lt-lt
+zoom: 0.6
 ---
 
 :: title ::
@@ -5122,7 +5131,7 @@ zoom: 1.0
 
 :: left ::
 
-<div class="ns-c-tight">
+<div class="ns-c-supertight">
 
 ## 🎭 From 2D Photos to 3D Models
 
@@ -5160,6 +5169,8 @@ Modern approaches use **neural networks** to directly predict 3D parameters from
 
 ::right::
 
+<div class="ns-c-supertight">
+
 ### 🎭 3D Face Components
 
 **Geometry (Shape)**
@@ -5191,24 +5202,23 @@ Total: 156 parameters control entire face!
 - [🎭 3D Face Reconstruction](https://huggingface.co/spaces/radames/Real-Time-Latent-Consistency-Model)
 - [🎬 Face2Face Real-time](https://niessnerlab.org/projects/thies2016face2face.html)
 
+</div>
+
 ---
 layout: two-cols-title
-columns: is-6
+columns: is-8
 align: c-lt-ct
-zoom: 1.0
+zoom: 0.55
 ---
 
 :: title ::
 
-<div class="text-2xl">
-
 # 🎨 Neural Rendering: From 3D to Photorealistic
 
-</div>
 
 :: left ::
 
-<div class="ns-c-tight">
+<div class="ns-c-supertight">
 
 ## 🖼️ Traditional vs Neural Rendering
 
@@ -5309,7 +5319,7 @@ Where neural networks learn the bidirectional reflectance distribution function 
 layout: two-cols-title
 columns: is-8
 align: c-lt-ct
-zoom: 1.0
+zoom: 0.6
 ---
 
 :: title ::
@@ -5322,7 +5332,7 @@ zoom: 1.0
 
 :: left ::
 
-<div class="ns-c-tight">
+<div class="ns-c-supertight">
 
 ## 🎬 The Challenge of Video Generation
 Creating realistic avatar videos requires more than just good single frames - we need **temporal consistency**.
@@ -5364,6 +5374,8 @@ Creating realistic avatar videos requires more than just good single frames - we
 
 ::right::
 
+<div class="ns-c-supertight">
+
 ### 🎞️ Temporal Processing Methods
 
 **Frame-by-Frame**
@@ -5399,24 +5411,22 @@ L_smooth = ||∇_t I||₂
 - Perceptual Quality: 0.023 LPIPS
 - Temporal FVD: 12.4
 
+</div>
+
 ---
 layout: two-cols-title
-columns: is-6
-align: c-lt-ct
-zoom: 1.0
+columns: is-8
+align: c-lt-lt
+zoom: 0.6
 ---
 
 :: title ::
 
-<div class="text-2xl">
-
 # 🔧 Real-time Processing Optimization
-
-</div>
 
 :: left ::
 
-<div class="ns-c-tight">
+<div class="ns-c-supertight">
 
 ## ⚡ The Real-time Challenge
 Avatar generation must be **fast enough for live interaction** - ideally under 100ms latency for natural conversation.
@@ -5459,6 +5469,8 @@ Avatar generation must be **fast enough for live interaction** - ideally under 1
 
 ::right::
 
+<div class="ns-c-supertight">
+
 ### ⚡ Performance Metrics
 
 **Latency Requirements**
@@ -5486,24 +5498,23 @@ Avatar generation must be **fast enough for live interaction** - ideally under 1
 - [🚀 TensorRT Optimization](https://developer.nvidia.com/tensorrt)
 - [⚡ ONNX Runtime](https://onnxruntime.ai/)
 
+</div>
+
 ---
 layout: two-cols-title
 columns: is-8
-align: c-lt-ct
-zoom: 1.0
+align: c-lt-lt
+zoom: 0.6
 ---
 
 :: title ::
 
-<div class="text-2xl">
-
 # 🎯 Quality Assessment and Metrics
 
-</div>
 
 :: left ::
 
-<div class="ns-c-tight">
+<div class="ns-c-supertight">
 
 ## 📊 How Do We Measure Avatar Quality?
 Evaluating AI-generated avatars requires multiple metrics measuring different aspects of quality.
@@ -5544,6 +5555,8 @@ Evaluating AI-generated avatars requires multiple metrics measuring different as
 
 ::right::
 
+<div class="ns-c-supertight">
+
 ### 📈 Quality Spectrum
 
 **Poor Quality (MOS: 1-2)**
@@ -5577,6 +5590,8 @@ Evaluating AI-generated avatars requires multiple metrics measuring different as
 - SSIM (Best): 0.97
 - LPIPS (Best): 0.08
 - Real-time FPS: 30+ fps
+
+</div>
 
 ---
 layout: center
@@ -5614,20 +5629,17 @@ class: text-center
 layout: two-cols-title
 columns: is-8
 align: c-lt-ct
-zoom: 1.0
+zoom: 0.7
 ---
 
 :: title ::
 
-<div class="text-2xl">
-
 # 🔌 Avatar API Architecture & Setup
 
-</div>
 
 :: left ::
 
-<div class="ns-c-tight">
+<div class="ns-c-supertight">
 
 ## 🏗️ API Service Overview
 Modern avatar platforms provide RESTful APIs that handle the complex AI processing behind the scenes.
@@ -5667,7 +5679,7 @@ headers = {
   <h3 class="text-lg font-bold mb-3">🧪 Live API Explorer</h3>
   
   <div class="space-y-3 mb-4">
-    <a href="https://docs.heygen.com/reference/overview" target="_blank" class="block w-full bg-blue-500 text-white px-3 py-2 text-sm text-center rounded hover:bg-blue-600">
+    <a href="https://docs.heygen.com/docs/quick-start" target="_blank" class="block w-full bg-blue-500 text-white px-3 py-2 text-sm text-center rounded hover:bg-blue-600">
       📖 HeyGen API Docs
     </a>
     <a href="https://www.d-id.com/api/" target="_blank" class="block w-full bg-green-500 text-white px-3 py-2 text-sm text-center rounded hover:bg-green-600">
@@ -5701,20 +5713,16 @@ headers = {
 layout: two-cols-title
 columns: is-6
 align: c-lt-ct
-zoom: 1.0
+zoom: 0.7
 ---
 
 :: title ::
 
-<div class="text-2xl">
-
 # 💻 Google Colab: Avatar Integration Playground
-
-</div>
 
 :: left ::
 
-<div class="ns-c-tight">
+<div class="ns-c-supertight">
 
 ## 🚀 Setting Up Your Development Environment
 
@@ -5788,6 +5796,7 @@ Store your keys securely using Colab secrets:
 ---
 layout: center
 class: text-center
+zoom: 0.8
 ---
 
 # 🎨 Avatar Customization Workshop
@@ -5843,20 +5852,16 @@ class: text-center
 layout: two-cols-title
 columns: is-6
 align: c-lt-ct
-zoom: 1.0
+zoom: 0.6
 ---
 
 :: title ::
 
-<div class="text-2xl">
-
 # 🔄 Handling Asynchronous Video Generation
-
-</div>
 
 :: left ::
 
-<div class="ns-c-tight">
+<div class="ns-c-supertight">
 
 ## ⏱️ Why Avatar Generation Takes Time
 - **Complex AI Processing** - Multiple neural networks involved
@@ -5936,6 +5941,7 @@ def generate_avatar_async(text, avatar_id):
 ---
 layout: center
 class: text-center
+zoom: 0.7
 ---
 
 # 🧪 Hands-On Challenge: Build Your First Avatar!
@@ -5988,6 +5994,7 @@ class: text-center
 ---
 layout: center
 class: text-center
+zoom: 0.8
 ---
 
 # 🎉 Class 3 Achievement Unlocked!
@@ -6036,14 +6043,14 @@ background: "#f3e5f5"
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lt-ct
-zoom: 0.8
+align: c-lt-lt
+zoom: 0.7
 ---
 
 :: title ::
-<div class="text-2xl">
+
 # 📈 Market Analysis & Business Opportunities
-</div>
+
 
 :: left ::
 <div class="ns-c-tight">
@@ -6107,15 +6114,15 @@ zoom: 0.8
 
 ---
 layout: two-cols-title
-columns: is-4
+columns: is-6
 align: c-lt-ct
-zoom: 0.8
+zoom: 0.6
 ---
 
 :: title ::
-<div class="text-2xl">
+
 # 🏢 Industry Ecosystem & Major Players
-</div>
+
 
 :: left ::
 <div class="ns-c-tight">
@@ -6203,14 +6210,14 @@ zoom: 0.8
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lt-ct
-zoom: 0.8
+align: c-lt-lt
+zoom: 0.6
 ---
 
 :: title ::
-<div class="text-2xl">
+
 # 🚀 Advanced Avatar Technologies
-</div>
+
 
 :: left ::
 <div class="ns-c-tight">
@@ -6283,14 +6290,14 @@ zoom: 0.8
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lt-ct
-zoom: 0.8
+align: c-lt-lt
+zoom: 0.6
 ---
 
 :: title ::
-<div class="text-2xl">
+
 # 🌍 Real-World Applications Deep Dive
-</div>
+
 
 :: left ::
 <div class="ns-c-tight">
@@ -6364,14 +6371,14 @@ zoom: 0.8
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lt-ct
-zoom: 0.8
+align: c-lt-lt
+zoom: 0.6
 ---
 
 :: title ::
-<div class="text-2xl">
+
 # ⚖️ Ethics & Responsible Development
-</div>
+
 
 :: left ::
 <div class="ns-c-tight">
@@ -6437,15 +6444,12 @@ zoom: 0.8
 - **Regular Audits**: Continuous bias and safety testing
 - **Education**: User awareness programs
 
-<div class="mt-4 bg-red-100 p-4 rounded-lg">
-<strong>⚠️ Critical Principle:</strong> "With great avatar power comes great responsibility" - prioritize human dignity and consent
-</div>
-
 </div>
 
 ---
 layout: center
 class: text-center
+zoom: 0.6
 ---
 
 # 🔮 Future Trends & Emerging Opportunities
