@@ -127,7 +127,7 @@ class: text-center
   <button @click="$slidev.nav.go(49)" class="bg-green-500 text-white px-6 py-4 rounded-lg hover:bg-green-600 transition-colors">
     🌐 Class 2: Web Apps & PyTorch
   </button>
-  <button @click="$slidev.nav.go(86)" class="bg-purple-500 text-white px-6 py-4 rounded-lg hover:bg-purple-600 transition-colors">
+  <button @click="$slidev.nav.go(90)" class="bg-purple-500 text-white px-6 py-4 rounded-lg hover:bg-purple-600 transition-colors">
     🎭 Class 3: Avatar Technology
   </button>
   <button @click="$slidev.nav.go(117)" class="bg-orange-500 text-white px-6 py-4 rounded-lg hover:bg-orange-600 transition-colors">
@@ -4869,7 +4869,7 @@ Face vector = [x₁, y₁, x₂, y₂, ..., x₆₈, y₆₈] = 136 numbers
 - **Mouth**: 20 points (48-67)
 
 ### 🔬 Interactive Demos
-- [📍 Face Landmark Detector](https://huggingface.co/spaces/asdasdasdasd/Face-Landmark)
+- [📍 Face Landmark Detector](https://huggingface.co/spaces/Akjava/mediapipe-68-points-facial-landmark)
 - [👁️ MediaPipe Face Mesh](https://mediapipe-studio.webapps.google.com/studio/demo/face_landmarker)
 
 ### 🧮 Math Fact:
