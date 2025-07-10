@@ -130,7 +130,7 @@ class: text-center
   <button @click="$slidev.nav.go(90)" class="bg-purple-500 text-white px-6 py-4 rounded-lg hover:bg-purple-600 transition-colors">
     🎭 Class 3: Avatar Technology
   </button>
-  <button @click="$slidev.nav.go(117)" class="bg-orange-500 text-white px-6 py-4 rounded-lg hover:bg-orange-600 transition-colors">
+  <button @click="$slidev.nav.go(124)" class="bg-orange-500 text-white px-6 py-4 rounded-lg hover:bg-orange-600 transition-colors">
     ⚡ Class 4: Integration & Features
   </button>
   <button @click="$slidev.nav.go(134)" class="bg-red-500 text-white px-6 py-4 rounded-lg hover:bg-red-600 transition-colors">
@@ -4981,7 +4981,7 @@ zoom: 0.65
   
   <div class="bg-green-50 p-4 rounded-lg">
     <h3 class="text-lg font-bold text-green-800 mb-3">🧪 Live Speech Analysis</h3>
-    <a href="https://huggingface.co/spaces/facebook/wav2vec2-base-960h" target="_blank" class="block w-full bg-green-500 text-white px-3 py-2 text-sm text-center rounded hover:bg-green-600">
+    <a href="https://huggingface.co/spaces/openai/whisper" target="_blank" class="block w-full bg-green-500 text-white px-3 py-2 text-sm text-center rounded hover:bg-green-600">
       🎤 Speech-to-Phoneme Demo
     </a>
   </div>
@@ -5199,8 +5199,9 @@ Total: 156 parameters control entire face!
 ```
 
 ### 🧪 3D Face Demos
-- [🎭 3D Face Reconstruction](https://huggingface.co/spaces/radames/Real-Time-Latent-Consistency-Model)
-- [🎬 Face2Face Real-time](https://niessnerlab.org/projects/thies2016face2face.html)
+- [🎭 3D Mesh Reconstruction](https://huggingface.co/spaces/stabilityai/stable-fast-3d)
+- [🎬 Face Dancer](https://huggingface.co/spaces/felixrosberg/face-swap)
+- [🎭 Live Portrait](https://huggingface.co/spaces/KwaiVGI/LivePortrait)
 
 </div>
 
@@ -6543,41 +6544,60 @@ class: text-center
 
 ### 🎯 What We'll Accomplish Today
 
-**Hour 1: Application Architecture**
-- Connect all your components together
-- Build a seamless user experience  
-- Test the complete messaging flow
-
-**Hour 2: Advanced Features**
-- Add conversation memory
-- Implement error handling
-- Polish the user interface
-- Deploy your final application
+<div class="grid grid-cols-2 gap-8 mt-6">
+  <div>
+    <h4 class="font-bold text-lg mb-3">Hour 1: Application Architecture</h4>
+    <ul class="text-left space-y-2">
+      <li>Connect all your components together</li>
+      <li>Build a seamless user experience</li>
+      <li>Test the complete messaging flow</li>
+    </ul>
+  </div>
+  <div>
+    <h4 class="font-bold text-lg mb-3">Hour 2: Advanced Features</h4>
+    <ul class="text-left space-y-2">
+      <li>Add conversation memory</li>
+      <li>Implement error handling</li>
+      <li>Polish the user interface</li>
+      <li>Deploy your final application</li>
+    </ul>
+  </div>
+</div>
 
 ### 🚀 By the End of Today:
 You'll have a **fully functional AI Avatar Chat App** ready to show your friends and family!
+
+---
+layout: quote
+color: sky-light
+quotesize: text-2xl
+authorsize: text-l
+author: "于丹"
+---
+
+人生没有白走的路，每一步都算数。你今天读过的书、走过的路、流过的汗水，最后都会沉淀成你生命里的光。青春不是用来挥霍的，而是用来积蓄力量的。真正的强大，不是你能打败别人，而是你能战胜自己，哪怕前路很远很难，只要你坚持下去，就一定会看到不一样的风景。
+
 
 ---
 layout: section
 background: "#f0f9ff"
 ---
 
-# 🎭 One-Shot Talking Face Generation
-## Making Photos Come Alive with AI
+# One-Shot Talking Face Generation
+## Let Photos Come Alive with AI
 
-Advanced Avatar Animation Technology
 
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lt-ct
+align: c-lt-lt
 zoom: 1.0
 ---
 
 :: title ::
-<div class="text-2xl">
+
 # 🎬 What is One-Shot Talking Face Generation?
-</div>
+
 
 :: left ::
 <div class="ns-c-tight">
@@ -6591,36 +6611,29 @@ zoom: 1.0
 - Creates **lifelike lip-sync** and natural expressions
 - **No training data** needed for new faces
 
+</div>
+
+:: right ::
 ## Real-World Impact
 - Virtual assistants and chatbots
 - Content creation and entertainment  
 - Educational applications
 - Accessibility tools for communication
 
-</div>
-
-:: right ::
-<div class="flex flex-col gap-4 items-center mt-8">
-  <img src="/images/image36.png" class="rounded max-h-64 w-full object-contain" />
-  <div class="text-center text-sm text-gray-600">
-    From static photo to animated talking face
-  </div>
-</div>
-
 ---
 layout: two-cols-title
 columns: is-6
 align: c-lt-ct
-zoom: 1.0
+zoom: 0.85
 ---
 
 :: title ::
-<div class="text-2xl">
+
 # 🧠 The Technology Behind the Magic
-</div>
+
 
 :: left ::
-<div class="ns-c-tight">
+<div class="ns-c-supertight">
 
 ## Deep Learning Models
 - **Audio-Visual Correlation Learning**
@@ -6660,9 +6673,9 @@ zoom: 1.0
 
 ---
 layout: two-cols-title
-columns: is-4
+columns: is-6
 align: c-lm-ct
-zoom: 1.0
+zoom: 0.9
 ---
 
 :: title ::
@@ -6673,7 +6686,7 @@ zoom: 1.0
 </div>
 
 :: left ::
-<div class="ns-c-tight">
+<div class="ns-c-supertight">
 
 ## Setup Process
 1. **Clone the repository**
@@ -6733,16 +6746,16 @@ output.save('talking_avatar.mp4')
 layout: two-cols-title
 columns: is-6
 align: c-lm-ct
-zoom: 1.0
+zoom: 0.8
 ---
 
 :: title ::
-<div class="text-2xl">
+
 # 🚀 Applications & Future Potential
-</div>
+
 
 :: left ::
-<div class="ns-c-tight">
+<div class="ns-c-supertight">
 
 ## Current Applications
 - **Virtual Influencers** and content creation
@@ -6793,8 +6806,8 @@ zoom: 1.0
 ---
 layout: two-cols-title
 columns: is-6
-align: c-lt-ct
-zoom: 1.0
+align: c-lt-lt
+zoom: 0.75
 ---
 
 :: title ::
@@ -6802,6 +6815,8 @@ zoom: 1.0
 # 🏗️ Application Architecture Review
 
 :: left ::
+
+<div class="ns-c-supertight">
 
 ## 🔄 The Complete Data Flow
 
@@ -6831,7 +6846,11 @@ zoom: 1.0
 - **User Experience**: Keep users engaged during processing
 - **Memory Management**: Long conversations use lots of data
 
+</div>
+
 :: right ::
+
+<div class="ns-c-supertight">
 
 ### 🧪 Interactive Architecture Explorer
 
@@ -6862,16 +6881,18 @@ zoom: 1.0
 
 **Challenge:** What happens if the avatar API is down?
 
+</div>
+
 ---
 layout: two-cols-title
 columns: is-8
 align: c-lt-ct
-zoom: 1.0
+zoom: 0.6
 ---
 
 :: title ::
 
-# 💻 Hands-On: Building the Integration Layer
+# 💻 Hands-On: Building the Integration Layer (Part 1)
 
 :: left ::
 
@@ -6922,19 +6943,6 @@ def handle_avatar_failure(self, text_response):
     }
 ```
 
-### Progressive Enhancement Strategy
-1. **Basic**: Text-only chat (always works)
-2. **Good**: Text + static avatar image  
-3. **Best**: Text + animated avatar video
-
-## 🚀 Step 3: Optimize User Experience
-
-### Loading States That Don't Suck
-- ✅ Show immediate text response
-- ✅ Animated "avatar thinking..." indicator
-- ✅ Progress bar for video generation
-- ✅ Estimated time remaining
-
 :: right ::
 
 ### 🧪 Live Coding Session
@@ -6942,6 +6950,11 @@ def handle_avatar_failure(self, text_response):
 **Follow Along in Google Colab:**
 
 **[🚀 Open Integration Colab Notebook](https://colab.research.google.com/)**
+
+### Progressive Enhancement Strategy
+1. **Basic**: Text-only chat (always works)
+2. **Good**: Text + static avatar image  
+3. **Best**: Text + animated avatar video
 
 ### 🎯 Integration Checklist
 
@@ -6951,6 +6964,51 @@ def handle_avatar_failure(self, text_response):
 - [ ] Streamlit UI displays both text and video
 - [ ] Error handling works when APIs fail
 - [ ] Conversation history persists
+
+### 🚀 What's Next?
+
+In the next slide, we'll optimize the user experience with smart loading states and professional debugging techniques.
+
+---
+layout: two-cols-title
+columns: is-6
+align: c-lt-ct
+zoom: 0.8
+---
+
+:: title ::
+
+# 💻 Integration Layer (Part 2): UX & Testing
+
+:: left ::
+
+<div class="ns-c-supertight">
+
+## 🚀 Step 3: Optimize User Experience
+
+### Loading States That Don't Suck
+- ✅ Show immediate text response
+- ✅ Animated "avatar thinking..." indicator
+- ✅ Progress bar for video generation
+- ✅ Estimated time remaining
+
+### 💡 Pro Tips
+
+**Performance Optimization:**
+- Cache avatar videos for repeated responses
+- Preload common avatar styles
+- Use WebSocket for real-time status updates
+
+**User Experience:**  
+- Let users interrupt long avatar generations
+- Provide conversation export functionality
+- Add keyboard shortcuts for power users
+
+</div>
+
+:: right ::
+
+<div class="ns-c-supertight">
 
 ### 🎮 Debug Like a Pro
 
@@ -6973,24 +7031,31 @@ def handle_avatar_failure(self, text_response):
 2. **[⚡ Response Time Monitor](https://httpbin.org/delay/2)**  
 3. **[💥 Error Simulation](https://httpbin.org/status/500)**
 
-### 💡 Pro Tips
+### 🎯 Testing Checklist
 
-**Performance Optimization:**
-- Cache avatar videos for repeated responses
-- Preload common avatar styles
-- Use WebSocket for real-time status updates
+**Before You Deploy:**
+- [ ] Test with slow internet connection
+- [ ] Test with API failures
+- [ ] Test with long conversations
+- [ ] Test avatar generation timeout
+- [ ] Test memory usage over time
 
-**User Experience:**  
-- Let users interrupt long avatar generations
-- Provide conversation export functionality
-- Add keyboard shortcuts for power users
+</div>
 
 ---
-layout: center
-class: text-center
+layout: two-cols-title
+columns: is-6
+align: c-lt-ct
+zoom: 0.7
 ---
+
+:: title ::
 
 # 🧪 Hands-On Lab: Complete Integration Challenge
+
+:: left ::
+
+<div class="ns-c-supertight">
 
 ## 45-Minute Build Challenge! ⏱️
 
@@ -7019,6 +7084,12 @@ Build a complete avatar chat system that handles:
 - Conversation memory and export
 - Custom avatar style selection
 
+</div>
+
+:: right ::
+
+<div class="ns-c-tight">
+
 ### 🚀 Starter Resources
 
 **Quick Setup Links:**
@@ -7032,20 +7103,30 @@ Build a complete avatar chat system that handles:
 ✅ App doesn't crash when things go wrong
 ✅ Interface feels responsive and professional
 
+### 💡 Pro Tips
+- Start with Bronze, then upgrade
+- Test each component individually
+- Use print statements for debugging
+- Save your work frequently!
+
 **Ready? Set? CODE! 🚀**
+
+</div>
 
 ---
 layout: two-cols-title
 columns: is-6
 align: c-lt-lt
-zoom: 1.0
+zoom: 0.7
 ---
 
 :: title ::
 
-# 🧠 Advanced Feature: Conversation Memory
+# 🧠 Advanced Feature: Conversation Memory (Part 1)
 
 :: left ::
+
+<div class="ns-c-supertight">
 
 ## 🤔 Why Memory Matters
 
@@ -7084,6 +7165,12 @@ def create_memory_summary(long_conversation):
     return claude_api.summarize(summary_prompt)
 ```
 
+</div>
+
+:: right ::
+
+<div class="ns-c-supertight">
+
 ### Semantic Memory (Advanced)
 ```python
 # Store important facts separately  
@@ -7100,7 +7187,39 @@ user_facts = {
 2. **Medium-term**: Summary of last 50 messages  
 3. **Long-term**: Key facts about user (permanent)
 
-:: right ::
+### 📊 Memory Performance Metrics
+
+**Memory Size vs Response Quality:**
+- 0 messages: Poor context (2/5)
+- 5 messages: Good context (4/5)
+- 20 messages: Excellent context (5/5)
+- 100+ messages: Diminishing returns (5/5 but slower)
+
+**Cost Analysis:**
+- Short conversation (10 messages): $0.01
+- Medium conversation (50 messages): $0.05  
+- Long conversation (200+ messages): $0.20+
+
+### 🚀 What's Next?
+
+In the next slide, we'll explore memory experiments and advanced techniques to make your avatar truly remember and adapt to users.
+
+</div>
+
+---
+layout: two-cols-title
+columns: is-6
+align: c-lt-lt
+zoom: 0.5
+---
+
+:: title ::
+
+# 🧠 Conversation Memory (Part 2): Testing & Advanced Techniques
+
+:: left ::
+
+<div class="ns-c-supertight">
 
 ### 🧪 Memory Experiments
 
@@ -7121,19 +7240,6 @@ user_facts = {
 - Ask AI: "What did we talk about?"  
 - Result: AI remembers key points, fast response
 
-### 📊 Memory Performance Metrics
-
-**Memory Size vs Response Quality:**
-- 0 messages: Poor context (2/5)
-- 5 messages: Good context (4/5)
-- 20 messages: Excellent context (5/5)
-- 100+ messages: Diminishing returns (5/5 but slower)
-
-**Cost Analysis:**
-- Short conversation (10 messages): $0.01
-- Medium conversation (50 messages): $0.05  
-- Long conversation (200+ messages): $0.20+
-
 ### 🎮 Interactive Memory Demo
 
 **Try This in Your App:**
@@ -7143,6 +7249,12 @@ user_facts = {
 3. Restart the app (clear memory)  
 4. Ask the same question
 5. Compare the responses!
+
+</div>
+
+:: right ::
+
+<div class="ns-c-supertight">
 
 ### 🔬 Advanced Memory Techniques
 
@@ -7162,6 +7274,29 @@ else:
     detail_level = "conversational"
 ```
 
+### 💡 Memory Best Practices
+
+**Do's:**
+- Keep recent messages for context
+- Summarize old conversations
+- Store key user facts permanently
+- Test memory limits regularly
+
+**Don'ts:**
+- Store sensitive information
+- Keep unlimited history
+- Ignore memory costs
+- Forget to clean up old data
+
+### 🎯 Implementation Tips
+
+- Start with simple sliding window
+- Add summarization when needed
+- Monitor API costs closely
+- Test with real conversations
+
+</div>
+
 ---
 layout: two-cols-title
 columns: is-6
@@ -7174,6 +7309,8 @@ zoom: 0.6
 # 🛡️ Error Handling & Resilience (Part 1)
 
 :: left ::
+
+<div class="ns-c-supertight">
 
 ## 🎯 The Murphy's Law of AI Apps
 
@@ -7214,6 +7351,8 @@ async def robust_api_call(request, max_retries=3):
     # All retries failed - graceful fallback
     return fallback_response()
 ```
+
+</div>
 
 :: right ::
 
@@ -7264,6 +7403,8 @@ zoom: 0.6
 
 :: left ::
 
+<div class="ns-c-supertight">
+
 ### 🧪 Error Simulation Lab
 
 **Test Your App's Resilience:**
@@ -7306,7 +7447,11 @@ def simulate_bad_data():
 - Pros: Best user experience
 - Cons: More complex to implement
 
+</div>
+
 :: right ::
+
+<div class="ns-c-supertight">
 
 ### 🎯 Error Monitoring Dashboard
 
@@ -7361,19 +7506,29 @@ def get_response_with_cache(user_input):
         return get_similar_cached_response(user_input)
 ```
 
+</div>
+
 ---
-layout: center
-class: text-center
+layout: two-cols-title
+columns: is-6
+align: c-lt-lt
+zoom: 0.8
 ---
 
+:: title ::
 # 🎨 UI/UX Polish: Making It Beautiful
 
+:: left ::
 ## From Functional to Fantastic! ✨
 
 ### 🎯 The User Experience Transformation
 
 **Before:** Basic Streamlit default styling
 **After:** Professional, polished avatar chat experience
+
+:: right ::
+
+<div class="ns-c-tight">
 
 ### 🎨 Design Principles for AI Apps
 
@@ -7397,11 +7552,13 @@ class: text-center
 - Smooth animations
 - Mobile-responsive design
 
+</div>
+
 ---
 layout: two-cols-title
 columns: is-6
 align: c-lt-ct
-zoom: 1.0
+zoom: 0.7
 ---
 
 :: title ::
@@ -7409,6 +7566,8 @@ zoom: 1.0
 # 🎨 Advanced Streamlit Styling
 
 :: left ::
+
+<div class="ns-c-supertight">
 
 ## 🌈 Custom CSS for Avatar Apps
 
@@ -7480,7 +7639,11 @@ def show_typing_indicator():
     """, unsafe_allow_html=True)
 ```
 
+</div>
+
 :: right ::
+
+<div class="ns-c-supertight">
 
 ### 🧪 Interactive Styling Lab
 
@@ -7489,17 +7652,14 @@ def show_typing_indicator():
 **Style 1: Corporate Professional**
 - Clean lines, blue/gray color scheme
 - Sans-serif fonts, minimal animations
-- [📱 See Example](https://streamlit-corporate-theme.com)
 
 **Style 2: Creative & Fun**  
 - Bright colors, playful animations
 - Custom fonts, emoji integration
-- [🎨 See Example](https://streamlit-creative-theme.com)
 
 **Style 3: Dark Mode**
 - Dark backgrounds, neon accents
 - High contrast, modern feel
-- [🌙 See Example](https://streamlit-dark-theme.com)
 
 ### 🎮 Real-Time Style Editor
 
@@ -7521,14 +7681,73 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 ```
 
-### 📱 Mobile Optimization
+</div>
 
-**Responsive Design Checklist:**
+---
+layout: two-cols-title
+columns: is-6
+align: c-lt-lt
+zoom: 0.6
+---
+
+:: title ::
+
+# 📱 Mobile Optimization & User Experience
+
+:: left ::
+
+<div class="ns-c-supertight">
+
+## 📱 Mobile-First Design
+
+### Responsive Design Checklist
 - [ ] Chat bubbles adapt to screen width
 - [ ] Avatar videos scale properly  
 - [ ] Touch-friendly button sizes
 - [ ] Readable text on small screens
 - [ ] Fast loading on mobile data
+
+### Mobile-Optimized CSS
+```css
+/* Mobile-responsive chat */
+@media (max-width: 768px) {
+    .user-message, .ai-message {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 14px;
+    }
+    
+    .avatar-container {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Touch-friendly elements */
+.mobile-button {
+    min-height: 44px;
+    padding: 12px 24px;
+    font-size: 16px;
+}
+```
+
+### Performance Optimization
+```python
+# Lazy loading for avatar videos
+@st.cache_resource
+def load_avatar_video(video_id):
+    return f"https://avatar-api.com/videos/{video_id}"
+
+# Optimize image loading
+def optimize_image_display(image_url):
+    st.image(image_url, use_column_width=True)
+```
+
+</div>
+
+:: right ::
+
+<div class="ns-c-supertight">
 
 ### 🎯 User Testing Results
 
@@ -7544,12 +7763,52 @@ st.markdown(f"""
 3. Text too small on mobile (86%)
 4. Confusing error messages (83%)
 
+### 🔧 Common UX Fixes
+
+**Loading States:**
+```python
+# Show progress during avatar generation
+with st.spinner("🎭 Creating your avatar..."):
+    avatar_video = generate_avatar(text)
+```
+
+**Error Handling:**
+```python
+try:
+    result = call_avatar_api(prompt)
+except Exception as e:
+    st.error("😅 Avatar is taking a break. Try again!")
+    st.info("💡 Tip: Keep messages under 100 words for faster processing")
+```
+
+**User Feedback:**
+```python
+# Let users rate the avatar response
+col1, col2 = st.columns(2)
+with col1:
+    if st.button("👍 Good response"):
+        st.success("Thanks for the feedback!")
+with col2:
+    if st.button("👎 Needs improvement"):
+        st.info("We'll work on making it better!")
+```
+
+</div>
+
 ---
-layout: center
-class: text-center
+layout: two-cols-title
+columns: is-6
+align: c-lt-lt
+zoom: 1.0
 ---
 
+:: title ::
+
 # 🚀 Deployment & Sharing
+
+:: left ::
+
+<div class="ns-c-tight">
 
 ## Make Your Avatar App Live! 🌐
 
@@ -7570,6 +7829,12 @@ class: text-center
 - Custom server configurations
 - Production-ready applications
 
+</div>
+
+:: right ::
+
+<div class="ns-c-tight">
+
 ### 🔧 Deployment Checklist
 
 **Before You Deploy:**
@@ -7585,33 +7850,63 @@ class: text-center
 - [ ] Implement rate limiting
 - [ ] Validate all user inputs
 
+</div>
+
 ---
-layout: center
-class: text-center
+layout: two-cols-title
+columns: is-6
+align: c-lt-lt
+zoom: 0.9
 ---
+
+:: title ::
 
 # 🎉 Class 4 Achievement Unlocked!
 
-## What You've Built Today:
+:: left ::
 
-### 🔧 Technical Mastery
+<div class="ns-c-supertight">
+
+## 🔧 Technical Mastery
+
+### What You've Built Today:
 - **Complete System Integration** - All components working together
 - **Advanced Error Handling** - Graceful failure recovery
 - **Smart Memory Management** - Context-aware conversations
 - **Professional UI/UX** - Polished user experience
 
-### 💡 Professional Skills  
+## 💡 Professional Skills  
 - **System Architecture** - Understanding complex data flows
 - **User Experience Design** - Building for real users
 - **Production Deployment** - Sharing your work with the world
 - **Performance Optimization** - Making apps fast and reliable
 
-### 🚀 What's Next?
-**Tomorrow: Group Projects & Demo Day!**
+</div>
+
+:: right ::
+
+<div class="ns-c-supertight">
+
+## 🚀 What's Next?
+
+### Tomorrow: Group Projects & Demo Day!
 
 Your avatar chat app is now ready for the final challenge - working in teams to create something extraordinary and presenting it to the class!
 
-**🏠 Tonight's Mission:** Polish your app, think about unique features you could add, and get ready to collaborate tomorrow!
+### 🏠 Tonight's Mission:
+- Polish your app and fix any remaining bugs
+- Think about unique features you could add
+- Get ready to collaborate tomorrow!
+- Review your code and prepare to explain it
+
+### 🎯 Preparation Checklist:
+- [ ] Test your avatar app thoroughly
+- [ ] Document any special features
+- [ ] Think about team collaboration ideas
+- [ ] Practice explaining your technical choices
+- [ ] Get excited for Demo Day! 🎉
+
+</div>
 
 ---
 layout: section
