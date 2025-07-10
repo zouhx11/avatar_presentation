@@ -7116,6 +7116,109 @@ Build a complete avatar chat system that handles:
 ---
 layout: two-cols-title
 columns: is-6
+align: c-lt-ct
+zoom: 0.6
+---
+
+:: title ::
+
+# 🤖 AI-Powered Coding: Let Gemini Write Code for You!
+
+:: left ::
+
+<div class="ns-c-supertight">
+
+## 🚀 Why Use Gemini CLI?
+
+### The Smart Coder's Secret Weapon
+- **Instant Code Generation** - Describe what you want, get working code
+- **Debug Like a Pro** - Paste errors, get fixes instantly  
+- **Learn While Building** - AI explains every line of code
+- **Free & Powerful** - Google's latest AI model at your fingertips
+
+### 🎯 Perfect for Avatar App Development
+- Generate Streamlit UI components
+- Create API integration functions
+- Build error handling systems
+- Write test cases automatically
+
+## 📦 Quick Setup (2 minutes!)
+
+### Step 1: Get Your Gemini API Key
+1. Visit **[https://ai.google.dev/gemini-api/docs/quickstart](https://ai.google.dev/gemini-api/docs/quickstart)**
+2. Click "Get API Key in Google AI Studio"
+3. Create new key → Copy it safely
+
+### Step 2: Install Gemini CLI
+```bash
+# Easy installation
+pip install google-generativeai
+npm install -g @google-ai/generativelanguage
+```
+
+### 🎯 Pro Tips for Effective Prompts
+- Be specific about what you want
+- Mention your tech stack (Streamlit, Python)
+- Ask for comments and explanations
+- Request error handling and edge cases
+
+**Official Repo:** [https://github.com/google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)
+
+
+</div>
+
+:: right ::
+
+<div class="ns-c-supertight">
+
+## 💻 Hands-On: Code Generation Magic
+
+### 🎭 Example 1: Avatar Chat Interface
+**Your Prompt:**
+```
+Create a Streamlit chat interface for an AI avatar app. 
+Include user input, message history, and a video player 
+for avatar responses. Add loading indicators.
+```
+
+**Gemini Generates:**
+```python
+import streamlit as st
+
+# Initialize chat history
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
+# Display chat history
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        st.markdown(message["content"])
+        if "video" in message:
+            st.video(message["video"])
+
+# User input
+if prompt := st.chat_input("Chat with your AI Avatar"):
+    # Add user message
+    st.session_state.messages.append({"role": "user", "content": prompt})
+    
+    # Show loading
+    with st.spinner("🎭 Avatar is thinking..."):
+        # Your API calls here
+        pass
+```
+
+### 🔧 Example 2: Error Handling System
+**Your Prompt:**
+```
+Create a robust error handling system for API calls 
+with retry logic and user-friendly error messages
+```
+
+</div>
+
+---
+layout: two-cols-title
+columns: is-6
 align: c-lt-lt
 zoom: 0.7
 ---
