@@ -133,7 +133,7 @@ class: text-center
   <button @click="$slidev.nav.go(124)" class="bg-orange-500 text-white px-6 py-4 rounded-lg hover:bg-orange-600 transition-colors">
     ⚡ Class 4: Integration & Features
   </button>
-  <button @click="$slidev.nav.go(134)" class="bg-red-500 text-white px-6 py-4 rounded-lg hover:bg-red-600 transition-colors">
+  <button @click="$slidev.nav.go(146)" class="bg-red-500 text-white px-6 py-4 rounded-lg hover:bg-red-600 transition-colors">
     🏆 Class 5: Demo Day & Projects
   </button>
 </div>
