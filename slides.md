@@ -7164,7 +7164,6 @@ npm install -g @google-ai/generativelanguage
 
 **Official Repo:** [https://github.com/google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)
 
-
 </div>
 
 :: right ::
@@ -8020,11 +8019,17 @@ background: "#ecfdf5"
 ## Group Projects & Demo Day
 
 ---
-layout: center
-class: text-center
+layout: two-cols-title
+columns: is-6
+align: c-lt-lt
+zoom: 0.9
 ---
 
+:: title::
 # Welcome to Demo Day! 🏆
+
+:: left ::
+<div class="ns-c-supertight">
 
 ## Today You Become AI Entrepreneurs! 
 
@@ -8046,6 +8051,8 @@ class: text-center
 - Prepare professional demonstration
 - Practice your presentation pitch
 
+</div>
+:: right ::
 ### 🎭 Project Categories
 
 Choose your adventure:
@@ -8058,7 +8065,7 @@ Choose your adventure:
 layout: two-cols-title
 columns: is-6
 align: c-lt-ct
-zoom: 1.0
+zoom: 0.8
 ---
 
 :: title ::
@@ -8066,6 +8073,8 @@ zoom: 1.0
 # 👥 Team Formation & Roles
 
 :: left ::
+
+<div class="ns-c-tight">
 
 ## 🎯 Building Balanced Teams
 
@@ -8089,6 +8098,12 @@ zoom: 1.0
 - Creates demonstrations and content
 - Leads the presentation and storytelling
 
+</div>
+
+:: right ::
+
+<div class="ns-c-tight">
+
 ## 🤝 Collaboration Strategies
 
 ### Effective Teamwork Principles
@@ -8108,28 +8123,25 @@ zoom: 1.0
 - Knowledge transfer meetings
 - Cross-training on different components
 
-## 📋 Project Planning Template
+</div>
 
-### Step 1: Team Contract
-- What are everyone's strengths?
-- How will you handle disagreements?
-- What's your communication schedule?
+---
+layout: two-cols-title
+columns: is-6
+align: c-lt-lt
+zoom: 0.9
+---
 
-### Step 2: Feature Roadmap
-- Core features (must-have)
-- Enhanced features (should-have)  
-- Stretch goals (nice-to-have)
+:: title ::
 
-### Step 3: Demo Planning
-- Who presents what section?
-- What's your elevator pitch?
-- How will you handle Q&A?
+# 🧪 Team Formation Activities
 
-:: right ::
+:: left ::
 
-### 🧪 Team Formation Activity
+<div class="ns-c-supertight">
 
-**Speed Networking Round (10 minutes)**
+## 🚀 Speed Networking Round
+**(10 minutes)**
 
 Find teammates by discussing:
 
@@ -8145,29 +8157,15 @@ Find teammates by discussing:
 - "Are you comfortable presenting to groups?"
 - "How do you like to structure demonstrations?"
 
-### 🎯 Project Ideation Framework
 
-**The "Jobs to Be Done" Method:**
 
-**Step 1:** What job is your avatar trying to do?
-- Entertain users during commute
-- Help students learn new languages
-- Assist customers with product questions
-- Create personalized workout coaching
+</div>
 
-**Step 2:** What makes it unique?
-- Personality adaptation to user mood
-- Multi-language support with cultural context
-- Integration with existing business systems
-- Real-time biometric feedback integration
+:: right ::
 
-**Step 3:** What's your competitive advantage?
-- Better user experience than existing solutions
-- Novel feature combination
-- Superior avatar quality or responsiveness
-- Unique target audience focus
+<div class="ns-c-supertight">
 
-### 🚀 Quick Team Assessment
+## 🚀 Quick Team Assessment
 
 **Rate your team balance (1-5 scale):**
 
@@ -8185,277 +8183,22 @@ Find teammates by discussing:
 
 **Aim for a total score >24 across all areas!**
 
----
-layout: center
-class: text-center
----
+</div>
 
-# 🚀 Project Showcase Categories
 
-## Choose Your Avatar App Adventure!
-
-### 🎮 Entertainment & Gaming
-
-**"Avatar Dungeon Master"**
-- AI-powered D&D game master with visual avatars
-- Dynamic storytelling based on player choices
-- Character voice generation for NPCs
-- *Unique Features: Procedural quest generation, voice modulation*
-
-**"Virtual Stand-Up Comedian"**  
-- AI that tells personalized jokes and stories
-- Learns user's humor preferences over time
-- Interactive comedy show format
-- *Unique Features: Audience reaction analysis, custom material*
-
-**"AI Workout Buddy"**
-- Motivational fitness coach with personality
-- Real-time form correction and encouragement  
-- Adaptive workout plans based on progress
-- *Unique Features: Biometric integration, achievement system*
-
-### 📚 Educational Applications
-
-**"Language Immersion Tutor"**
-- Native speaker avatars for conversation practice
-- Cultural context and pronunciation feedback
-- Gamified learning with story-based lessons
-- *Unique Features: Accent adaptation, cultural scenarios*
-
-**"Code Review Mentor"**
-- AI programming tutor with code analysis
-- Explains complex concepts with visual demonstrations
-- Personalized learning path recommendations
-- *Unique Features: Live code execution, debugging assistance*
-
-**"Virtual Science Lab"**
-- AI lab instructor for virtual experiments
-- Interactive demonstrations of physics/chemistry
-- Safety training and procedure guidance
-- *Unique Features: 3D visualization integration, experiment simulation*
-
-### 💼 Business & Professional
-
-**"Customer Success Avatar"**
-- Brand-specific customer service representative
-- Product knowledge base integration
-- Escalation to human agents when needed
-- *Unique Features: Sentiment analysis, CRM integration*
-
-**"Sales Presentation Coach"**
-- AI that helps practice and improve pitches
-- Real-time feedback on delivery and content
-- Objection handling training scenarios
-- *Unique Features: Presentation analysis, confidence metrics*
-
-**"Virtual Therapist Assistant"**
-- Supportive companion for mental health
-- Mood tracking and coping strategy suggestions
-- Crisis detection and resource connection
-- *Unique Features: Emotional intelligence, privacy protection*
 
 ---
 layout: two-cols-title
-columns: is-8
-align: c-lt-ct
-zoom: 1.0
+columns: is-6
+align: c-lt-lt
+zoom: 0.8
 ---
 
 :: title ::
-
-# 🛠️ Advanced Features Toolkit
+# 🏗️ 75-Minute Group Development Sprint!
 
 :: left ::
-
-## 🎯 Level Up Your Avatar App
-
-### 🧠 AI Enhancement Features
-
-**1. Personality Adaptation Engine**
-```python
-class PersonalityEngine:
-    def adapt_to_user(self, conversation_history):
-        user_traits = analyze_communication_style(conversation_history)
-        
-        if user_traits['humor_preference'] > 0.7:
-            self.response_style = "witty_and_playful"
-        elif user_traits['formality_level'] > 0.6:
-            self.response_style = "professional_friendly"
-        else:
-            self.response_style = "casual_conversational"
-            
-        return self.generate_adaptive_response()
-```
-
-**2. Multi-Modal Input Processing**
-```python
-# Handle text, voice, and image inputs
-def process_user_input(input_data):
-    if input_data.type == "voice":
-        text = speech_to_text(input_data.audio)
-        emotion = analyze_voice_emotion(input_data.audio)
-    elif input_data.type == "image":
-        text = image_to_text_description(input_data.image)
-        context = "user_shared_image"
-    else:
-        text = input_data.text
-        emotion = analyze_text_sentiment(text)
-    
-    return enhanced_response_with_context(text, emotion, context)
-```
-
-**3. Real-Time Learning System**
-```python
-class UserPreferenceTracker:
-    def __init__(self):
-        self.preferences = {
-            "response_length": "medium",
-            "technical_detail": "moderate",
-            "humor_level": "light",
-            "topics_of_interest": []
-        }
-    
-    def update_from_feedback(self, user_reaction):
-        if user_reaction == "too_long":
-            self.preferences["response_length"] = "short"
-        elif user_reaction == "more_detail":
-            self.preferences["technical_detail"] = "high"
-```
-
-### 🌐 Integration & Connectivity
-
-**4. Social Media Integration**
-```python
-# Share conversations and avatar videos
-def share_to_social(conversation_snippet, avatar_video):
-    platforms = ["twitter", "instagram", "tiktok"]
-    
-    for platform in platforms:
-        formatted_content = format_for_platform(
-            conversation_snippet, 
-            avatar_video, 
-            platform
-        )
-        post_to_platform(formatted_content, platform)
-```
-
-**5. Real-Time Collaboration**
-```python
-# Multiple users in same conversation
-class MultiUserAvatarChat:
-    def __init__(self):
-        self.active_users = {}
-        self.shared_context = {}
-    
-    def process_group_message(self, user_id, message):
-        # Update shared context with all users' input
-        self.shared_context[user_id] = message
-        
-        # Generate response considering all participants
-        response = generate_group_aware_response(
-            self.shared_context, 
-            self.active_users
-        )
-        
-        return broadcast_to_all_users(response)
-```
-
-**6. External API Enrichment**
-```python
-# Integrate with external services for rich responses
-def enrich_response_with_external_data(user_query, base_response):
-    enrichments = {}
-    
-    if contains_location(user_query):
-        enrichments['weather'] = get_weather_data(extract_location(user_query))
-        enrichments['events'] = get_local_events(extract_location(user_query))
-    
-    if contains_product_mention(user_query):
-        enrichments['pricing'] = get_product_prices(extract_products(user_query))
-        enrichments['reviews'] = get_product_reviews(extract_products(user_query))
-    
-    return augment_response(base_response, enrichments)
-```
-
-:: right ::
-
-### 🎨 User Experience Innovations
-
-**7. Adaptive Avatar Styles**
-```python
-class DynamicAvatarStyling:
-    def select_avatar_style(self, conversation_context):
-        if conversation_context.topic == "professional":
-            return "business_formal"
-        elif conversation_context.time_of_day == "evening":
-            return "casual_relaxed"
-        elif conversation_context.user_mood == "excited":
-            return "energetic_animated"
-        else:
-            return "default_friendly"
-```
-
-**8. Voice Cloning & Customization**
-```python
-# Let users train custom avatar voices
-def create_custom_voice(user_voice_samples):
-    voice_model = train_voice_clone(user_voice_samples)
-    
-    return {
-        "voice_id": generate_unique_id(),
-        "model": voice_model,
-        "characteristics": analyze_voice_traits(user_voice_samples)
-    }
-```
-
-**9. Conversation Analytics Dashboard**
-```python
-def generate_conversation_insights(conversation_history):
-    insights = {
-        "topics_discussed": extract_topics(conversation_history),
-        "mood_progression": track_mood_changes(conversation_history),
-        "learning_progress": measure_skill_development(conversation_history),
-        "engagement_score": calculate_engagement_metrics(conversation_history)
-    }
-    
-    return create_visualization_dashboard(insights)
-```
-
-### 🧪 Experimental Features
-
-**Try These Cutting-Edge Ideas:**
-
-**10. Emotion-Synchronized Animations**
-- Avatar facial expressions match conversation emotion
-- Real-time sentiment analysis drives avatar behavior
-- Micro-expressions for subtle emotional cues
-
-**11. AR/VR Integration**  
-- Augmented reality avatar overlay on camera feed
-- Virtual reality immersive conversation environments
-- Spatial audio for 3D avatar positioning
-
-**12. Biometric Response Adaptation**
-- Heart rate monitoring for stress detection
-- Eye tracking for attention and interest measurement
-- Voice stress analysis for emotional state assessment
-
-### 🎯 Feature Implementation Guide
-
-**Choose 2-3 features that match your team's interests:**
-
-**For Creative Teams:** Focus on personality, voice customization, AR/VR
-**For Technical Teams:** Build analytics, external integrations, real-time features  
-**For Business Teams:** Implement customer-focused features, social sharing, collaboration
-
-**Remember:** It's better to implement 2 features really well than 5 features poorly!
-
----
-layout: center
-class: text-center
----
-
-# 🏗️ 75-Minute Group Development Sprint!
+<div class="ns-c-supertight">
 
 ## Time to Build Something Amazing! ⚡
 
@@ -8480,6 +8223,11 @@ class: text-center
 - Practice your presentation flow
 - Prepare talking points for each team member
 - Set up demonstration materials and backup plans
+
+</div>
+
+:: right ::
+<div class="ns-c-supertight">
 
 ### 🚀 Development Resources
 
@@ -8506,11 +8254,12 @@ class: text-center
 4. **Unique Features** (60 seconds) - What makes it special?
 5. **Q&A** (120 seconds) - Answer audience questions
 
+</div>
 ---
 layout: two-cols-title
 columns: is-6
 align: c-lt-ct
-zoom: 1.0
+zoom: 0.7
 ---
 
 :: title ::
@@ -8518,6 +8267,8 @@ zoom: 1.0
 # 🏆 Demo Day Presentation Guide
 
 :: left ::
+
+<div class="ns-c-supertight">
 
 ## 🎯 Crafting Your Pitch
 
@@ -8549,6 +8300,12 @@ zoom: 1.0
 - Thank the audience
 - Handle Q&A confidently
 
+</div>
+
+:: right ::
+
+<div class="ns-c-supertight">
+
 ## 🎭 Presentation Best Practices
 
 ### Technical Demo Tips
@@ -8569,39 +8326,24 @@ zoom: 1.0
 - Speak clearly and at appropriate pace
 - Make eye contact with the audience
 
-### Common Presentation Mistakes to Avoid
+</div>
 
-❌ **Starting with "Sorry, this might not work"**
-✅ **Start confidently: "We're excited to show you..."**
+---
+layout: two-cols-title
+columns: is-6
+align: c-lt-ct
+zoom: 0.8
+---
 
-❌ **Reading directly from slides**
-✅ **Tell a story about your avatar app**
+:: title ::
 
-❌ **Apologizing for missing features**  
-✅ **Focus on what you accomplished**
+# 📊 Demo Day Schedule & Awards
 
-❌ **Rushing through the demo**
-✅ **Take time to explain what's happening**
+:: left ::
 
-:: right ::
+<div class="ns-c-supertight">
 
-### 🎯 Audience Engagement Strategies
-
-**Interactive Elements:**
-
-**Volunteer Participation**
-- "Who wants to have a conversation with our AI tutor?"
-- "Can someone give us a customer service scenario to test?"
-
-**Real-Time Polls**
-- "How many of you have used AI chatbots before?"
-- "What avatar feature sounds most useful to you?"
-
-**Technical Challenges**
-- "Try to break our error handling - ask something unusual!"
-- "What edge case can you think of for our app?"
-
-### 📊 Evaluation Criteria
+## 📊 Evaluation Criteria
 
 **What the Judges Look For:**
 
@@ -8626,18 +8368,13 @@ zoom: 1.0
 - Professional delivery
 - Effective teamwork
 
-### 🎪 Demo Day Schedule
+</div>
 
-**Team 1: "Avatar Language Tutor"** (9:00-9:07)
-**Team 2: "Virtual Fitness Coach"** (9:08-9:15)
-**Team 3: "AI Customer Success"** (9:16-9:23)
-**Team 4: "Code Review Mentor"** (9:24-9:31)
-**Team 5: "Creative Storyteller"** (9:32-9:39)
+:: right ::
 
-**Break & Deliberation** (9:40-9:50)
-**Awards Ceremony** (9:50-10:00)
+<div class="ns-c-supertight">
 
-### 🏅 Award Categories
+## 🏅 Award Categories
 
 **🥇 Most Innovative Feature**
 - Most creative technical implementation
@@ -8659,38 +8396,9 @@ zoom: 1.0
 - Most natural and engaging avatar
 - Great voice/video integration
 
----
-layout: center
-class: text-center
----
+</div>
 
-# 🎪 Demo Day Presentations!
 
-## Let the Show Begin! 🌟
-
-### 🎯 Presentation Order & Timing
-
-Each team has **exactly 7 minutes** for their complete presentation:
-- **5 minutes:** Live demonstration and explanation
-- **2 minutes:** Q&A with audience and judges
-
-### 🏆 Evaluation Process
-
-**Student Peer Voting:**
-- Everyone votes for their favorite apps (can't vote for own team)
-- Use provided voting cards for each category
-
-**Instructor Evaluation:**
-- Technical complexity and implementation quality
-- User experience and interface design
-- Innovation and creative problem-solving
-- Presentation effectiveness and teamwork
-
-### 🎊 Ready to Present?
-
-**Team 1, you're up first!**
-
-*Remember: Have fun, be proud of what you've built, and show off your amazing avatar creations!*
 
 ---
 layout: center
@@ -8782,114 +8490,6 @@ zoom: 0.8
 
 </div>
 
----
-layout: two-cols-title
-columns: is-6
-align: c-lt-ct
-zoom: 1.0
----
-
-:: title ::
-
-# 🚀 Your AI Journey Continues
-
-:: left ::
-
-## 🎯 Next Steps in Your AI Adventure
-
-### 📚 Deepen Your Knowledge
-
-**Advanced AI Courses:**
-- Deep Learning Specialization (Coursera)
-- CS231n: Computer Vision (Stanford)
-- Natural Language Processing (fast.ai)
-- Machine Learning Engineering (MLOps)
-
-**Recommended Reading:**
-- "Hands-On Machine Learning" by Aurélien Géron
-- "Deep Learning" by Ian Goodfellow
-- "The Hundred-Page Machine Learning Book" by Andriy Burkov
-
-### 💼 Career Pathways
-
-**AI/ML Engineer**
-- Build and deploy machine learning systems
-- Work with data pipelines and model optimization
-- Salary: $120k - $200k+
-
-**Product Manager - AI**
-- Guide AI product development and strategy  
-- Bridge technical teams and business needs
-- Salary: $130k - $220k+
-
-**AI Research Scientist**
-- Develop new AI algorithms and techniques
-- Publish research papers and patents
-- Salary: $150k - $300k+
-
-**Startup Founder**
-- Create AI-powered companies
-- Solve real-world problems with AI
-- Potential: Unlimited! 🚀
-
-### 🛠️ Build Your Portfolio
-
-**Project Ideas:**
-1. **AI Art Generator** - Create custom image generation tools
-2. **Smart Home Assistant** - Build voice-controlled automation
-3. **Educational AI Tutor** - Personalized learning systems
-4. **Healthcare AI** - Diagnostic assistance tools
-5. **Financial AI** - Trading algorithms and analysis
-
-:: right ::
-
-### 🌐 Join the AI Community
-
-**Online Communities:**
-- [🤗 Hugging Face Community](https://huggingface.co/community)
-- [📖 AI/ML Reddit](https://reddit.com/r/MachineLearning)
-- [💬 Discord AI Servers](https://discord.gg/ai-community)
-- [📱 AI Twitter](https://twitter.com/i/communities/ai)
-
-**Local Meetups & Events:**
-- AI/ML meetup groups in your city
-- University AI research seminars
-- Tech conference student programs
-- Hackathons and coding competitions
-
-### 🎓 University & Scholarship Opportunities
-
-**Top AI Programs:**
-- Stanford University (CS with AI track)
-- MIT (Computer Science & AI)  
-- Carnegie Mellon (Machine Learning)
-- UC Berkeley (EECS with AI focus)
-
-**Scholarship Programs:**
-- Google AI Education Scholarships
-- Microsoft AI for Good Grants
-- NVIDIA AI Education Programs
-- NSF Graduate Research Fellowships
-
-### 🌟 Stay Connected
-
-**Your Course Resources:**
-- All slides and code: [📁 Course GitHub Repository]
-- Instructor contact: [📧 Email for questions]
-- Alumni network: [🤝 Class Discord Server]
-- Office hours: [⏰ Weekly drop-in sessions]
-
-### 💡 Remember
-
-**"The best time to plant a tree was 20 years ago. The second best time is now."**
-
-You've planted your AI knowledge tree this week. Keep nurturing it with:
-- **Continuous learning** - AI evolves rapidly
-- **Hands-on projects** - Build things that matter to you
-- **Community engagement** - Learn with and from others
-- **Ethical consideration** - Use AI to make the world better
-
-**You're not just students anymore - you're the next generation of AI innovators!** 🚀
 
 ---
 layout: center
