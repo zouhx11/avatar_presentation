@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:sli.dev)",
+      "Bash(mkdir:*)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "WebFetch(domain:gureckis.github.io)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:upload.wikimedia.org)",
+      "WebFetch(domain:www.anthropic.com)",
+      "WebFetch(domain:grok.x.ai)",
+      "WebFetch(domain:www.deepseek.com)",
+      "Bash(curl:*)",
+      "Bash(rg:*)",
+      "Bash(rm:*)",
+      "Bash(pkill:*)",
+      "Bash(true)",
+      "Bash(npm run dev:*)",
+      "Bash(grep:*)",
+      "Bash(lsof:*)",
+      "WebFetch(domain:a16z.com)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git config:*)",
+      "Bash(git push:*)",
+      "Bash(npm install)",
+      "Bash(npm run build:protected:*)",
+      "Bash(npm run build:github:*)",
+      "Bash(npm run:*)",
+      "Bash(npx staticrypt:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "WebFetch(domain:xthemadgenius.medium.com)",
+      "Bash(sed:*)",
+      "WebFetch(domain:huggingface.co)",
+      "Bash(where:*)",
+      "Bash(npm install:*)",
+      "Bash(pip install:*)",
+      "Bash(python:*)"
+    ],
+    "deny": []
+  }
+}
